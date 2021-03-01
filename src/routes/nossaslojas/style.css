@@ -1,0 +1,161 @@
+#nossaslojas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 6rem 18rem;
+}
+
+#nossaslojas #nossaslojas_left {
+  width: 70%;
+  height: auto;
+}
+
+#nossaslojas #nossaslojas_left h1 {
+  font-size: 2.4rem;
+}
+
+#nossaslojas .select {
+  position: relative;
+  width: 26rem;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  background-color: #fff;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+#nossaslojas .select::-ms-expand {
+  display: none;
+}
+
+#nossaslojas .select:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ">";
+  width: 4rem;
+  height: auto;
+  color: var(--red);
+  font-size: 1.3em;
+  font-family: "Nanum Gothic Coding", monospace;
+  pointer-events: none;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#nossaslojas #img {
+  width: 98%;
+  height: 56vh;
+  margin-top: 4rem;
+  justify-content: stretch;
+  object-fit: contain;
+  background-color: rgb(128, 255, 212, 0.6);
+}
+
+#nossaslojas #infocard {
+  display: flex;
+  flex-direction: column;
+  width: 22.8rem;
+  height: 38rem;
+  margin-top: 13rem;
+  margin-left: 1.8rem;
+  padding: 2rem 2rem;
+  background-color: #fff;
+}
+
+#nossaslojas #infocard h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#nossaslojas #infocard #infolocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  max-height: 20%;
+  margin-top: 2rem;
+  margin-bottom: -4rem;
+  font-size: 0.92rem;
+}
+
+#nossaslojas #infocard #infohours {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 7rem;
+  padding-bottom: 2rem;
+  max-height: 20%;
+  font-size: 0.92rem;
+  border-bottom: 1px solid rgb(69, 69, 69, 0.2);
+}
+
+#nossaslojas #infocard #infohours h5 {
+  color: var(--red);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#nossaslojas #infocard #infohours h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#nossaslojas #infocard #infohours h5 {
+  margin-bottom: 1rem;
+}
+
+#nossaslojas #infocard #infohours p {
+  margin-top: 0.25rem;
+}
+
+#nossaslojas #infocard #contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-height: 20%;
+  margin-top: 2rem;
+}
+
+#nossaslojas #infocard #contact div {
+  margin-top: 0.5rem;
+}
+
+#nossaslojas #infocard #contact div img {
+  display: block;
+  width: 4rem;
+  height: auto;
+  background-color: #bada55;
+}
+
+#nossaslojas #infocard a {
+  width: 60%;
+  height: 3rem;
+  margin-top: 2rem;
+  padding-top: 0.86rem;
+  color: #454545;
+  border: 1px solid #454545;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  will-change: background-color;
+}
+
+#nossaslojas #infocard a:hover {
+  background-color: rgb(207, 207, 207, 0.6);
+}
