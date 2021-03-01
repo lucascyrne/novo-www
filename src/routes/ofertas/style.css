@@ -1,0 +1,129 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 32rem;
+  height: 4rem;
+  margin-top: 0.6rem;
+  padding-top: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--red);
+  border-radius: 0.46rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(141, 0, 12, 0.9);
+}
+
+#ofertas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+#ofertas #banner {
+  width: 100%;
+  height: 30vh;
+  background-color: #bada55;
+}
+
+#ofertas #ofertas_inner {
+  width: 100%;
+  height: 106vh;
+  padding: 6rem 18rem;
+  padding-right: 6rem;
+}
+
+#ofertas #ofertas_left {
+  width: 36%;
+  height: 20%;
+}
+
+#ofertas #ofertas_left {
+  font-size: 1.2rem;
+}
+
+#ofertas .select {
+  position: relative;
+  width: 26rem;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  background-color: #fff;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+#ofertas .select::-ms-expand {
+  display: none;
+}
+
+#ofertas .select:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ">";
+  width: 4rem;
+  height: auto;
+  color: var(--red);
+  font-size: 1.3em;
+  font-family: "Nanum Gothic Coding", monospace;
+  pointer-events: none;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#ofertas #tabloids {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45rem;
+  height: 40rem;
+  margin-top: 6.8rem;
+  margin-left: 4rem;
+  background-color: yellow;
+}
+
+#ofertas #tabloids div {
+  width: 45%;
+  height: auto;
+  text-align: center;
+}
+
+#ofertas #tabloids img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  justify-self: stretch;
+}
+
+#ofertas #tabloids h6 {
+  font-size: 1rem;
+}
+
+#ofertas div a {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
