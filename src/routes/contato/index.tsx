@@ -57,7 +57,7 @@ const Contato: FunctionalComponent = () => {
               <label htmlFor="name">Nome</label>
               <input type="text" />
             </div>
-            <div class={style.col}>
+            <div class={style.col} id={style.m_left}>
               <label htmlFor="email">E-mail</label>
               <input type="email" />
             </div>
@@ -67,7 +67,7 @@ const Contato: FunctionalComponent = () => {
               <label htmlFor="tel">Telefone</label>
               <input type="number" />
             </div>
-            <div class={style.col}>
+            <div class={style.col} id={style.m_left}>
               <label htmlFor="state">Estado</label>
               <input type="text" />
             </div>
@@ -77,19 +77,22 @@ const Contato: FunctionalComponent = () => {
               <label htmlFor="city">Cidade</label>
               <input type="text" />
             </div>
-            <div class={style.col}>
+            <div class={style.col} id={style.m_left}>
               <label htmlFor="vocation">Função</label>
               <input type="text" />
             </div>
           </div>
           <div class={style.row}>
             <div class={style.col}>
-              <label htmlFor="cv">Currículo</label>
-              <input type="file" />
+              <p>Currículo</p>
+              <label htmlFor="cv" id={style.input_file}>
+                Anexe o currículo em PDF
+              </label>
+              <input type="file" id="cv" />
             </div>
-            <div class={style.col}>
-              <label htmlFor="state">Estado</label>
-              <input type="text" />
+            <div id={style.m_left}>
+              <img src="" alt="" />
+              <p>Preciso de ajuda</p>
             </div>
           </div>
         </form>

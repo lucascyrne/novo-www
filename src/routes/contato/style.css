@@ -96,3 +96,57 @@
   color: #fff;
   background-color: var(--blue);
 }
+
+#trabalheconosco p {
+  line-height: 1.8rem;
+}
+
+#trabalheconosco form {
+  width: 58rem;
+  height: 40rem;
+}
+
+#trabalheconosco form label {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+#trabalheconosco form input {
+  width: 26rem;
+  height: 2.8rem;
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  font-family: montserrat, sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e6e6e6;
+}
+
+#trabalheconosco form p {
+  font-weight: 600;
+}
+
+#trabalheconosco form [type="file"] {
+  display: inline-block;
+  appearance: none;
+  display: none;
+  opacity: 0;
+}
+
+#trabalheconosco form label#input_file {
+  width: 26rem;
+  height: 2.8rem;
+  margin-top: -0.4rem;
+  padding-top: 0.35rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.26rem;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+#trabalheconosco form #m_left {
+  margin-left: 4rem;
+}
