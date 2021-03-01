@@ -1,0 +1,152 @@
+.bold {
+  font-weight: 800;
+}
+
+.italic {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#quemsomos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+#quemsomos #about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  background-color: #fff;
+}
+
+#quemsomos #about #about_text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 4rem 18rem;
+}
+
+#quemsomos #about #about_text h1 {
+  width: 28rem;
+  font-size: 2.6rem;
+}
+
+#quemsomos #about #about_text p {
+  width: 30rem;
+  line-height: 1.4rem;
+}
+
+#quemsomos #about img {
+  display: block;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  justify-self: strecht;
+  background-color: rgb(127, 255, 212, 0.6);
+}
+
+#quemsomos #infobanner {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+  padding-top: 2.4rem;
+  color: #fff;
+  background-color: var(--yellow);
+}
+
+#quemsomos #infobanner h2 {
+  font-size: 3.6rem;
+}
+
+#quemsomos #infobanner p {
+  font-size: 1.4rem;
+}
+
+#quemsomos #valuesbanner {
+  display: inline-block;
+  align-content: center;
+  width: 100%;
+  height: 56vh;
+  padding: 2rem 18rem;
+  color: #fff;
+  background-color: var(--red);
+}
+
+#quemsomos #valuesbanner_inner {
+  min-width: 100%;
+  margin: 2rem auto;
+}
+
+#quemsomos #valuesbanner_inner h3 {
+  font-size: 1.86rem;
+  font-weight: 600;
+}
+
+#quemsomos #valuesbanner_inner p {
+  line-height: 1.4rem;
+}
+
+#quemsomos #valuesbanner_left {
+  width: 30rem;
+  height: 30rem;
+  border-right: 1px solid #fff;
+  padding-right: 4rem;
+}
+
+#quemsomos #valuesbanner_center {
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+#quemsomos #valuesbanner_center h3 {
+  margin-bottom: 0.5rem;
+}
+
+#quemsomos #valuesbanner_right {
+  width: 30rem;
+  margin-top: 4.4rem;
+  margin-left: 4rem;
+}
+
+#quemsomos #mapbanner {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-content: center;
+  padding: 6rem 18rem;
+}
+
+#quemsomos #mapbanner #maptext {
+  width: 50%;
+  height: auto;
+}
+
+#quemsomos #mapbanner #maptext h1 {
+  font-size: 3rem;
+}
+
+#quemsomos #mapbanner #maptext p {
+  width: 70%;
+  line-height: 1.4rem;
+}
+
+#quemsomos #mapbanner img {
+  width: 50%;
+  height: auto;
+}
