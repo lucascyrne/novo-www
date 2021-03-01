@@ -1,55 +1,62 @@
 #header {
-	display: inline-grid;
-	grid-template-rows: 100%;
-	grid-template-columns: 26% 45% 29%;
-	width: 100%;
-	min-height: 10vh;
-	padding: 0;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	z-index: 50;
+  display: inline-grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 26% 45% 29%;
+  width: 100%;
+  min-height: 6vh;
+  max-height: 10vh;
+  padding: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 50;
 }
 
 #header #logo {
-	grid-column-start: 1;
-	background-color: #fff;
+  grid-column-start: 1;
+  background-color: #fff;
+}
+
+#header #menu {
+  display: inline-block;
+  grid-column-start: 2;
+  background-color: var(--blue);
+  text-align: center;
 }
 
 #header nav {
-	display: flex;
-	justify-content: center;
-	grid-column-start: 2;
-	font-size: 65%;
-	background-color: var(--blue);
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 65%;
 }
 
 #header nav a {
-	display: block;
-	width: 15%;
-	height: 100%;
-	padding-top: 1.5rem;
-	text-align: center;
-	background: var(--blue);
-	text-decoration: none;
-	color: #FFF;
-	will-change: background-color;
+  width: 8rem;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  background: var(--blue);
+  text-decoration: none;
+  color: #fff;
+  will-change: background-color;
 }
 
 #header nav a:hover,
 #header nav a:active {
-	background: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #header nav a.active {
-	background: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #header #location {
-	display: flex;
-	grid-column-start: 3;
-	justify-content: center;
-	background-color: var(--yellow);
+  display: flex;
+  grid-column-start: 3;
+  justify-content: center;
+  background-color: var(--yellow);
 }
 
 #header #location p {
-	font-size: .8rem;
+  font-size: 0.8rem;
 }
