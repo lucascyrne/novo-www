@@ -1,0 +1,153 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 34vh;
+  padding: 7.4rem 16rem;
+  background-color: var(--blue);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer #logo {
+  width: 10rem;
+  height: 6rem;
+  margin-right: 2rem;
+  background-color: #bada55;
+}
+
+#footer #logo img {
+  width: 100%;
+  height: auto;
+  justify-content: stretch;
+  object-fit: contain;
+}
+
+#footer #footer_nav {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: auto;
+  margin-top: -0.4rem;
+  margin-left: -3rem;
+  padding: 0 2rem;
+  color: #fff;
+}
+
+#footer #footer_nav div {
+  width: 22rem;
+  height: 10rem;
+  margin: 0 auto;
+  margin-left: 2rem;
+  font-size: 80%;
+  border-right: 1px solid #454545;
+}
+
+#footer #footer_nav div:last-of-type {
+  border: 0;
+}
+
+#footer #footer_nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#footer #pagamento {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 24rem;
+  margin-top: -11rem;
+}
+
+#footer #newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 24rem;
+  height: 16rem;
+  border-radius: 16px;
+  background-color: var(--yellow);
+}
+
+#footer #newsletter h4 {
+  font-weight: 600;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: -3rem;
+  font-size: 1.4rem;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 16rem;
+  height: 4rem;
+  margin-top: 0.6rem;
+  padding-top: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--red);
+  border-radius: 0.46rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(141, 0, 12, 0.9);
+}
+
+#footer #formas_pagamento {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+#footer #social {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 5rem;
+  margin-top: 2.5rem;
+  margin-left: -16rem;
+  padding: 0.8rem 16rem;
+  color: #fff;
+  background-color: #23528b;
+}
+
+#footer #social div {
+  width: 32rem;
+}
+
+#footer #social h4 {
+  margin-right: 2rem;
+}
+
+#footer #social a:first-child {
+  margin-left: 6rem;
+}
+
+#footer #social a {
+  width: 1rem;
+  height: auto;
+  background-color: #fff;
+}
+
+#footer #copyright {
+  width: 100%;
+  height: 3rem;
+  padding-top: 0.9rem;
+  font-size: 80%;
+  color: #454545;
+}
