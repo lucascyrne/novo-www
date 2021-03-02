@@ -1,6 +1,8 @@
 import { FunctionalComponent, h } from "preact";
 import style from "./style";
 
+import teste1 from "../../assets/img/teste1.jpg";
+
 const QuemSomos: FunctionalComponent = () => {
   return (
     <div id={style.quemsomos}>
@@ -21,7 +23,7 @@ const QuemSomos: FunctionalComponent = () => {
             climatizado, comercializando em torno de 9 mil itens.
           </p>
         </div>
-        <img src="" alt="" />
+        <img src={teste1} alt="" />
       </div>
       <div id={style.infobanner}>
         <h2>
@@ -119,7 +121,7 @@ const QuemSomos: FunctionalComponent = () => {
             os municípios que estão inseridos.
           </p>
         </div>
-        <img src="" alt="" />
+        <div id={style.imagemap} />
       </div>
     </div>
   );

@@ -29,6 +29,7 @@
   flex-direction: row;
   width: 100%;
   height: 50vh;
+  overflow: hidden;
   background-color: #fff;
 }
 
@@ -37,7 +38,7 @@
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 4rem 18rem;
+  padding: 4rem 19rem;
 }
 
 #quemsomos #about #about_text h1 {
@@ -51,11 +52,12 @@
 }
 
 #quemsomos #about img {
-  display: block;
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-  justify-self: strecht;
+  display: flex;
+  min-width: 50%;
+  min-height: 100%;
+  justify-self: center;
+  align-items: center;
+  overflow: hidden;
   background-color: rgb(127, 255, 212, 0.6);
 }
 
@@ -66,6 +68,7 @@
   height: 40vh;
   padding-top: 2.4rem;
   color: #fff;
+  background-image: url("../../assets/img/ofertasbanner.png");
   background-color: var(--yellow);
 }
 
@@ -126,15 +129,15 @@
 #quemsomos #mapbanner {
   display: flex;
   width: 100%;
-  height: 80vh;
-  justify-content: center;
-  align-content: center;
-  padding: 6rem 18rem;
+  height: 100vh;
 }
 
 #quemsomos #mapbanner #maptext {
-  width: 50%;
+  width: 28rem;
   height: auto;
+  margin-top: 6rem;
+  margin-left: 17.6rem;
+  margin-right: 8rem;
 }
 
 #quemsomos #mapbanner #maptext h1 {
@@ -142,11 +145,19 @@
 }
 
 #quemsomos #mapbanner #maptext p {
-  width: 70%;
-  line-height: 1.4rem;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.6rem;
 }
 
-#quemsomos #mapbanner img {
-  width: 50%;
-  height: auto;
+#quemsomos #mapbanner #imagemap {
+  display: flex;
+  justify-self: center;
+  width: 60rem;
+  height: 50rem;
+  margin-top: 8rem;
+  background-size: contain;
+  background-image: url("../../assets/img/imagemap.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
