@@ -2,6 +2,11 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
+import teste1 from "../../assets/img/teste1.jpg";
+import location from "../../assets/icons/location_red.jpg";
+import whatsapp from "../../assets/icons/whatsapp_blue.jpg";
+import phone from "../../assets/icons/phone.jpg";
+
 const NossasLojas: FunctionalComponent = () => {
   return (
     <div id={style.nossaslojas}>
@@ -17,13 +22,13 @@ const NossasLojas: FunctionalComponent = () => {
           </select>
         </div>
         <div id={style.img}>
-          <img src="" alt="" />
+          <img src={teste1} alt="" />
         </div>
       </div>
       <div id={style.infocard}>
         <h2>Vitória de Santo Antão - PE</h2>
         <div id={style.infolocation} class={style.row}>
-          <img src="" alt="" />
+          <img src={location} alt="" />
           <p>
             Trevo da PE-050 com a BR-232,
             <br />
@@ -37,11 +42,11 @@ const NossasLojas: FunctionalComponent = () => {
         </div>
         <div id={style.contact}>
           <div class={style.row}>
-            <img src="" alt="" />
+            <img src={whatsapp} alt="" />
             <p>(81) 98246-9459</p>
           </div>
           <div class={style.row}>
-            <img src="" alt="" />
+            <img src={phone} alt="" />
             <p>(81) 3771-7702</p>
           </div>
         </div>
