@@ -35,6 +35,10 @@
   background-color: var(--gray);
 }
 
+#contato h1 {
+  font-size: 2rem;
+}
+
 #contato p {
   margin-top: 1rem;
   line-height: 1.8rem;
@@ -63,7 +67,7 @@
 
 #contato form .form_input input {
   width: auto;
-  height: 2.8rem;
+  height: 3.4rem;
   margin-top: 0.8rem;
   padding-left: 1rem;
   font-family: montserrat, sans-serif;
@@ -91,10 +95,13 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80vh;
+  height: 86vh;
   padding: 6rem 18rem;
   color: #fff;
-  background-color: var(--blue);
+  background-image: url("../../assets/img/teste1blue.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: left center;
 }
 
 #trabalheconosco p {
@@ -113,7 +120,7 @@
 
 #trabalheconosco form input {
   width: 26rem;
-  height: 2.8rem;
+  height: 3.4rem;
   margin-top: 0.8rem;
   padding-left: 1rem;
   font-family: montserrat, sans-serif;
@@ -136,9 +143,10 @@
 
 #trabalheconosco form label#input_file {
   width: 26rem;
-  height: 2.8rem;
+  height: 3.4rem;
   margin-top: -0.4rem;
-  padding-top: 0.35rem;
+  margin-bottom: 2.5rem;
+  padding-top: 0.7rem;
   text-align: center;
   color: #fff;
   font-size: 1.26rem;
@@ -149,4 +157,22 @@
 
 #trabalheconosco form #m_left {
   margin-left: 4rem;
+}
+
+#trabalheconosco #help {
+  width: 12rem;
+  height: 4rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+#trabalheconosco #help img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#trabalheconosco #help p {
+  margin-top: 0.2rem;
+  margin-left: 1rem;
 }

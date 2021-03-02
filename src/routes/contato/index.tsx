@@ -2,6 +2,8 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
+import help from "../../assets/icons/help.png";
+
 const Contato: FunctionalComponent = () => {
   return (
     <div class={style.col}>
@@ -90,11 +92,14 @@ const Contato: FunctionalComponent = () => {
               </label>
               <input type="file" id="cv" />
             </div>
-            <div id={style.m_left}>
-              <img src="" alt="" />
+            <div id={(style.m_left, style.help)} class={style.row}>
+              <img src={help} alt="" />
               <p>Preciso de ajuda</p>
             </div>
           </div>
+          <a href="" class={style.button}>
+            Enviar
+          </a>
         </form>
       </div>
     </div>
