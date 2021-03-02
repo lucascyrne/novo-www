@@ -1,18 +1,37 @@
+#bold {
+  font-weight: 700;
+}
+
 #header {
   display: inline-grid;
   grid-template-rows: 100%;
   grid-template-columns: 26% 45% 29%;
   width: 100%;
-  min-height: 6vh;
-  max-height: 10vh;
+  height: 8vh;
   padding: 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border: none;
   z-index: 50;
 }
 
 #header #logo {
+  display: inline-flex;
+  justify-items: left;
   grid-column-start: 1;
   background-color: #fff;
+}
+
+#header #logo a {
+  margin-left: auto;
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+
+#header #logo a img {
+  margin-top: -2.5rem;
+  margin-bottom: -6rem;
+  width: 110%;
+  height: 10rem;
 }
 
 #header #menu {
@@ -27,14 +46,15 @@
   width: 70%;
   height: 100%;
   margin: 0 auto;
-  font-size: 65%;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 #header nav a {
   width: 8rem;
   height: 100%;
   margin: 0 auto;
-  padding-top: 1.5rem;
+  padding-top: 2.2rem;
   background: var(--blue);
   text-decoration: none;
   color: #fff;
@@ -53,10 +73,370 @@
 #header #location {
   display: flex;
   grid-column-start: 3;
-  justify-content: center;
+  justify-content: left;
+  padding: 1.5rem 2rem;
   background-color: var(--yellow);
 }
 
+#header #location div {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 60%;
+}
+
+#header #location img {
+  width: 1.8rem;
+  height: 2.2rem;
+}
+
 #header #location p {
-  font-size: 0.8rem;
+  margin-top: 0;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1921px) and (max-height: 1440px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: 6rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 12rem;
+    margin-top: -2.4rem;
+    margin-bottom: -3rem;
+  }
+
+  #header nav {
+    width: 70%;
+  }
+
+  #header nav a {
+    width: 10rem;
+    padding-top: 2.96rem;
+    font-size: 1.14rem;
+  }
+
+  #header #location {
+    padding: 1.6rem 2rem;
+  }
+
+  #header #location div {
+    width: 92%;
+  }
+
+  #header #location div img {
+    width: 3rem;
+    height: 4rem;
+  }
+
+  #header #location div p {
+    margin-top: 0.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1921px) and (max-height: 1080px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: 6rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 10rem;
+    margin-top: -2.4rem;
+    margin-bottom: -3rem;
+  }
+
+  #header nav {
+    width: 70%;
+  }
+
+  #header nav a {
+    width: 10rem;
+    padding-top: 1.96rem;
+    font-size: 1.14rem;
+  }
+
+  #header #location {
+    padding: 1.36rem 2rem;
+  }
+
+  #header #location div {
+    width: 60%;
+  }
+
+  #header #location div img {
+    width: 2rem;
+    height: 3rem;
+  }
+
+  #header #location div p {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 940px) {
+  #header #logo a img {
+    margin-top: -2.8rem;
+    width: 90%;
+  }
+
+  #header nav a {
+    padding-top: 1.8rem;
+  }
+
+  #header #location {
+    padding: 1.3rem 2rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -1.3rem;
+  }
+
+  #header nav a {
+    padding-top: 1.9rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 1.2rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 790px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -0.8rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 7rem;
+    margin-top: -4rem;
+    margin-bottom: -4.4rem;
+  }
+
+  #header nav a {
+    padding-top: 1.58rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.9rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 770px) {
+  #header #location img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  #header #location p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 660px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -0.8rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 6rem;
+    margin-top: -1.4rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav a {
+    padding-top: 1.3rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.66rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 630px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -0.2rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 5.4rem;
+    margin-top: -1.2rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav a {
+    padding-top: 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.56rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -1rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 6.6rem;
+    margin-top: -1.4rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav a {
+    padding-top: 1.7rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.9rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+
+  #header #location div p {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 620px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -1rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: -1.4rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav a {
+    padding-top: 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.5rem 2rem;
+  }
+
+  #header #location div {
+    width: 80%;
+  }
+
+  #header #location div p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -2.6rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav {
+    width: 90%;
+  }
+
+  #header nav a {
+    padding-top: 1.5rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.9rem 2rem;
+  }
+
+  #header #location div {
+    width: 92%;
+  }
+
+  #header #location div p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 610px) {
+  #header #logo a {
+    margin-left: auto;
+    margin-right: -2.6rem;
+  }
+
+  #header #logo a img {
+    width: 100%;
+    height: 5rem;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+  }
+
+  #header nav {
+    width: 90%;
+  }
+
+  #header nav a {
+    padding-top: 1.16rem;
+    font-size: 0.6rem;
+  }
+
+  #header #location {
+    padding: 0.56rem 2rem;
+  }
+
+  #header #location div {
+    width: 92%;
+  }
+
+  #header #location div p {
+    font-size: 0.7rem;
+  }
 }

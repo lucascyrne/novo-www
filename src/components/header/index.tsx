@@ -2,12 +2,15 @@ import { FunctionalComponent, h } from "preact";
 import { Link } from "preact-router/match";
 import style from "./style.css";
 
+import logo from "../../assets/logo/logo.svg";
+import location from "../../assets/icons/location.png";
+
 const Header: FunctionalComponent = () => {
   return (
     <header id={style.header}>
       <div id={style.logo}>
         <a href="/">
-          <img src="" alt="" />
+          <img src={logo} alt="Novo Atacarejo Logo" />
         </a>
       </div>
       <div id={style.menu}>
@@ -30,8 +33,13 @@ const Header: FunctionalComponent = () => {
         </nav>
       </div>
       <div id={style.location}>
-        <img src="" alt="" />
-        <p>Você está proximo a nossa loja do...</p>
+        <div>
+          <img src={location} alt="Location icon" />
+          <p>
+            Você está proximo a nossa loja do{" "}
+            <span id={style.bold}>Recife - PE</span>
+          </p>
+        </div>
       </div>
     </header>
   );
