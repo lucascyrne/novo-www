@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+
 #home {
   display: flex;
   flex-direction: column;
@@ -11,16 +13,22 @@
   min-width: 100%;
   width: 100%;
   height: 50vh;
+  overflow: hidden;
   background-color: rgb(127, 255, 212, 0.6);
 }
 
 #home #banner .img {
-  display: inline-block;
+  display: flex;
   grid-column-start: 1;
   order: 1;
-  justify-self: stretch;
-  width: 100%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #banner img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #home #banner .info {
@@ -48,6 +56,10 @@ p {
   line-height: 1.3rem;
 }
 
+#home #banner .info a {
+  margin-top: 2rem;
+}
+
 .button {
   display: inline-block;
   text-align: center;
@@ -73,45 +85,72 @@ p {
   width: 70%;
   height: 50vh;
   margin: 1rem auto;
-  background-color: rgb(255, 255, 0, 0.6);
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+#home #ofertas h1 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 #home #fique_por_dentro {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   height: 50vh;
   margin: 1rem auto;
-  background-color: rgb(0, 0, 255, 0.6);
+}
+
+#home #fique_por_dentro h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+#home #fique_por_dentro #fique_body {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #home #fique_por_dentro .news_card {
-  display: block;
-  width: 22.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 26.8rem;
 }
 
 #home #fique_por_dentro .news_card img {
-  display: block;
-  justify-self: strech;
-  width: 100%;
-  height: 70%;
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  min-width: 100%;
+  min-height: 74%;
 }
 
 #home #fique_por_dentro .news_card h2 {
-  margin-top: -6rem;
-  margin-bottom: 2.8rem;
-  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+  color: var(--blue);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 #home #fique_por_dentro .news_card a {
-  width: 6rem;
-  height: 3rem;
-  padding: 1rem;
-  font-size: 0.8rem;
-  color: #000;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  width: 11.6rem;
+  height: 3.4rem;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #cccccc;
   text-decoration: none;
-  border: 3px solid var(--gray);
+  border: 3px solid #cccccc;
   border-radius: 0.6rem;
   background-color: #fff;
   cursor: pointer;
@@ -119,8 +158,10 @@ p {
 
 #home #fique_por_dentro .news_card a span {
   position: relative;
-  left: 0.2rem;
+  top: -0.3rem;
   color: var(--red);
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -128,17 +169,19 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60vh;
+  height: 56vh;
   margin-top: 6rem;
-  padding-top: 10rem;
+  padding-top: 4.8rem;
   padding-left: 16rem;
+  color: #fff;
+  background-image: url("../../assets/img/teste3.jpg");
   background-color: rgb(255, 165, 0, 0.6);
 }
 
 #home #cartao h1 {
-  width: 30rem;
+  width: 36rem;
   height: auto;
   justify-self: flex-start;
   text-align: left;
-  font-size: 2.8rem;
+  font-size: 3.6rem;
 }
