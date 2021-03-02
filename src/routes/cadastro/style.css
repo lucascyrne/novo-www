@@ -1,0 +1,91 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 16rem;
+  height: 4rem;
+  margin-top: 0.6rem;
+  padding-top: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--red);
+  border-radius: 0.46rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(141, 0, 12, 0.9);
+}
+
+#m_left {
+  margin-left: 2rem;
+}
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 6rem 18rem;
+}
+
+#cadastro h1 {
+  font-size: 2rem;
+}
+
+#cadastro #radio {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+#cadastro #radio div:nth-child(2) {
+  margin-left: 2rem;
+}
+
+#cadastro form {
+  width: 70%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#cadastro form label {
+  font-weight: 600;
+}
+
+#cadastro form input {
+  width: 20rem;
+  height: 2.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #e4e4e4;
+}
+
+#cadastro #politics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+#cadastro a {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
