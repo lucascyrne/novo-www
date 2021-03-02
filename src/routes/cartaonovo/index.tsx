@@ -2,6 +2,8 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
+import cardwoman from "../../assets/img/cartaonovo_girl.jpg";
+
 const CartaoNovo: FunctionalComponent = () => {
   return (
     <div id={style.cartaonovo} class={style.col}>
@@ -43,7 +45,7 @@ const CartaoNovo: FunctionalComponent = () => {
           </div>
         </div>
         <div id={style.cartao_img}>
-          <img src="" alt="" />
+          <img src={cardwoman} alt="" />
         </div>
       </div>
     </div>
