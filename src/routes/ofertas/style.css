@@ -9,12 +9,12 @@
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-evenly;
   text-align: center;
   width: 32rem;
-  height: 4rem;
-  margin-top: 0.6rem;
-  padding-top: 1.1rem;
+  height: 5rem;
+  padding: 1.6rem 2rem;
   font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
@@ -36,14 +36,19 @@
 }
 
 #ofertas #banner {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
   height: 30vh;
-  background-color: #bada55;
+  background-image: url("../../assets/img/ofertasbannertop.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
 }
 
 #ofertas #ofertas_inner {
   width: 100%;
-  height: 106vh;
+  height: 100vh;
   padding: 6rem 18rem;
   padding-right: 6rem;
 }
@@ -61,7 +66,6 @@
   position: relative;
   width: 26rem;
   height: 3rem;
-  margin-top: 1rem;
   padding-left: 2rem;
   font-family: Montserrat, sans-serif;
   font-size: 1.1rem;
@@ -100,10 +104,9 @@
   flex-direction: row;
   justify-content: space-between;
   width: 45rem;
-  height: 40rem;
-  margin-top: 6.8rem;
+  height: 36rem;
+  margin-top: 6rem;
   margin-left: 4rem;
-  background-color: yellow;
 }
 
 #ofertas #tabloids div {
@@ -113,17 +116,27 @@
 }
 
 #ofertas #tabloids img {
+  display: flex;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  justify-self: stretch;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 #ofertas #tabloids h6 {
+  margin-top: 0.8rem;
   font-size: 1rem;
 }
 
 #ofertas div a {
   margin-top: 4rem;
   margin-left: 4rem;
+}
+
+#ofertas #btn img {
+  position: relative;
+  top: -0.6rem;
+  width: 3rem;
+  height: 3rem;
 }

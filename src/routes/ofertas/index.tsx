@@ -2,6 +2,10 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
+import banner from "../../assets/img/ofertasbannertop.jpg";
+import whitewpp from "../../assets/icons/white_whatsapp.png";
+import tabloidtest from "../../assets/img/tabloidtest.jpg";
+
 const Ofertas: FunctionalComponent = () => {
   return (
     <div id={style.ofertas}>
@@ -22,17 +26,17 @@ const Ofertas: FunctionalComponent = () => {
         <div class={style.col}>
           <div id={style.tabloids}>
             <div>
-              <img src="" alt="" />
+              <img src={tabloidtest} alt="" />
               <h6>Ofertas válidas até dia 10/10 até dia 11/11</h6>
             </div>
             <div>
-              <img src="" alt="" />
+              <img src={tabloidtest} alt="" />
               <h6>Ofertas válidas até dia 10/10 até dia 11/11</h6>
             </div>
           </div>
           <div id={style.btn}>
             <a href="" class={style.button}>
-              <img src="" alt="" />
+              <img src={whitewpp} alt="" />
               Quero as ofertas por Whatsapp
             </a>
           </div>
