@@ -42,7 +42,7 @@
   min-width: 100%;
   height: 30vh;
   background-image: url("../../assets/img/ofertasbannertop.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: fill;
 }
 
@@ -139,4 +139,183 @@
   top: -0.6rem;
   width: 3rem;
   height: 3rem;
+}
+
+/* aiming to 2560px width */
+@media (min-width: 1921px) and (max-height: 1440px) {
+  #ofertas #ofertas_inner {
+    padding: 6rem 24.2rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left h1 {
+    font-size: 3rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left .select {
+    width: 32rem;
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids {
+    width: 70rem;
+    margin-top: 7.8rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids h6 {
+    font-size: 1.5rem;
+  }
+
+  #ofertas #ofertas_inner #btn {
+    margin-top: 18rem;
+  }
+
+  #ofertas #ofertas_inner #btn .button {
+    width: 40rem;
+    height: 5rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 16px;
+  }
+
+  #ofertas #ofertas_inner #btn .button img {
+    margin-top: 0.1rem;
+  }
+}
+
+/* aiming to 2560px width */
+@media (min-width: 1921px) and (max-height: 1080px) {
+  #ofertas #ofertas_inner {
+    height: 128vh;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 940px) {
+  #ofertas #ofertas_inner {
+    height: 102vh;
+  }
+
+  #ofertas #ofertas_inner {
+    padding: 6rem 12.6rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left h1 {
+    width: 26rem;
+    font-size: 1.8rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left .select {
+    width: 20rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-top: 0.2rem;
+    font-size: 1rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids {
+    width: 38rem;
+    margin-top: 5.6rem;
+  }
+
+  #ofertas #ofertas_inner #btn {
+    margin-top: -6rem;
+  }
+
+  #ofertas #ofertas_inner #btn .button img {
+    margin-top: 0.32rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  #ofertas #ofertas_inner #btn .button {
+    width: 24rem;
+    height: 3rem;
+    padding-top: 0.92rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 789px) {
+  #ofertas #ofertas_inner {
+    height: 114vh;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 659px) {
+  #ofertas #ofertas_inner {
+    height: 134vh;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 630px) {
+  #ofertas #ofertas_inner {
+    height: 144vh;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  #ofertas #ofertas_inner {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 610px) {
+  #ofertas #ofertas_inner {
+    height: 146vh;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #ofertas #ofertas_inner {
+    height: 84vh;
+    padding: 4rem 9.6rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left h1 {
+    font-size: 1.4rem;
+  }
+
+  #ofertas #ofertas_inner #ofertas_left .select {
+    width: 14rem;
+    height: 2rem;
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    border-radius: 8px;
+  }
+
+  #ofertas #ofertas_inner #tabloids {
+    width: 26rem;
+    margin-top: 4.7rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids h6 {
+    font-size: 0.7rem;
+  }
+
+  #ofertas #ofertas_inner #btn {
+    margin-top: -16rem;
+  }
+
+  #ofertas #ofertas_inner #btn .button {
+    width: 16rem;
+    height: 2rem;
+    padding: 0;
+    padding-top: 0.54rem;
+    padding-right: 1rem;
+    font-size: 0.7rem;
+  }
+
+  #ofertas #ofertas_inner #btn .button img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 610px) {
+  #ofertas #ofertas_inner {
+    height: 106vh;
+  }
 }
