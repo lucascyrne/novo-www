@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: var(--gray);
 }
 
 #home #banner {
@@ -14,18 +15,22 @@
   width: 100%;
   height: 50vh;
   overflow: hidden;
-  background-color: rgb(127, 255, 212, 0.6);
 }
 
 #home #banner .img {
   display: flex;
   grid-column-start: 1;
   order: 1;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#home #banner img {
+#home #banner .img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
@@ -37,7 +42,7 @@
   order: 2;
   padding: 4rem 6rem;
   text-align: left;
-  background-color: var(--gray);
+  background-color: #fff;
 }
 
 #home #banner .info h1,
@@ -84,7 +89,8 @@ p {
   flex-direction: column;
   width: 70%;
   height: 50vh;
-  margin: 1rem auto;
+  margin: 0 auto;
+  margin-top: 6rem;
   margin-bottom: 4rem;
   overflow: hidden;
 }
@@ -99,7 +105,8 @@ p {
   flex-direction: column;
   width: 70%;
   height: 50vh;
-  margin: 1rem auto;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 #home #fique_por_dentro h1 {
@@ -128,7 +135,7 @@ p {
   justify-self: center;
   align-content: center;
   min-width: 100%;
-  min-height: 74%;
+  min-height: 64%;
 }
 
 #home #fique_por_dentro .news_card h2 {
@@ -175,7 +182,6 @@ p {
   padding-left: 16rem;
   color: #fff;
   background-image: url("../../assets/img/teste3.jpg");
-  background-color: rgb(255, 165, 0, 0.6);
 }
 
 #home #cartao h1 {
@@ -184,4 +190,367 @@ p {
   justify-self: flex-start;
   text-align: left;
   font-size: 3.6rem;
+}
+
+#home #cartao h1,
+#home #cartao a {
+  margin-left: 2rem;
+}
+
+/* aiming to 2560px width */
+@media (min-width: 1921px) and (min-height: 1440px) {
+  #home #banner .info h1 {
+    width: 60%;
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+
+  #home #banner .info p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  #home .button {
+    width: 20rem;
+    height: 5rem;
+    padding-top: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 16px;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    font-size: 3rem;
+  }
+
+  #home #fique_por_dentro .news_card {
+    width: 35.8rem;
+  }
+
+  #home #fique_por_dentro .news_card h2 {
+    font-size: 2rem;
+  }
+
+  #home #fique_por_dentro .news_card a {
+    width: 16rem;
+    height: 3.8rem;
+    padding-left: 1.8rem;
+    font-size: 1.2rem;
+  }
+
+  #home #cartao {
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -1.2rem;
+  }
+}
+
+/* aiming to 2560px width */
+@media (min-width: 1921px) and (max-height: 1080px) {
+  #home #banner {
+    height: 60vh;
+  }
+
+  #home #banner .info h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+
+  #home #banner .info p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  #home .button {
+    width: 20rem;
+    height: 4.8rem;
+    padding-top: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 16px;
+  }
+
+  #home #ofertas {
+    height: 64vh;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    font-size: 3rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 8rem;
+  }
+
+  #home #fique_por_dentro #fique_body .news_card {
+    width: 36rem;
+  }
+
+  #home #fique_por_dentro #fique_body .news_card h2 {
+    font-size: 2rem;
+  }
+
+  #home #fique_por_dentro #fique_body .news_card a {
+    width: 16rem;
+    height: 4rem;
+    padding-top: 0.86rem;
+    font-size: 1.4rem;
+  }
+
+  #home #fique_por_dentro #fique_body .news_card a span {
+    top: 0.1rem;
+  }
+
+  #home #cartao {
+    display: flex;
+    min-width: 100%;
+    height: 74vh;
+    justify-content: center;
+    background-size: contain;
+  }
+
+  #home #cartao h1 {
+    width: 40rem;
+    margin-top: -4rem;
+    font-size: 4rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao a {
+    margin-left: 7.8rem;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 940px) {
+  #home #banner .info {
+    padding: 2rem 4rem;
+  }
+
+  #home #ofertas {
+    margin-top: 4rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 4rem;
+  }
+
+  #home #cartao {
+    height: 67vh;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  #home #fique_por_dentro .news_card {
+    width: 31.5%;
+  }
+
+  #home #cartao {
+    padding: 6.2rem 16rem;
+    background-position: 58% 0;
+  }
+
+  #home #cartao h1 {
+    font-size: 3rem;
+    margin-left: -2.8rem;
+  }
+
+  #home #cartao a {
+    margin-left: -2.8rem;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 790px) {
+  #home #banner .info {
+    padding: 0 2.6rem;
+  }
+
+  #home #banner .info h1 {
+    width: 70%;
+    font-size: 2.6rem;
+  }
+
+  #home #banner .info p {
+    font-size: 0.9rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 6rem;
+  }
+
+  #home #cartao {
+    height: 74vh;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 770px) {
+  #home #banner .info h1 {
+    margin-top: 2.46rem;
+  }
+
+  #home #banner .info p {
+    margin-top: -0.6rem;
+  }
+
+  #home #banner .info a {
+    margin-top: 0.8rem;
+  }
+
+  #home #cartao {
+    height: 76vh;
+  }
+
+  #home #cartao h1,
+  #home #cartao a {
+    margin-left: -3.8rem;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 660px) {
+  #home #banner .info h1 {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  #home #banner .info p {
+    font-size: 0.9rem;
+    margin-top: 0.1rem;
+  }
+
+  #home #banner .info .button {
+    width: 14rem;
+    height: 3rem;
+    padding-top: 0.76rem;
+    font-size: 1.2rem;
+  }
+
+  #home #ofertas {
+    height: 64vh;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 10rem;
+  }
+
+  #home #cartao {
+    height: 88vh;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 625px) {
+  #home #banner {
+    height: 60vh;
+  }
+
+  #home #banner .info {
+    padding: 1.6rem 4rem;
+  }
+
+  #home #ofertas {
+    height: 66vh;
+  }
+
+  #home #cartao {
+    height: 94vh;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  #home #banner .info {
+    padding: 2.8rem 4rem;
+  }
+
+  #home #banner .info h1 {
+    width: 80%;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  #home #banner .info p {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  #home .button {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-top: 0.76rem;
+    font-size: 1.2rem;
+  }
+
+  #home #cartao {
+    height: 74vh;
+  }
+
+  #home #cartao h1,
+  #home #cartao a {
+    margin-left: -4.4rem;
+  }
+
+  #home #cartao h1 {
+    width: 28rem;
+    margin-top: 4rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 620px) {
+  #home #banner .info {
+    padding: 0.4rem 4rem;
+  }
+
+  #home #banner .info p {
+    margin-top: -0.4rem;
+  }
+
+  #home #cartao {
+    height: 96vh;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #home #banner .info {
+    padding: 0.8rem 3rem;
+  }
+
+  #home #banner .info p {
+    line-height: 0.9rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-top: -4rem;
+    margin-bottom: 4rem;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    font-size: 1.6rem;
+  }
+
+  #home #fique_por_dentro #fique_body h2 {
+    font-size: 1rem;
+  }
+
+  #home #cartao {
+    height: 76vh;
+    background-position: 50% 0;
+  }
+
+  #home #cartao h1 {
+    width: 24rem;
+    font-size: 2.2rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao a {
+    margin-left: -6.8rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 620px) {
+  #home #cartao {
+    height: 96vh;
+  }
 }

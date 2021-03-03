@@ -9,7 +9,9 @@ const Home: FunctionalComponent = () => {
   return (
     <div id={style.home}>
       <div id={style.banner}>
-        <img class={style.img} src={teste1} alt="Teste 1" />
+        <div class={style.img}>
+          <img src={teste1} alt="Teste 1" />
+        </div>
         <div class={style.info}>
           <h1>Example Of Title To Be Read</h1>
           <p>
