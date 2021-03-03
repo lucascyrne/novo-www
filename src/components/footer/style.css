@@ -19,9 +19,10 @@
 }
 
 #footer #logo {
-  width: 10rem;
+  width: 12rem;
   height: 6rem;
-  margin-top: -1.6rem;
+  margin-top: -2rem;
+  margin-left: -2.8rem;
   margin-right: 2rem;
 }
 
@@ -66,6 +67,7 @@
   width: 24rem;
   height: 24rem;
   margin-top: -11rem;
+  margin-left: 2rem;
 }
 
 #footer #newsletter {
@@ -152,6 +154,59 @@
   color: #454545;
 }
 
+@media (min-width: 2560px) and (max-height: 1440px) {
+  #footer #logo {
+    width: 20rem;
+  }
+
+  #footer #footer_nav div {
+    width: 18rem;
+    height: 15rem;
+  }
+
+  #footer #footer_nav h3 {
+    font-size: 1.6rem;
+  }
+
+  #footer #footer_nav a {
+    font-size: 1.2rem;
+  }
+
+  #footer #newsletter {
+    width: 30rem;
+    height: 18rem;
+    margin-bottom: 2rem;
+  }
+
+  #footer #newsletter h4 {
+    font-size: 1.8rem;
+  }
+
+  #footer #newsletter .button {
+    width: 20rem;
+    padding-top: 0.86rem;
+    font-size: 1.8rem;
+  }
+
+  #footer #pagamento {
+    height: 30rem;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 1.2rem;
+  }
+
+  #footer #social {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 2560px) and (max-height: 1080px) {
+  #footer {
+    height: 45.2vh;
+  }
+}
+
 @media (max-width: 1920px) and (max-height: 940px) {
   #footer {
     height: 40vh;
@@ -232,12 +287,71 @@
 
 @media (max-width: 1024px) and (max-height: 768px) {
   #footer {
-    height: 51.1vh;
+    height: 40vh;
     padding-left: 0;
+  }
+
+  #footer #logo {
+    min-width: 10rem;
+    margin-top: -6rem;
+    margin-left: 1rem;
+  }
+
+  #footer #footer_nav {
+    margin-top: -4.6rem;
+    margin-left: -6rem;
+  }
+
+  #footer #footer_nav h3 {
+    font-size: 0.8rem;
+  }
+
+  #footer #footer_nav a {
+    font-size: 0.6rem;
   }
 
   #footer #newsletter {
     width: 16rem;
     height: 10rem;
+    margin-left: -1rem;
+  }
+
+  #footer #newsletter h4 {
+    font-size: 1rem;
+  }
+
+  #footer #newsletter .button {
+    width: 12rem;
+    height: 2.6rem;
+    padding-top: 0.76rem;
+    font-size: 1rem;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 0.8rem;
+  }
+
+  #footer #formas_pagamento img {
+    width: 14rem;
+  }
+
+  #footer #social {
+    width: 125vw;
+    margin-top: -3rem;
+  }
+
+  #footer #social h4 {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #footer #copyright {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 610px) {
+  #footer #social {
+    margin-top: -4rem;
   }
 }
