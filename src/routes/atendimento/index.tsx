@@ -129,11 +129,13 @@ const Atendimento: FunctionalComponent = () => {
         <p>
           Digite seu email e receba ofertas para compras pessoais ou em atacado.
         </p>
-        <input type="text" placeholder="Digite seu email" />
-        <label htmlFor="news-btn">
-          {">"}
-          <button type="submit" id="news-btn" />
-        </label>
+        <div class={style.row}>
+          <input type="text" placeholder="Digite seu email" />
+          <label htmlFor="news-btn">
+            {">"}
+            <button type="submit" id="news-btn" />
+          </label>
+        </div>
       </div>
     </div>
   );
