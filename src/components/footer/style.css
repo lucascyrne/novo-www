@@ -19,11 +19,10 @@
 }
 
 #footer #logo {
-  width: 12rem;
+  width: 16rem;
   height: 6rem;
-  margin-top: -2rem;
-  margin-left: -2.8rem;
-  margin-right: 2rem;
+  margin-top: -6.2rem;
+  margin-left: -2rem;
 }
 
 #footer #logo img {
@@ -36,17 +35,19 @@
   flex-direction: row;
   width: 60%;
   height: auto;
-  margin-top: -0.4rem;
-  margin-left: -3rem;
+  margin-top: -4rem;
+  margin-left: -8rem;
+  margin-right: 3rem;
   padding: 0 2rem;
   color: #fff;
 }
 
 #footer #footer_nav div {
-  width: 22rem;
+  width: 18rem;
   height: 10rem;
   margin: 0 auto;
-  margin-left: 2rem;
+  margin-left: 8rem;
+  margin-right: -4rem;
   font-size: 80%;
   border-right: 1px solid #454545;
 }
@@ -64,8 +65,8 @@
 #footer #pagamento {
   display: flex;
   flex-direction: column;
-  width: 24rem;
-  height: 24rem;
+  width: auto;
+  height: auto;
   margin-top: -11rem;
   margin-left: 2rem;
 }
@@ -76,8 +77,8 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  width: 24rem;
-  height: 16rem;
+  width: 22rem;
+  height: 14rem;
   border-radius: 16px;
   background-color: var(--yellow);
 }
@@ -109,7 +110,12 @@
   background-color: rgba(141, 0, 12, 0.9);
 }
 
+#footer #formas_pagamento img {
+  width: 100%;
+}
+
 #footer #formas_pagamento {
+  width: 22.6rem;
   margin-top: 1rem;
   color: #fff;
 }
@@ -117,11 +123,13 @@
 #footer #social {
   display: inline-flex;
   flex-direction: row;
+  justify-self: center;
+  align-content: center;
   width: 100vw;
-  min-height: 5rem;
-  margin-top: 2.5rem;
+  height: 5rem;
+  margin-top: 2rem;
   margin-left: -16rem;
-  padding: 0.6rem 16rem;
+  padding-left: 18rem;
   color: #fff;
   background-color: #1a4f90;
 }
@@ -129,7 +137,13 @@
 #footer #social #social_icons {
   display: flex;
   flex-direction: row;
-  width: 30rem;
+  justify-self: center;
+  align-self: center;
+  width: 40rem;
+}
+
+#footer #social #social_icons h4 {
+  font-size: 1.4rem;
 }
 
 #footer #social #social_icons a:first-of-type {
@@ -137,31 +151,49 @@
 }
 
 #footer #social #social_icons a {
-  margin-top: 1.2rem;
+  align-self: center;
   margin-left: 2rem;
   cursor: pointer;
 }
 
 #footer #social #social_icons a:last-child {
-  margin-top: 1.4rem;
+  margin-top: 0.1rem;
 }
 
 #footer #copyright {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
   width: 100%;
-  height: 3rem;
-  padding-top: 0.9rem;
-  font-size: 80%;
+  height: 4rem;
   color: #454545;
 }
 
-@media (min-width: 2560px) and (max-height: 1440px) {
+#footer #copyright h4 {
+  padding-left: 2rem;
+}
+
+#footer #copyright img {
+  height: 3rem;
+  margin-left: auto;
+  margin-right: 1.2rem;
+}
+
+/* Aiming to 2560px width */
+@media (min-width: 1921px) and (min-height: 1440px) {
   #footer #logo {
     width: 20rem;
+    margin-top: -4rem;
+    margin-left: 3rem;
   }
 
   #footer #footer_nav div {
     width: 18rem;
     height: 15rem;
+    margin-top: -1.2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 
   #footer #footer_nav h3 {
@@ -170,6 +202,10 @@
 
   #footer #footer_nav a {
     font-size: 1.2rem;
+  }
+
+  #footer #pagamento {
+    margin-left: -17.4rem !important;
   }
 
   #footer #newsletter {
@@ -188,8 +224,8 @@
     font-size: 1.8rem;
   }
 
-  #footer #pagamento {
-    height: 30rem;
+  #footer #formas_pagamento {
+    width: 30rem;
   }
 
   #footer #formas_pagamento h4 {
@@ -197,13 +233,56 @@
   }
 
   #footer #social {
-    margin-top: 4rem;
+    margin-top: 4rem !important;
+    padding-left: 24rem;
+  }
+
+  #footer #copyright {
+    padding-left: 6rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 8rem !important;
   }
 }
 
-@media (min-width: 2560px) and (max-height: 1080px) {
-  #footer {
-    height: 45.2vh;
+@media (min-width: 1921px) and (min-width: 1080px) {
+  #footer #logo {
+    width: 20rem;
+    margin-top: -6.2rem;
+    margin-left: 3.6rem;
+  }
+
+  #footer #footer_nav {
+    margin-top: -3.8rem;
+    margin-left: 6rem;
+  }
+
+  #footer #footer_nav div {
+    width: 13rem;
+    height: 13.6rem;
+    margin-right: 0;
+    margin-left: 4rem;
+  }
+
+  #footer #footer_nav h3 {
+    font-size: 1.3rem;
+  }
+
+  #footer #footer_nav a {
+    font-size: 1rem;
+  }
+
+  #footer #pagamento {
+    margin-left: -12rem;
+  }
+
+  #footer #social {
+    margin-top: 2rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 9rem;
   }
 }
 
@@ -215,91 +294,110 @@
 
 @media (max-width: 1440px) and (max-height: 900px) {
   #footer {
-    height: 44vh;
+    height: 30vh;
     padding: 9rem 4rem;
   }
 
   #footer #logo {
-    margin-left: 6.2rem;
-    margin-top: -4rem;
+    margin-left: 5rem;
+    margin-top: -8rem;
+    margin-right: 4rem;
   }
 
   #footer #footer_nav {
-    width: 38rem;
-    margin-top: -3rem;
+    width: 40rem;
+    margin-top: -5.8rem;
+    margin-right: -2rem;
+  }
+
+  #footer #footer_nav div {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  #footer #newsletter {
+    width: 15.6rem;
+    height: 10rem;
+  }
+
+  #footer #newsletter h4 {
+    font-size: 1rem;
+  }
+
+  #footer #newsletter .button {
+    width: 12rem;
+    height: 2.6rem;
+    padding-top: 0.72rem;
+    font-size: 1rem;
+  }
+
+  #footer #formas_pagamento {
+    width: 15.8rem;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 0.8rem;
   }
 
   #footer #social {
     width: 114.2vw;
-    padding-left: 24rem;
+    padding-left: 25rem;
+  }
+
+  #footer #social #social_icons h4 {
+    font-size: 1rem;
   }
 
   #footer #copyright {
-    padding-left: 8rem;
+    font-size: 0.7rem;
+    padding-left: 7rem;
   }
-}
 
-@media (max-width: 1440px) and (max-height: 790px) {
-  #footer {
-    height: 49.6vh;
+  #footer #copyright img {
+    height: 1.6rem;
+    margin-right: 9rem;
   }
 }
 
 @media (max-width: 1366px) and (max-height: 770px) {
-  #footer {
-    height: 51.2vh;
+  #footer #logo {
+    width: 10rem;
+    margin-left: 6rem;
   }
-}
 
-@media (max-width: 1366px) and (max-height: 660px) {
-  #footer {
-    height: 59.6vh;
+  #footer #footer_nav {
+    margin-top: -7rem;
   }
-}
 
-@media (max-width: 1366px) and (max-height: 625px) {
-  #footer {
-    height: 63vh;
+  #footer #footer_nav h3 {
+    font-size: 1rem;
+  }
+
+  #footer #footer_nav a {
+    font-size: 0.7rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 9.4rem;
   }
 }
 
 @media (max-width: 1280px) and (max-height: 800px) {
   #footer {
     padding-left: 0;
-    height: 49vh;
-  }
-
-  #footer #social {
-    width: 120vw;
-  }
-}
-
-@media (max-width: 1280px) and (max-height: 610px) {
-  #footer {
-    padding-left: 0;
-    height: 64.2vh;
-  }
-
-  #footer #social {
-    width: 120vw;
-  }
-}
-
-@media (max-width: 1024px) and (max-height: 768px) {
-  #footer {
-    height: 40vh;
-    padding-left: 0;
   }
 
   #footer #logo {
-    min-width: 10rem;
-    margin-top: -6rem;
-    margin-left: 1rem;
+    width: 9rem;
+    margin-left: 9.4rem;
   }
 
   #footer #footer_nav {
-    margin-top: -4.6rem;
-    margin-left: -6rem;
+    margin-top: -7rem;
+  }
+
+  #footer #footer_nav div {
+    height: 9rem;
   }
 
   #footer #footer_nav h3 {
@@ -311,33 +409,123 @@
   }
 
   #footer #newsletter {
-    width: 16rem;
-    height: 10rem;
-    margin-left: -1rem;
+    width: 13.8rem;
+    height: 8rem;
   }
 
   #footer #newsletter h4 {
-    font-size: 1rem;
-  }
-
-  #footer #newsletter .button {
-    width: 12rem;
-    height: 2.6rem;
-    padding-top: 0.76rem;
-    font-size: 1rem;
-  }
-
-  #footer #formas_pagamento h4 {
     font-size: 0.8rem;
   }
 
-  #footer #formas_pagamento img {
+  #footer #newsletter .button {
+    width: 10rem;
+    height: 2rem;
+    padding-top: 0.58rem;
+    font-size: 0.8rem;
+  }
+
+  #footer #formas_pagamento {
     width: 14rem;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 0.6rem;
+  }
+
+  #footer #social {
+    width: 120vw;
+    margin-top: 4rem;
+    padding-left: 27.6rem;
+  }
+
+  #footer #social #social_icons h4 {
+    font-size: 0.8rem;
+  }
+
+  #footer #copyright {
+    padding-left: 9.58rem;
+    font-size: 0.6rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 7.8rem;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 610px) {
+  #footer {
+    padding-left: 0;
+  }
+
+  #footer #social {
+    width: 120vw;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #footer {
+    height: 20vh;
+    padding-left: 0;
+  }
+
+  #footer #logo {
+    min-width: 10rem;
+    margin-top: -7.2rem;
+    margin-left: 6.6rem;
+  }
+
+  #footer #footer_nav {
+    width: 34rem;
+    margin-top: -6rem;
+    margin-left: -6.8rem;
+  }
+
+  #footer #footer_nav div {
+    height: 8.4rem;
+    margin-left: 0rem;
+    margin-right: 2rem;
+  }
+
+  #footer #footer_nav h3 {
+    font-size: 0.7rem;
+  }
+
+  #footer #footer_nav a {
+    font-size: 0.5rem;
+  }
+
+  #footer #pagamento {
+    margin-left: -2rem;
+  }
+
+  #footer #newsletter {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  #footer #newsletter h4 {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  #footer #newsletter .button {
+    width: 7.4rem;
+    height: 2rem;
+    padding-top: 0.56rem;
+    font-size: 0.7rem;
+  }
+
+  #footer #formas_pagamento {
+    width: 12rem;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 0.6rem;
   }
 
   #footer #social {
     width: 125vw;
-    margin-top: -3rem;
+    padding-left: 25rem;
   }
 
   #footer #social h4 {
@@ -346,12 +534,17 @@
   }
 
   #footer #copyright {
+    padding-left: 7rem;
     font-size: 0.6rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 4rem;
   }
 }
 
 @media (max-width: 1024px) and (max-height: 610px) {
   #footer #social {
-    margin-top: -4rem;
+    margin-top: 4rem;
   }
 }

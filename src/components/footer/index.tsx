@@ -3,6 +3,7 @@ import { Link } from "preact-router";
 import style from "./style";
 
 import logo from "../../assets/logo/logo.svg";
+import pulltechLogo from "../../assets/logo/Pulltech.png";
 import payment from "../../assets/img/formapagamento.png";
 import fbIcon from "../../assets/icons/facebook_white.png";
 import ytIcon from "../../assets/icons/youtube_white.png";
@@ -65,7 +66,7 @@ const Footer: FunctionComponent = () => {
       </div>
       <div id={style.copyright}>
         <h4>Novo Atacarejo | Todos os direitos reservados</h4>
-        <img src="/" alt="" />
+        <img src={pulltechLogo} alt="" />
       </div>
     </footer>
   );
