@@ -13,12 +13,14 @@ const Home: FunctionalComponent = () => {
           <img src={teste1} alt="Teste 1" />
         </div>
         <div class={style.info}>
-          <h1>Example Of Title To Be Read</h1>
-          <p>
-            Example of not too big paragraph to be read. Example of not too big
-            paragraph to be read
-          </p>
-          <a class={style.button}>Saiba mais</a>
+          <div>
+            <h1>Example Of Title To Be Read</h1>
+            <p>
+              Example of not too big paragraph to be read. Example of not too
+              big paragraph to be read
+            </p>
+            <a class={style.button}>Saiba mais</a>
+          </div>
         </div>
       </div>
       <div id={style.ofertas}>
@@ -52,12 +54,14 @@ const Home: FunctionalComponent = () => {
         </div>
       </div>
       <div id={style.cartao}>
-        <h1>
-          Um jeito novo
-          <br /> de pagar suas compras, com
-          <br /> mais comodidade.
-        </h1>
-        <a class={style.button}>Saiba mais</a>
+        <div>
+          <h1>
+            Um jeito novo
+            <br /> de pagar as suas compras, com
+            <br /> mais comodidade.
+          </h1>
+          <a class={style.button}>Saiba mais</a>
+        </div>
       </div>
     </div>
   );

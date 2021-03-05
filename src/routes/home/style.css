@@ -37,17 +37,26 @@
 }
 
 #home #banner .info {
-  display: inline-block;
+  display: flex;
   grid-column-start: 2;
   order: 2;
-  padding: 4rem 6rem;
   text-align: left;
   background-color: #fff;
 }
 
-#home #banner .info h1,
-p {
-  width: 24rem;
+#home #banner .info div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#home #banner .info h1 {
+  width: 100%;
+  margin-top: 0;
+  font-size: 2rem;
 }
 
 #home #banner .info h1 {
@@ -57,6 +66,7 @@ p {
 }
 
 #home #banner .info p {
+  width: 74%;
   font-size: 1rem;
   line-height: 1.3rem;
 }
@@ -88,7 +98,6 @@ p {
   display: inline-flex;
   flex-direction: column;
   width: 70%;
-  height: 50vh;
   margin: 0 auto;
   margin-top: 6rem;
   margin-bottom: 4rem;
@@ -96,7 +105,7 @@ p {
 }
 
 #home #ofertas h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 500;
 }
 
@@ -104,13 +113,12 @@ p {
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 50vh;
+  height: auto;
   margin: 0 auto;
-  margin-top: 2rem;
 }
 
 #home #fique_por_dentro h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -128,6 +136,7 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 26.8rem;
+  height: auto;
 }
 
 #home #fique_por_dentro .news_card img {
@@ -150,10 +159,12 @@ p {
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
-  width: 11.6rem;
-  height: 3.4rem;
-  padding: 1rem 1rem;
-  font-size: 0.9rem;
+  align-items: center;
+  width: 13rem;
+  min-height: 2.4rem;
+  height: 7rem;
+  padding: 0 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #cccccc;
   text-decoration: none;
@@ -164,8 +175,8 @@ p {
 }
 
 #home #fique_por_dentro .news_card a span {
+  display: flex;
   position: relative;
-  top: -0.3rem;
   color: var(--red);
   font-family: "Nanum Myeongjo", serif;
   font-size: 1.6rem;
@@ -175,13 +186,15 @@ p {
 #home #cartao {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 56vh;
+  height: 64vh;
   margin-top: 6rem;
-  padding-top: 4.8rem;
-  padding-left: 16rem;
   color: #fff;
   background-image: url("../../assets/img/teste3.jpg");
+  background-position: 90% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #home #cartao h1 {
@@ -194,20 +207,26 @@ p {
 
 #home #cartao h1,
 #home #cartao a {
-  margin-left: 2rem;
+  margin-left: 18rem;
 }
 
 /* aiming to 2560px width */
 @media (min-width: 1921px) and (min-height: 1440px) {
+  #home #banner .info div {
+    margin-top: -3rem;
+  }
+
   #home #banner .info h1 {
-    width: 60%;
+    width: 100%;
     font-size: 4rem;
     line-height: 4.4rem;
   }
 
   #home #banner .info p {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    width: 74%;
+    margin-top: 0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   #home .button {
@@ -223,26 +242,39 @@ p {
     font-size: 3rem;
   }
 
+  #home #fique_por_dentro {
+    margin-bottom: 2rem;
+  }
+
   #home #fique_por_dentro .news_card {
     width: 35.8rem;
   }
 
   #home #fique_por_dentro .news_card h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   #home #fique_por_dentro .news_card a {
-    width: 16rem;
-    height: 3.8rem;
-    padding-left: 1.8rem;
-    font-size: 1.2rem;
+    width: 15.6rem;
+    height: 9rem;
+    font-size: 1.4rem;
   }
 
   #home #cartao {
+    height: 56vh;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: -1.2rem;
+  }
+
+  #home #cartao div {
+    margin-left: 6rem;
+  }
+
+  #home #cartao h1 {
+    width: 40rem;
+    font-size: 4rem;
   }
 }
 
@@ -253,13 +285,15 @@ p {
   }
 
   #home #banner .info h1 {
+    width: 80%;
     font-size: 3.8rem;
     line-height: 3.8rem;
   }
 
   #home #banner .info p {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    width: 74%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   #home .button {
@@ -280,7 +314,7 @@ p {
   }
 
   #home #fique_por_dentro {
-    margin-bottom: 8rem;
+    margin-bottom: 1rem;
   }
 
   #home #fique_por_dentro #fique_body .news_card {
@@ -293,8 +327,6 @@ p {
 
   #home #fique_por_dentro #fique_body .news_card a {
     width: 16rem;
-    height: 4rem;
-    padding-top: 0.86rem;
     font-size: 1.4rem;
   }
 
@@ -305,26 +337,25 @@ p {
   #home #cartao {
     display: flex;
     min-width: 100%;
-    height: 74vh;
+    height: 72.9vh;
     justify-content: center;
     background-size: contain;
   }
 
   #home #cartao h1 {
     width: 40rem;
-    margin-top: -4rem;
     font-size: 4rem;
   }
 
   #home #cartao h1,
   #home #cartao a {
-    margin-left: 7.8rem;
+    margin-left: 24rem;
   }
 }
 
 @media (max-width: 1920px) and (max-height: 940px) {
-  #home #banner .info {
-    padding: 2rem 4rem;
+  #home #banner .info p {
+    width: 74%;
   }
 
   #home #ofertas {
@@ -332,7 +363,11 @@ p {
   }
 
   #home #fique_por_dentro {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  #home #fique_por_dentro h2 {
+    font-size: 2.4rem;
   }
 
   #home #cartao {
@@ -341,45 +376,79 @@ p {
 }
 
 @media (max-width: 1440px) and (max-height: 900px) {
+  #home #banner .info h1 {
+    width: 100%;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  #home #banner .info p {
+    width: 76%;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+
+  #home #cartao .button,
+  #home #banner .button {
+    width: 12rem;
+    height: 3.2rem;
+    padding-top: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    font-size: 2rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 0rem;
+  }
+
   #home #fique_por_dentro .news_card {
     width: 31.5%;
   }
 
+  #home #fique_por_dentro .news_card img {
+    min-height: 47%;
+  }
+
+  #home #fique_por_dentro .news_card a {
+    width: 10rem;
+    height: 3.2rem;
+    font-size: 0.8rem;
+    border: 2px solid #cccccc;
+  }
+
+  #home #fique_por_dentro .news_card a span {
+    position: relative;
+    left: 0.4rem;
+  }
+
   #home #cartao {
-    padding: 6.2rem 16rem;
+    height: 54vh;
     background-position: 58% 0;
   }
 
   #home #cartao h1 {
-    font-size: 3rem;
-    margin-left: -2.8rem;
+    width: 26rem;
+    font-size: 2.4rem;
   }
 
+  #home #cartao h1,
   #home #cartao a {
-    margin-left: -2.8rem;
+    margin-left: 13rem;
   }
 }
 
 @media (max-width: 1440px) and (max-height: 790px) {
-  #home #banner .info {
-    padding: 0 2.6rem;
-  }
-
-  #home #banner .info h1 {
-    width: 70%;
-    font-size: 2.6rem;
-  }
-
-  #home #banner .info p {
-    font-size: 0.9rem;
-  }
-
   #home #fique_por_dentro {
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
   }
 
   #home #cartao {
-    height: 74vh;
+    height: 58vh;
+    margin-top: 4rem;
   }
 }
 
@@ -397,25 +466,26 @@ p {
   }
 
   #home #cartao {
-    height: 76vh;
+    height: 56vh;
   }
 
   #home #cartao h1,
   #home #cartao a {
-    margin-left: -3.8rem;
+    margin-left: 12.6rem;
   }
 }
 
 @media (max-width: 1366px) and (max-height: 660px) {
   #home #banner .info h1 {
-    width: 50%;
+    width: 75%;
+    margin-top: 0;
     font-size: 2rem;
     line-height: 2.2rem;
   }
 
   #home #banner .info p {
-    font-size: 0.9rem;
-    margin-top: 0.1rem;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
   }
 
   #home #banner .info .button {
@@ -425,16 +495,12 @@ p {
     font-size: 1.2rem;
   }
 
-  #home #ofertas {
-    height: 64vh;
-  }
-
   #home #fique_por_dentro {
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
   }
 
   #home #cartao {
-    height: 88vh;
+    height: 64vh;
   }
 }
 
@@ -443,32 +509,43 @@ p {
     height: 60vh;
   }
 
-  #home #banner .info {
-    padding: 1.6rem 4rem;
+  #home #banner .info h1 {
+    width: 80%;
+    margin-top: 0;
   }
 
-  #home #ofertas {
-    height: 66vh;
+  #home #banner .info p {
+    width: 72%;
+    line-height: 1.1rem;
+  }
+
+  #home #banner .info .button,
+  #home #cartao .button {
+    width: 12rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 1rem;
   }
 
   #home #cartao {
-    height: 94vh;
+    height: 68vh;
+  }
+
+  #home #cartao h1 {
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 1280px) and (max-height: 800px) {
-  #home #banner .info {
-    padding: 2.8rem 4rem;
-  }
-
   #home #banner .info h1 {
     width: 80%;
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
   }
 
   #home #banner .info p {
-    width: 80%;
+    width: 78%;
     font-size: 0.8rem;
   }
 
@@ -480,48 +557,92 @@ p {
     font-size: 1.2rem;
   }
 
-  #home #cartao {
-    height: 74vh;
+  #home #fique_por_dentro {
+    margin-bottom: -1rem;
+  }
+
+  #home #fique_por_dentro .news_card h2 {
+    font-size: 1.2rem;
+  }
+
+  #home #fique_por_dentro .news_card img {
+    min-height: 48%;
+  }
+
+  #home #fique_por_dentro .news_card a {
+    width: 9rem;
+    height: 3rem;
+    font-size: 0.7rem;
+  }
+
+  #home #fique_por_dentro .news_card a span {
+    font-size: 1.2rem;
+    left: 0.4rem;
   }
 
   #home #cartao h1,
   #home #cartao a {
-    margin-left: -4.4rem;
+    margin-left: 12rem;
   }
 
   #home #cartao h1 {
     width: 28rem;
-    margin-top: 4rem;
     font-size: 2.4rem;
   }
 }
 
 @media (max-width: 1280px) and (max-height: 620px) {
-  #home #banner .info {
-    padding: 0.4rem 4rem;
+  #home #banner .info h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
   }
 
   #home #banner .info p {
+    width: 78%;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
     margin-top: -0.4rem;
   }
 
-  #home #cartao {
-    height: 96vh;
+  #home #banner .info .button {
+    width: 12rem;
+  }
+
+  #home #fique_por_dentro {
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 1024px) and (max-height: 768px) {
-  #home #banner .info {
-    padding: 0.8rem 3rem;
+  #home #banner {
+    height: 40vh;
+  }
+
+  #home #banner .img img {
+    width: 50%;
+  }
+
+  #home #banner .info h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   #home #banner .info p {
-    line-height: 0.9rem;
+    width: 73%;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  #home #banner .info .button,
+  #home #cartao .button {
+    width: 8rem;
+    height: 2.4rem;
+    font-size: 0.8rem;
   }
 
   #home #fique_por_dentro {
-    margin-top: -4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   #home #ofertas h1,
@@ -534,8 +655,7 @@ p {
   }
 
   #home #cartao {
-    height: 76vh;
-    background-position: 50% 0;
+    background-position: 58% 0;
   }
 
   #home #cartao h1 {
@@ -545,12 +665,19 @@ p {
 
   #home #cartao h1,
   #home #cartao a {
-    margin-left: -6.8rem;
+    margin-left: 9.2rem;
   }
 }
 
-@media (max-width: 1024px) and (max-height: 620px) {
-  #home #cartao {
-    height: 96vh;
+@media (max-width: 1024px) and (max-height: 610px) {
+  #home #banner .info h1 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  #home #banner .info p {
+    width: 66%;
+    font-size: 0.5rem;
+    line-height: 0.7rem;
   }
 }
