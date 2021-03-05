@@ -205,7 +205,7 @@ p {
 }
 
 /* aiming to 2560px width */
-@media (min-width: 1921px) and (max-height: 1440px) {
+@media (min-width: 2200px) and (max-height: 1440px) {
   #nossaslojas {
     padding: 8rem 24.6rem;
   }
@@ -289,7 +289,7 @@ p {
 }
 
 /* aiming to 2560px width */
-@media (max-width: 2560px) and (max-height: 1080px) {
+@media (min-width: 2200px) and (max-height: 1080px) {
   #nossaslojas {
     height: 130vh;
   }
