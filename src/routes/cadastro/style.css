@@ -89,3 +89,89 @@
   margin-top: 2rem;
   margin-bottom: 6rem;
 }
+
+/* aiming for 2560px width */
+@media (min-width: 2200px) and (max-height: 1440px) {
+  #cadastro {
+    padding: 8rem 24rem;
+  }
+
+  #cadastro h1 {
+    font-size: 3.8rem;
+  }
+
+  #cadastro #radio div input {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+  }
+
+  #cadastro #radio div:last-of-type input {
+    margin-left: 4rem;
+  }
+
+  #cadastro #radio div {
+    font-size: 1.8rem;
+  }
+
+  #cadastro form label {
+    font-size: 1.6rem;
+  }
+
+  #cadastro form div input {
+    width: 40rem;
+    height: 5rem;
+    border-radius: 12px;
+  }
+
+  #cadastro #politics div input {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 1rem;
+  }
+
+  #cadastro #politics div:last-of-type {
+    margin-top: 1rem;
+  }
+
+  #cadastro #politics div {
+    font-size: 1.8rem;
+  }
+
+  #cadastro .button {
+    width: 20rem;
+    height: 5rem;
+    margin-top: 4rem;
+    padding-top: 1.34rem;
+    font-size: 1.8rem;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 900px) {
+  #cadastro {
+    padding: 6rem 14rem;
+  }
+
+  #cadastro a {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  #cadastro {
+    padding: 6rem 13rem;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+  #cadastro {
+    padding: 6rem 12rem;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+  #cadastro {
+    padding: 4rem 10rem;
+  }
+}

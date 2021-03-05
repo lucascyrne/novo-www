@@ -46,11 +46,11 @@ const Cadastro: FunctionalComponent = () => {
       </form>
       <div id={style.politics}>
         <div>
-          <input type="radio" name="squarebutton" />
+          <input type="radio" name="politics" />
           Li e aceito a Política de Privacidade
         </div>
         <div>
-          <input type="radio" name="squarebutton" />
+          <input type="radio" name="subscribe" />
           Desejo receber ofertas por e-mail do Novo Atacarejo
         </div>
       </div>
