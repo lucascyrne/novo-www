@@ -13,14 +13,14 @@ const QuemSomos: FunctionalComponent = () => {
             O Novo Atacarejo é uma rede pernambucana que surgiu com o objetivo
             de melhorar a qualidade de vida da população oferecendo o melhor das
             grandes redes pelo menor preço.
-          </p>
-          <p>
-            O Novo conta com serviços de açougue, frios e padaria com produção
-            própria, além da comercialização de alimentos perecíveis, mercearia,
-            artigos de higiene, limpeza, bazar, automotivo, eletroportáteis,
-            bomboniere e bebidas. Todas as unidades estão localizadas em um
-            terreno de 20mil metros, com estacionamento próprio, ambiente
-            climatizado, comercializando em torno de 9 mil itens.
+            <br />
+            <br />O Novo conta com serviços de açougue, frios e padaria com
+            produção própria, além da comercialização de alimentos perecíveis,
+            mercearia, artigos de higiene, limpeza, bazar, automotivo,
+            eletroportáteis, bomboniere e bebidas. Todas as unidades estão
+            localizadas em um terreno de 20mil metros, com estacionamento
+            próprio, ambiente climatizado, comercializando em torno de 9 mil
+            itens.
           </p>
         </div>
         <img src={teste1} alt="" />
