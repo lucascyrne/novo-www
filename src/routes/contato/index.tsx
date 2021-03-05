@@ -55,38 +55,38 @@ const Contato: FunctionalComponent = () => {
         </p>
         <form action="" method="post" class={style.col}>
           <div class={style.row}>
-            <div class={style.col}>
+            <div class={(style.col, style.form_input)}>
               <label htmlFor="name">Nome</label>
               <input type="text" />
             </div>
-            <div class={style.col} id={style.m_left}>
+            <div class={(style.col, style.form_input)} id={style.m_left}>
               <label htmlFor="email">E-mail</label>
               <input type="email" />
             </div>
           </div>
           <div class={style.row}>
-            <div class={style.col}>
+            <div class={(style.col, style.form_input)}>
               <label htmlFor="tel">Telefone</label>
               <input type="number" />
             </div>
-            <div class={style.col} id={style.m_left}>
+            <div class={(style.col, style.form_input)} id={style.m_left}>
               <label htmlFor="state">Estado</label>
               <input type="text" />
             </div>
           </div>
           <div class={style.row}>
-            <div class={style.col}>
+            <div class={(style.col, style.form_input)}>
               <label htmlFor="city">Cidade</label>
               <input type="text" />
             </div>
-            <div class={style.col} id={style.m_left}>
+            <div class={(style.col, style.form_input)} id={style.m_left}>
               <label htmlFor="vocation">Função</label>
               <input type="text" />
             </div>
           </div>
           <div class={style.row}>
             <div class={style.col}>
-              <p>Currículo</p>
+              <label id={(style.m_bot, style.cvTitle)}>Currículo</label>
               <label htmlFor="cv" id={style.input_file}>
                 Anexe o currículo em PDF
               </label>
