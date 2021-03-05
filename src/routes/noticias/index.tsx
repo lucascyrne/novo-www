@@ -2,25 +2,31 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
+import teste1 from "../../assets/img/teste1.jpg";
+import fbIcon from "../../assets/icons/facebook_gray.png";
+import wppIcon from "../../assets/icons/whatsapp_gray.png";
+import ttIcon from "../../assets/icons/twitter_gray.png";
+import emailIcon from "../../assets/icons/email_gray.png";
+
 const Noticias: FunctionalComponent = () => {
   return (
     <div id={style.noticias}>
       <h1>Fique por dentro</h1>
       <div class={style.news_body}>
-        <img class={style.news_img} src="" alt="" />
+        <img class={style.news_img} src={teste1} alt="" />
         <div class={style.social}>
           Compartilhe:
           <a href="">
-            <img src="" alt="" />
+            <img src={fbIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={wppIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={ttIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={emailIcon} alt="" />
           </a>
         </div>
         <div class={style.news_info}>
