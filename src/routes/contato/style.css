@@ -35,13 +35,13 @@
 
 #contato {
   width: 100%;
-  height: 100vh;
+  height: 104vh;
   padding: 6rem 18rem;
   background-color: var(--gray);
 }
 
 #contato h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 #contato p {
@@ -101,7 +101,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 86vh;
+  height: 92vh;
   padding: 6rem 18rem;
   color: #fff;
   background-image: url("../../assets/img/teste1blue.jpg");
@@ -110,8 +110,14 @@
   background-position: left center;
 }
 
+#trabalheconosco h1 {
+  font-size: 2.8rem;
+}
+
 #trabalheconosco p {
   width: 60rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
   line-height: 1.8rem;
 }
 
@@ -128,7 +134,8 @@
 #trabalheconosco form input {
   width: 26rem;
   height: 3.4rem;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   padding-left: 1rem;
   font-family: montserrat, sans-serif;
   font-size: 1.2rem;
@@ -139,6 +146,10 @@
 
 #trabalheconosco form p {
   font-weight: 600;
+}
+
+#cvTitle {
+  margin-bottom: 1.6rem;
 }
 
 #trabalheconosco form [type="file"] {
@@ -170,7 +181,7 @@
   width: 12rem;
   height: 4rem;
   margin-top: 4rem;
-  margin-left: 4rem;
+  margin-right: 15.2rem;
   cursor: pointer;
 }
 
@@ -187,12 +198,12 @@
 /* aiming for 2560px width */
 @media (min-width: 2200px) and (max-height: 1440px) {
   #contato {
-    height: 88vh;
-    padding: 8rem 24.8rem;
+    height: 86vh;
+    padding: 6rem 24.8rem;
   }
 
   #contato h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   #contato p {
@@ -228,16 +239,18 @@
   }
 
   #trabalheconosco {
+    height: 78vh;
     background-size: cover;
-    padding: 8rem 24.8rem;
+    padding: 6rem 24.8rem;
   }
 
   #trabalheconosco h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   #trabalheconosco p {
     font-size: 1.4rem;
+    margin-top: 0;
   }
 
   #trabalheconosco form {
@@ -274,7 +287,8 @@
 
   #trabalheconosco form #help {
     width: 20rem;
-    margin-right: 28rem;
+    margin-top: 4.2rem;
+    margin-left: 2rem;
   }
 
   #trabalheconosco form #help img {
@@ -292,66 +306,158 @@
 /* aiming for 2560px width */
 @media (min-width: 2200px) and (max-height: 1080px) {
   #contato {
-    height: 122vh;
-  }
-
-  #trabalheconosco {
-    height: 112vh;
-  }
-}
-
-@media (max-width: 1920px) and (max-height: 937px) {
-  #contato {
     height: 114vh;
   }
 
   #trabalheconosco {
-    height: 96vh;
+    height: 108vh;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 970px) {
+  #contato {
+    height: 120vh;
+  }
+
+  #trabalheconosco {
+    height: 106vh;
   }
 }
 
 @media (max-width: 1440px) and (max-height: 900px) {
   #contato {
-    height: 118vh;
-    padding: 6rem 13.6rem;
+    height: 116vh;
+    padding: 4rem 13.6rem;
+  }
+
+  #contato h1,
+  #trabalheconosco h1 {
+    font-size: 2.4rem;
   }
 
   #trabalheconosco {
     height: 102vh;
-    padding: 6rem 13.6rem;
+    padding: 4rem 13.6rem;
   }
 }
 
 @media (max-width: 1440px) and (max-height: 789px) {
   #contato {
-    height: 134vh;
+    height: 132vh;
+  }
+
+  #trabalheconosco {
+    height: 116vh;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  #contato {
+    height: 102vh;
+    padding: 4rem 13rem;
+  }
+
+  #contato h1,
+  #trabalheconosco h1 {
+    font-size: 2rem;
+  }
+
+  #contato p,
+  #trabalheconosco p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  #contato form {
+    width: 40rem;
+    height: 27rem;
+  }
+
+  #contato .form_input,
+  #trabalheconosco .form_input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contato .form_input label,
+  #trabalheconosco .form_input label,
+  #cvTitle {
+    font-size: 0.7rem;
+  }
+
+  #contato form .form_input input,
+  #trabalheconosco form .form_input input {
+    width: 18rem;
+    height: 2.4rem;
+    font-size: 1rem;
+  }
+
+  #contato form .form_input textarea {
+    width: 40rem;
+    height: 10rem;
   }
 
   #trabalheconosco {
     height: 110vh;
+    padding: 4rem 13rem;
+  }
+
+  #trabalheconosco form {
+    width: 3rem;
+  }
+
+  #trabalheconosco form label#input_file {
+    width: 18rem;
+    height: 2.4rem;
+    margin-top: -0.8rem;
+    font-size: 0.8rem;
+  }
+
+  #trabalheconosco #help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.8rem;
+    margin-left: 3.8rem;
+  }
+
+  #trabalheconosco #help img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #trabalheconosco #help p {
+    margin-top: 1.8rem;
+  }
+
+  .button {
+    width: 14rem;
+    height: 3.2rem;
+    padding-top: 0.8rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 1366px) and (max-height: 659px) {
   #contato {
-    height: 152vh;
+    height: 120vh;
     padding: 4rem 13.6rem;
   }
 
   #trabalheconosco {
-    height: 124vh;
+    height: 126vh;
     padding: 4rem 13.6rem;
   }
 }
 
 @media (max-width: 1366px) and (max-height: 625px) {
   #contato {
-    height: 160vh;
+    height: 124vh;
     padding: 4rem 13rem;
   }
 
   #trabalheconosco {
-    height: 130vh;
+    height: 134vh;
     padding: 4rem 13rem;
   }
 }
@@ -464,11 +570,23 @@
   }
 
   #trabalheconosco {
-    height: 116vh;
+    height: 120vh;
+  }
+
+  #trabalheconosco form {
+    height: 36rem;
+  }
+
+  #cvTitle {
+    margin-bottom: 1.4rem;
   }
 
   #trabalheconosco form #help {
-    margin-top: 2.68rem;
+    margin-top: 1.8rem;
+  }
+
+  #trabalheconosco form #help p {
+    margin-top: 1.8rem;
   }
 }
 
@@ -483,12 +601,28 @@
   }
 
   #trabalheconosco {
-    height: 92vh;
+    height: 96vh;
     padding: 4rem 10rem;
+  }
+
+  #trabalheconosco form {
+    height: 32rem;
+  }
+
+  #cvTitle {
+    margin-bottom: 1.4rem;
   }
 
   #trabalheconosco form label#input_file {
     padding-top: 0.7rem;
+  }
+
+  #trabalheconosco form #help {
+    margin-top: 2rem;
+  }
+
+  #trabalheconosco form #help p {
+    margin-top: 2rem;
   }
 }
 

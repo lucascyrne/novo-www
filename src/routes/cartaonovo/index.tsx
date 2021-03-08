@@ -19,7 +19,7 @@ const CartaoNovo: FunctionalComponent = () => {
         </h1>
       </div>
       <div id={style.cartaonovo_inner} class={style.row}>
-        <div class={style.col}>
+        <div class={style.col} id={style.fst_paragraph}>
           <div>
             <h1>Conheça o NOVOCARD</h1>
             <ul>

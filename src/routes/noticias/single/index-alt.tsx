@@ -2,6 +2,11 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "../style";
 
+import fbIcon from "../../../assets/icons/facebook_gray.png";
+import wppIcon from "../../../assets/icons/whatsapp_gray.png";
+import ttIcon from "../../../assets/icons/twitter_gray.png";
+import emailIcon from "../../../assets/icons/email_gray.png";
+
 const NoticiaSingle: FunctionalComponent = () => {
   return (
     <div id={style.noticias}>
@@ -11,16 +16,16 @@ const NoticiaSingle: FunctionalComponent = () => {
         <div class={style.social}>
           Compartilhe:
           <a href="">
-            <img src="" alt="" />
+            <img src={fbIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={wppIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={ttIcon} alt="" />
           </a>
           <a href="">
-            <img src="" alt="" />
+            <img src={emailIcon} alt="" />
           </a>
         </div>
         <div class={style.news_info}>

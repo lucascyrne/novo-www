@@ -11,6 +11,8 @@ import Atendimento from "../routes/atendimento";
 import Cadastro from "../routes/cadastro";
 import Noticias from "../routes/noticias";
 import NoticiaSingle from "../routes/noticias/single/index-alt";
+import Politicas from "../routes/politicas";
+import Cookies from "../components/cookies";
 import Sucesso from "../routes/sucesso";
 import NotFoundPage from "../routes/notfound";
 import Header from "./header";
@@ -31,11 +33,13 @@ const App: FunctionalComponent = () => {
         <Route path="/cadastro/" component={Cadastro} />
         <Route path="/noticias/" component={Noticias} />
         <Route path="/noticias/single" component={NoticiaSingle} />
+        <Route path="/politicas" component={Politicas} />
         <Route path="/sucesso" component={Sucesso} />
         <Route path="/noticia-selecionada/" component={NotFoundPage} />
         <NotFoundPage default />
       </Router>
       <Footer />
+      <Cookies />
     </div>
   );
 };

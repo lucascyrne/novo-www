@@ -1,0 +1,42 @@
+#cookies_container {
+  display: flex;
+  position: sticky;
+  justify-self: baseline;
+  width: 100%;
+  height: 6rem;
+  padding-left: 8rem;
+  background-color: var(--yellow);
+}
+
+#cookies_container div {
+  display: flex;
+  flex-direction: row;
+}
+
+#cookies_container div p {
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+  text-align: left;
+  font-family: Montserrat, sans-serif;
+}
+
+#cookies_container div p a {
+  color: blue;
+  font-weight: 600;
+}
+
+#cookies_container div button {
+  width: 10%;
+  height: 100%;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-left: auto;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  border: none;
+  cursor: pointer;
+  background-color: var(--blue);
+}

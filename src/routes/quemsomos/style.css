@@ -43,11 +43,12 @@
 
 #quemsomos #about #about_text h1 {
   width: 28rem;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 #quemsomos #about #about_text p {
-  width: 30rem;
+  width: 32rem;
   line-height: 1.4rem;
 }
 
@@ -164,23 +165,20 @@
 }
 
 /* aiming to 2560px width */
-@media (min-width: 1921px) and (min-height: 1440px) {
+@media (min-width: 2200px) and (min-height: 1440px) {
   #quemsomos #about #about_text {
     padding: 5rem 24.6rem;
   }
 
   #quemsomos #about #about_text h1 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   #quemsomos #about #about_text p {
-    width: 38rem;
+    width: 42rem;
+    margin-top: 1rem;
     font-size: 1.4rem;
     line-height: 1.8rem;
-  }
-
-  #quemsomos #about #about_text p:last-of-type {
-    margin-top: 2rem;
   }
 
   #quemsomos #infobanner {
@@ -259,25 +257,87 @@
 }
 
 /* aiming to 2560px width */
-@media (min-width: 1920px) and (max-height: 1080px) {
+@media (min-width: 2200px) and (max-height: 1080px) {
   #quemsomos #about {
-    height: 64vh;
+    height: 58vh;
+  }
+
+  #quemsomos #about #about_text {
+    padding: 4rem 24.8rem;
+  }
+
+  #quemsomos #about #about_text h1 {
+    font-size: 3rem;
+  }
+
+  #quemsomos #about #about_text p {
+    width: 40rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
 
   #quemsomos #infobanner {
     height: 50vh;
   }
 
+  #quemsomos #infobanner h2 {
+    font-size: 5rem;
+  }
+
+  #quemsomos #infobanner p {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+
   #quemsomos #valuesbanner {
     height: 80vh;
   }
 
+  #quemsomos #valuesbanner_inner {
+    margin: 4rem auto;
+    padding-left: 6rem;
+  }
+
+  #quemsomos #valuesbanner_inner #valuesbanner_left {
+    width: 40rem;
+    height: 42rem;
+  }
+
+  #quemsomos #valuesbanner_inner h3 {
+    font-size: 2.8rem;
+  }
+
+  #quemsomos #valuesbanner_inner p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
   #quemsomos #mapbanner {
-    height: 124vh;
+    height: 108vh;
+  }
+
+  #quemsomos #mapbanner #maptext {
+    margin-left: 23rem;
+  }
+
+  #quemsomos #mapbanner #maptext h1 {
+    font-size: 3rem;
+  }
+
+  #quemsomos #mapbanner #maptext p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 110%;
+  }
+
+  #quemsomos #mapbanner #imagemap {
+    height: 60rem;
+    margin-top: 6rem;
+    margin-left: 18rem;
   }
 }
 
-@media (max-width: 1920px) and (max-height: 940px) {
+@media (max-width: 1920px) and (max-height: 970px) {
   #quemsomos #about {
     height: 60vh;
   }
@@ -295,13 +355,23 @@
   }
 }
 
+@media (max-width: 1920px) and (max-height: 860px) {
+  #quemsomos #valuesbanner {
+    height: 70vh;
+  }
+
+  #quemsomos #mapbanner {
+    height: 124vh;
+  }
+}
+
 @media (max-width: 1440px) and (max-height: 900px) {
   #quemsomos #about {
-    height: 51vh;
+    height: 48vh;
   }
 
   #quemsomos #about #about_text {
-    padding: 1.8rem 13.6rem;
+    padding: 4rem 14.2rem;
   }
 
   #quemsomos #about #about_text h1 {
@@ -310,11 +380,9 @@
 
   #quemsomos #about #about_text p {
     width: 25rem;
+    margin-top: 0.6rem;
     font-size: 0.9rem;
-  }
-
-  #quemsomos #about #about_text p:last-child {
-    margin-top: 2rem;
+    line-height: 1.1rem;
   }
 
   #quemsomos #infobanner {
@@ -331,6 +399,10 @@
 
   #quemsomos #valuesbanner {
     padding: 2rem 13rem;
+  }
+
+  #quemsomos #valuesbanner_inner {
+    margin-top: 1.4rem;
   }
 
   #quemsomos #valuesbanner h3 {
@@ -419,6 +491,16 @@
   }
 }
 
+@media (max-width: 1366px) and (max-height: 768px) {
+  #quemsomos #about #about_text {
+    padding: 3rem 13rem;
+  }
+
+  #quemsomos #about #about_text p {
+    width: 25rem;
+  }
+}
+
 @media (max-width: 1366px) and (max-height: 660px) {
   #quemsomos #about #about_text h1 {
     font-size: 1.8rem;
@@ -432,20 +514,42 @@
     margin-top: 0.6rem;
   }
 
-  #quemsomos #about #about_text p:last-child {
-    margin-top: 0;
-  }
-
   #quemsomos #infobanner {
     height: 54vh;
   }
 
   #quemsomos #valuesbanner {
-    height: 87vh;
+    height: 76vh;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_inner {
+    margin-top: 2rem;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_left {
+    height: 24rem;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_inner h3 {
+    font-size: 1.4rem;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_inner p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
   }
 
   #quemsomos #mapbanner {
     height: 128vh;
+  }
+
+  #quemsomos #mapbanner #maptext h1 {
+    font-size: 2rem;
+  }
+
+  #quemsomos #mapbanner #maptext p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
   }
 }
 
@@ -466,10 +570,6 @@
     font-size: 1rem;
   }
 
-  #quemsomos #valuesbanner {
-    height: 92vh;
-  }
-
   #quemsomos #valuesbanner #valuesbanner_right {
     margin-top: 3.6rem;
   }
@@ -485,13 +585,17 @@
   }
 
   #quemsomos #about #about_text h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #quemsomos #about #about_text p {
     width: 21rem;
     font-size: 0.7rem;
     line-height: 1rem;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_inner {
+    margin-top: 2rem;
   }
 
   #quemsomos #about #about_text p:last-child {

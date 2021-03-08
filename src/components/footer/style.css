@@ -181,11 +181,16 @@
 }
 
 /* Aiming to 2560px width */
-@media (min-width: 1921px) and (min-height: 1440px) {
+@media (min-width: 2200px) and (min-height: 1440px) {
   #footer #logo {
     width: 20rem;
     margin-top: -4rem;
     margin-left: 3rem;
+    margin-right: -4rem;
+  }
+
+  #footer #footer_nav {
+    margin-top: 0rem;
   }
 
   #footer #footer_nav div {
@@ -205,7 +210,7 @@
   }
 
   #footer #pagamento {
-    margin-left: -17.4rem !important;
+    margin-left: -16.4rem !important;
   }
 
   #footer #newsletter {
@@ -246,16 +251,14 @@
   }
 }
 
-@media (min-width: 1921px) and (min-width: 1080px) {
+@media (min-width: 2200px) and (min-width: 1080px) {
   #footer #logo {
     width: 20rem;
-    margin-top: -6.2rem;
-    margin-left: 3.6rem;
+    margin-left: 3rem;
   }
 
   #footer #footer_nav {
-    margin-top: -3.8rem;
-    margin-left: 6rem;
+    margin-left: 8rem;
   }
 
   #footer #footer_nav div {
@@ -279,14 +282,19 @@
 
   #footer #social {
     margin-top: 2rem;
+    padding-left: 24rem;
+  }
+
+  #footer #copyright {
+    padding-left: 6em;
   }
 
   #footer #copyright img {
-    margin-right: 9rem;
+    margin-right: 6rem;
   }
 }
 
-@media (max-width: 1920px) and (max-height: 940px) {
+@media (max-width: 1920px) and (max-height: 970px) {
   #footer {
     height: 40vh;
   }

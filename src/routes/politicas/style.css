@@ -1,0 +1,31 @@
+#politicas {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+#container h1 {
+  text-align: center;
+}
+
+#container h1,
+#container h2 {
+  color: var(--blue);
+}
+
+#container div:first-of-type {
+  margin-top: 4rem;
+}
+
+#container div:last-of-type {
+  margin-bottom: 10rem;
+}
