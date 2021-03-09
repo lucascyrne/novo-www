@@ -1,11 +1,14 @@
 import { FunctionalComponent, h } from "preact";
 import style from "./style.css";
 
+import { cookieInit } from "../../components/cookies/";
+
 import teste1 from "../../assets/img/teste1.jpg";
 import teste2 from "../../assets/img/teste2.jpg";
-import teste3 from "../../assets/img/teste3.jpg";
 
 const Home: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.home}>
       <div id={style.banner}>

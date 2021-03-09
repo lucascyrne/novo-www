@@ -5,8 +5,11 @@ import style from "./style";
 import location from "../../assets/icons/location_red.jpg";
 import wppred from "../../assets/icons/whatsapp_red.png";
 import wppblue from "../../assets/icons/whatsapp_blue.jpg";
+import { cookieInit } from "../../components/cookies";
 
 const Atendimento: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.atendimento}>
       <h1>Atendimento Novo</h1>

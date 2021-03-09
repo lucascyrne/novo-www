@@ -12,7 +12,6 @@ import Cadastro from "../routes/cadastro";
 import Noticias from "../routes/noticias";
 import NoticiaSingle from "../routes/noticias/single/index-alt";
 import Politicas from "../routes/politicas";
-import Cookies from "../components/cookies";
 import Sucesso from "../routes/sucesso";
 import NotFoundPage from "../routes/notfound";
 import Header from "./header";
@@ -39,7 +38,6 @@ const App: FunctionalComponent = () => {
         <NotFoundPage default />
       </Router>
       <Footer />
-      <Cookies />
     </div>
   );
 };

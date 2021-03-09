@@ -1,8 +1,11 @@
 import { FunctionalComponent, h } from "preact";
+import { cookieInit } from "../../components/cookies";
 
 import style from "./style";
 
 const Cadastro: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.cadastro}>
       <h1>Cadastre-se</h1>

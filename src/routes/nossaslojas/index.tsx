@@ -7,8 +7,11 @@ import teste1 from "../../assets/img/teste1.jpg";
 import location from "../../assets/icons/location_red.jpg";
 import whatsapp from "../../assets/icons/whatsapp_blue.jpg";
 import phone from "../../assets/icons/phone.jpg";
+import { cookieInit } from "../../components/cookies";
 
 const NossasLojas: FunctionalComponent = () => {
+  cookieInit();
+
   const [open, isOpen] = useState(false);
   const ref = useRef(null);
 

@@ -5,8 +5,11 @@ import style from "./style";
 import banner from "../../assets/img/ofertasbannertop.jpg";
 import whitewpp from "../../assets/icons/white_whatsapp.png";
 import tabloidtest from "../../assets/img/tabloidtest.jpg";
+import { cookieInit } from "../../components/cookies";
 
 const Ofertas: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.ofertas}>
       <div id={style.banner} />

@@ -3,8 +3,11 @@ import { FunctionalComponent, h } from "preact";
 import style from "./style";
 
 import cardwoman from "../../assets/img/cartaonovo_girl.jpg";
+import { cookieInit } from "../../components/cookies";
 
 const CartaoNovo: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.cartaonovo} class={style.col}>
       <div id={style.cartao}>

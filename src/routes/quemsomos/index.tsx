@@ -2,8 +2,11 @@ import { FunctionalComponent, h } from "preact";
 import style from "./style";
 
 import teste1 from "../../assets/img/teste1.jpg";
+import { cookieInit } from "../../components/cookies";
 
 const QuemSomos: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.quemsomos}>
       <div id={style.about}>

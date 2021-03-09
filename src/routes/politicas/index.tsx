@@ -1,8 +1,11 @@
 import { FunctionalComponent, h } from "preact";
+import { cookieInit } from "../../components/cookies";
 
 import style from "./style";
 
 const Politicas: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div id={style.politicas}>
       <div id={style.container}>

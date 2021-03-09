@@ -3,8 +3,11 @@ import { FunctionalComponent, h } from "preact";
 import style from "./style";
 
 import help from "../../assets/icons/help.png";
+import { cookieInit } from "../../components/cookies";
 
 const Contato: FunctionalComponent = () => {
+  cookieInit();
+
   return (
     <div class={style.col}>
       <div id={style.contato}>
