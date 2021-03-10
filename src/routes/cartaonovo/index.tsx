@@ -5,22 +5,41 @@ import style from "./style";
 import cardwoman from "../../assets/img/cartaonovo_girl.jpg";
 import { cookieInit } from "../../components/cookies";
 
+const isWeb = (): boolean => {
+  if (window.innerHeight < window.innerWidth) return true;
+  return false;
+};
+
+const WebCartao = (): h.JSX.Element => {
+  return (
+    <div id={style.cartao}>
+      <h1>
+        Um jeito novo
+        <br />
+        de pagar as suas
+        <br />
+        compras, com
+        <br />
+        mais comodidade.
+      </h1>
+    </div>
+  );
+};
+
+const MobileCartao = (): h.JSX.Element => {
+  return (
+    <div id={style.cartao}>
+      <h1>Um jeito novo de pagar as suas compras, com mais comodidade.</h1>
+    </div>
+  );
+};
+
 const CartaoNovo: FunctionalComponent = () => {
   cookieInit();
 
   return (
     <div id={style.cartaonovo} class={style.col}>
-      <div id={style.cartao}>
-        <h1>
-          Um jeito novo
-          <br />
-          de pagar as suas
-          <br />
-          compras, com
-          <br />
-          mais comodidade.
-        </h1>
-      </div>
+      {isWeb() ? <WebCartao /> : <MobileCartao />}
       <div id={style.cartaonovo_inner} class={style.row}>
         <div class={style.col} id={style.fst_paragraph}>
           <div>
