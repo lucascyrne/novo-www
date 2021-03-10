@@ -10,12 +10,10 @@ import phone from "../../assets/icons/phone.jpg";
 import { cookieInit } from "../../components/cookies";
 
 const NossasLojas: FunctionalComponent = () => {
-  cookieInit();
-
   const [open, isOpen] = useState(false);
   const ref = useRef(null);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     const map = ref.current;
 
     if (map === null)
@@ -24,17 +22,13 @@ const NossasLojas: FunctionalComponent = () => {
     if (open) {
       isOpen(!open);
       map.style.display = "none";
-      console.log("1");
     } else {
       isOpen(!open);
       map.style.display = "block";
-      console.log("2");
     }
   };
 
-  useEffect(() => {
-    handleClick;
-  }, []);
+  cookieInit();
 
   return (
     <div class={style.col}>
