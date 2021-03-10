@@ -195,6 +195,24 @@
   margin-left: 1rem;
 }
 
+#trabalheconosco #help_msg {
+  display: flex;
+  position: absolute;
+  top: 8rem;
+  max-width: 18rem;
+  max-height: 6rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 16px;
+  background-color: var(--yellow);
+}
+
+#trabalheconosco #help_msg p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+}
+
 /* aiming for 2560px width */
 @media (min-width: 2200px) and (max-height: 1440px) {
   #contato {
@@ -300,6 +318,17 @@
     margin-top: 0.66rem;
     margin-left: 2rem;
     font-size: 1.6rem;
+  }
+
+  #trabalheconosco #help_msg {
+    max-width: 22rem;
+    max-height: 10rem;
+    top: 10.4rem;
+    left: 2rem;
+  }
+
+  #trabalheconosco #help_msg p {
+    font-size: 1.2rem;
   }
 }
 
@@ -428,6 +457,17 @@
 
   #trabalheconosco #help p {
     margin-top: 1.8rem;
+  }
+
+  #trabalheconosco #help_msg {
+    max-width: 12rem;
+    max-height: 4.8rem;
+    top: 6rem;
+    left: 4rem;
+  }
+
+  #trabalheconosco #help_msg p {
+    font-size: 0.7rem;
   }
 
   .button {
@@ -562,6 +602,17 @@
     margin-top: 0.4rem;
     font-size: 0.8rem;
   }
+
+  #trabalheconosco #help_msg {
+    max-width: 12rem;
+    max-height: 4.8rem;
+    top: 7rem;
+    left: 0rem;
+  }
+
+  #trabalheconosco #help_msg p {
+    font-size: 0.6rem;
+  }
 }
 
 @media (max-width: 1280px) and (max-height: 610px) {
@@ -587,6 +638,10 @@
 
   #trabalheconosco form #help p {
     margin-top: 1.8rem;
+  }
+
+  #trabalheconosco #help_msg {
+    left: 4rem;
   }
 }
 
@@ -623,6 +678,10 @@
 
   #trabalheconosco form #help p {
     margin-top: 2rem;
+  }
+
+  #trabalheconosco #help_msg {
+    left: 4rem;
   }
 }
 

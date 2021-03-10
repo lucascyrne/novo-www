@@ -4,8 +4,27 @@ import style from "./style";
 
 import help from "../../assets/icons/help.png";
 import { cookieInit } from "../../components/cookies";
+import { useState } from "preact/hooks";
 
 const Contato: FunctionalComponent = () => {
+  const [click, isClicked] = useState(false);
+
+  const Nothing = (): null => null;
+
+  const HelpMsg = (): h.JSX.Element => {
+    return (
+      <div id={style.help_msg}>
+        <p>O Arquivo precisa ser PDF ou DOC. Tamanho máximo: 1MB.</p>
+      </div>
+    );
+  };
+
+  const handleClick = (): void => {
+    console.log(click);
+    if (click) isClicked(!click);
+    else isClicked(true);
+  };
+
   cookieInit();
 
   return (
@@ -95,9 +114,16 @@ const Contato: FunctionalComponent = () => {
               </label>
               <input type="file" id="cv" />
             </div>
-            <div id={(style.m_left, style.help)} class={style.row}>
-              <img src={help} alt="" />
-              <p>Preciso de ajuda</p>
+            <div class={style.col} style="position: relative;">
+              <div
+                id={(style.m_left, style.help)}
+                class={style.row}
+                onClick={handleClick}
+              >
+                <img src={help} alt="" />
+                <p>Preciso de ajuda</p>
+              </div>
+              {click ? <HelpMsg /> : <Nothing />}
             </div>
           </div>
           <a href="" class={style.button}>
