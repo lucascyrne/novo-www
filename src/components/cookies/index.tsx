@@ -28,7 +28,7 @@ class CookiePopup extends Component<Props, State> {
 
   public render(): h.JSX.Element {
     return (
-      <div id={style.cookies_container}>
+      <div id={style.cookies_container} class={style.slide_top}>
         <div>
           <p>
             Utilizamos seus dados para oferecer uma experiência mais relevante
@@ -37,7 +37,7 @@ class CookiePopup extends Component<Props, State> {
             Novo Atacarejo a coletar estes dados e utilizá-los para estes fins.
             Consulte nossa <a href="/">Política de Privacidade.</a>
           </p>
-          <button onClick={this.clickClose}>Aceitar!</button>
+          <button onClick={this.clickClose}>Entendi!</button>
         </div>
       </div>
     );
