@@ -2,9 +2,8 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
-import banner from "../../assets/img/ofertasbannertop.jpg";
 import whitewpp from "../../assets/icons/white_whatsapp.png";
-import tabloidtest from "../../assets/img/tabloidtest.jpg";
+import teste1 from "../../assets/img/teste2.jpg";
 import { cookieInit } from "../../components/cookies";
 
 const Ofertas: FunctionalComponent = () => {
@@ -15,7 +14,7 @@ const Ofertas: FunctionalComponent = () => {
       <div id={style.banner} />
       <div id={style.ofertas_inner} class={style.row}>
         <div id={style.ofertas_left} class={style.col}>
-          <h1>Ofertas Novo Atacarejo</h1>
+          <h1>Ofertas vigentes</h1>
           <div id={style.stores_select}>
             <select name="stores" id="stores" class={style.select}>
               <option value="op0">Escolha por cidade</option>
@@ -29,12 +28,12 @@ const Ofertas: FunctionalComponent = () => {
         <div class={style.col}>
           <div id={style.tabloids}>
             <div>
-              <img src={tabloidtest} alt="" />
-              <h6>Ofertas válidas até dia 10/10 até dia 11/11</h6>
+              <img src={teste1} alt="" />
+              <h6>OFERTAS DA SEMANA - DE 21 A 24/12</h6>
             </div>
             <div>
-              <img src={tabloidtest} alt="" />
-              <h6>Ofertas válidas até dia 10/10 até dia 11/11</h6>
+              <img src={teste1} alt="" />
+              <h6>OFERTAS DE NATAL | DE 14 A 18/12</h6>
             </div>
           </div>
           <div id={style.btn}>
