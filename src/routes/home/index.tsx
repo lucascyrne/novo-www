@@ -1,10 +1,99 @@
 import { FunctionalComponent, h } from "preact";
-import style from "./style.css";
 
 import { cookieInit } from "../../components/cookies/";
 
+import style from "./style.css";
+
 import teste1 from "../../assets/img/teste1.jpg";
 import teste2 from "../../assets/img/teste2.jpg";
+
+const isWeb = (): boolean => {
+  if (window.innerHeight > window.innerWidth) return false;
+  return true;
+};
+
+const WebFiquePorDentro: FunctionalComponent = () => {
+  return (
+    <div id={style.fique_body}>
+      <div class={style.news_card}>
+        <img src={teste1} alt="" />
+        <h2>Example of title not to big that's gonna be read!</h2>
+        <a href="">
+          Continue Lendo<span>{">"}</span>
+        </a>
+      </div>
+      <div class={style.news_card}>
+        <img src={teste1} alt="" />
+        <h2>Example of title not to big that's gonna be read!</h2>
+        <a href="">
+          Continue Lendo<span>{">"}</span>
+        </a>
+      </div>
+      <div class={style.news_card}>
+        <img src={teste1} alt="" />
+        <h2>Example of title not to big that's gonna be read!</h2>
+        <a href="">
+          Continue Lendo<span>{">"}</span>
+        </a>
+      </div>
+    </div>
+  );
+};
+
+const MobileFiquePorDentro: FunctionalComponent = () => {
+  return (
+    <div>
+      <div>
+        <div>
+          <div>1</div>
+          <div>
+            <h2>Title 1</h2>
+            <a href="">
+              Continue Lendo<span>{">"}</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div>2</div>
+          <div>
+            <h2>Title 2</h2>
+            <a href="">
+              Continue Lendo<span>{">"}</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div>3</div>
+          <div>
+            <h2>Title 3</h2>
+            <a href="">
+              Continue Lendo<span>{">"}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span />
+        <span />
+        <span />
+      </div>
+    </div>
+  );
+};
+
+const WebCardTitle = (): h.JSX.Element => {
+  return (
+    <h1>
+      Um jeito novo
+      <br /> de pagar as suas compras, com
+      <br /> mais comodidade.
+    </h1>
+  );
+};
+
+const MobileCardTitle = (): h.JSX.Element => {
+  return <h1>Um jeito novo de pagar as suas compras, com mais comodidade.</h1>;
+};
 
 const Home: FunctionalComponent = () => {
   cookieInit();
@@ -32,37 +121,11 @@ const Home: FunctionalComponent = () => {
       </div>
       <div id={style.fique_por_dentro}>
         <h1>Fique por dentro</h1>
-        <div id={style.fique_body}>
-          <div class={style.news_card}>
-            <img src={teste1} alt="" />
-            <h2>Example of title not to big that's gonna be read!</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-          <div class={style.news_card}>
-            <img src={teste1} alt="" />
-            <h2>Example of title not to big that's gonna be read!</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-          <div class={style.news_card}>
-            <img src={teste1} alt="" />
-            <h2>Example of title not to big that's gonna be read!</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-        </div>
+        {isWeb() ? <WebFiquePorDentro /> : <MobileFiquePorDentro />}
       </div>
       <div id={style.cartao}>
         <div>
-          <h1>
-            Um jeito novo
-            <br /> de pagar as suas compras, com
-            <br /> mais comodidade.
-          </h1>
+          {isWeb() ? <WebCardTitle /> : <MobileCardTitle />}
           <a class={style.button}>Saiba mais</a>
         </div>
       </div>
