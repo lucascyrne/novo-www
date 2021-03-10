@@ -4,6 +4,9 @@ import style from "./style.css";
 
 import logo from "../../assets/logo/logo.svg";
 import location from "../../assets/icons/location.png";
+import { useEffect, useRef, useState } from "preact/hooks";
+
+const Nothing = (): null => null;
 
 const isWeb = (): boolean => {
   if (window.innerHeight < window.innerWidth) return true;
@@ -35,24 +38,67 @@ const Menu: FunctionalComponent = () => {
 };
 
 const BurgerMenu: FunctionalComponent = () => {
-  return (
-    <div id={style.burger_menu}>
-      <div id={style.burger_menu_span}>
-        <span />
-        <span />
-        <span />
-      </div>
+  const [open, isOpen] = useState(false);
+
+  const handleClick = (): void => {
+    if (open) isOpen(!open);
+    else isOpen(true);
+  };
+
+  function useOutsideAlerter(paneRef): void {
+    useEffect(() => {
+      const handleClickOutside = (e: MouseEvent): void => {
+        if (paneRef?.current && !paneRef?.current?.contains(e.target as Node)) {
+          return isOpen(false);
+        }
+      };
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return (): void => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    });
+  }
+
+  const Links: FunctionalComponent = () => {
+    const paneRef = useRef<HTMLDivElement>(null);
+    useOutsideAlerter(paneRef);
+
+    return (
       <div id={style.black_layer}>
-        <div id={style.burger_menu_links}>
-          <ul>
-            <li>Quem somos</li>
-            <li>Nossas lojas</li>
-            <li>Ofertas</li>
-            <li>Cartão Novo</li>
-            <li>Contato</li>
-          </ul>
+        <div id={style.burger_menu_pane} class={style.slide_left} ref={paneRef}>
+          <div id={style.burger_menu_links}>
+            <nav>
+              <Link activeClassName={style.active} href="/quem-somos">
+                Quem somos
+              </Link>
+              <Link activeClassName={style.active} href="/nossas-lojas">
+                Nossas lojas
+              </Link>
+              <Link activeClassName={style.active} href="/ofertas">
+                Ofertas
+              </Link>
+              <Link activeClassName={style.active} href="/cartao-novo">
+                Cartão Novo
+              </Link>
+              <Link activeClassName={style.active} href="/contato">
+                Contato
+              </Link>
+            </nav>
+          </div>
         </div>
       </div>
+    );
+  };
+
+  return (
+    <div id={style.burger_menu}>
+      <div id={style.burger_menu_span} onClick={handleClick}>
+        <span />
+        <span />
+        <span />
+      </div>
+      {open ? <Links /> : <Nothing />}
     </div>
   );
 };
