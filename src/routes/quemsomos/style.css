@@ -71,7 +71,8 @@
   color: #fff;
   background-image: url("../../assets/img/ofertasbanner.png");
   background-color: var(--yellow);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #quemsomos #infobanner h2 {
@@ -742,5 +743,115 @@
 
   #quemsomos #mapbanner {
     height: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  #quemsomos #about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  #quemsomos #about p {
+    color: #9a9a9a;
+  }
+
+  #quemsomos #infobanner {
+    height: auto;
+  }
+
+  #quemsomos #infobanner h2 {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #quemsomos #valuesbanner,
+  #quemsomos #valuesbanner #valuesbanner_inner,
+  #quemsomos #valuesbanner #valuesbanner_left,
+  #quemsomos #valuesbanner #valuesbanner_left div,
+  #quemsomos #valuesbanner #valuesbanner_center,
+  #quemsomos #valuesbanner #valuesbanner_right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #quemsomos #valuesbanner p {
+    width: 100%;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_inner div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-right: 0;
+  }
+
+  #quemsomos #mapbanner {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    height: auto;
+  }
+
+  #quemsomos #mapbanner p {
+    color: #9a9a9a;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 568px) {
+  #quemsomos #about {
+    padding: 1rem 2rem;
+  }
+
+  #quemsomos #about h1 {
+    font-size: 1.6rem;
+  }
+
+  #quemsomos #about p {
+    margin-top: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  #quemsomos #infobanner h2 {
+    font-size: 1.8rem;
+  }
+
+  #quemsomos #infobanner p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #quemsomos #valuesbanner {
+    padding: 1rem 2rem;
+  }
+
+  #quemsomos #valuesbanner #valuesbanner_left div:nth-child(1),
+  #quemsomos #valuesbanner #valuesbanner_left div:nth-child(2) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  #quemsomos #mapbanner h1 {
+    font-size: 1.4rem;
+  }
+
+  #quemsomos #mapbanner #imagemap {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background-size: fill;
+  }
+
+  #quemsomos #mapbanner p {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
   }
 }
