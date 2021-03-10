@@ -49,7 +49,7 @@
   margin-left: 8rem;
   margin-right: -4rem;
   font-size: 80%;
-  border-right: 1px solid #454545;
+  border-right: 1px solid rgba(69, 69, 69, 0.4);
 }
 
 #footer #footer_nav div:last-of-type {
@@ -554,5 +554,147 @@
 @media (max-width: 1024px) and (max-height: 610px) {
   #footer #social {
     margin-top: 4rem;
+  }
+}
+
+@media (orientation: portrait) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer #newsletter {
+    display: flex;
+    margin-top: 1rem;
+    padding: 0;
+    width: 86%;
+    height: 6rem;
+    border-radius: 8px;
+  }
+
+  #footer #newsletter h4 {
+    text-align: center;
+    align-self: center;
+    margin-top: 0.2rem;
+    width: 90%;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+  }
+
+  #footer #newsletter .button {
+    margin-top: 0.1rem;
+    width: 9rem;
+    border-radius: 4px;
+  }
+
+  #footer #footer_nav {
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  #footer #footer_nav div {
+    margin: 0;
+    margin-left: 0.8rem;
+    padding: 0;
+    height: auto;
+  }
+
+  #footer #footer_nav h3 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  #footer #footer_nav a:first-of-type {
+    margin-top: 0.8rem;
+  }
+
+  #footer #footer_nav a {
+    margin-bottom: -0.6rem;
+    font-size: 0.6rem;
+  }
+
+  #footer #formas_pagamento {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 82%;
+  }
+
+  #footer #formas_pagamento h4 {
+    font-size: 0.7rem;
+  }
+
+  #footer #social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3rem;
+  }
+
+  #footer #social #social_icons {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 82%;
+  }
+
+  #footer #social #social_icons h4 {
+    padding: 0;
+    margin-right: auto;
+    margin-left: 0.6rem;
+    width: 40rem;
+    font-size: 0.7rem;
+  }
+
+  #footer #social #social_icons a:first-of-type {
+    margin-left: -2rem;
+    width: 1.8rem;
+  }
+
+  #footer #social #social_icons a {
+    padding: 0;
+    margin-left: 1rem;
+    width: 3rem;
+    height: auto;
+  }
+
+  #footer #social #social_icons a:last-of-type {
+    margin-top: -0.2rem;
+  }
+
+  #footer #social #social_icons a img {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer #copyright {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: #fff;
+  }
+
+  #footer #copyright h4 {
+    font-size: 0.4rem;
+    font-weight: 500;
+  }
+
+  #footer #copyright img {
+    width: 4rem;
+    margin-right: 1.8rem;
   }
 }
