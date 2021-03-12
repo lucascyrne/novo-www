@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 60vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 300vw;
+  height: 84%;
+}
+
+.atendimento_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 150vw;
+  height: 84%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  margin-right: 1rem;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background-color: #fff;
+}
+
+.atendimento_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  width: 16rem;
+  height: 93%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background-color: #fff;
+}
+
+.atendimento_card h2 {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+}
+
+.card div {
+  padding: 0.5rem 1rem;
+}
+
+.card div h2 {
+  margin-bottom: 1rem;
+  color: var(--blue);
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+
+.card div a {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  margin: 0;
+  width: 7rem;
+  height: 2.4rem;
+  font-size: 0.6rem;
+  color: #9a9a9a;
+  border: 1px solid #9a9a9a;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.card div a span {
+  display: flex;
+  position: relative;
+  left: 0.4rem;
+  font-size: 1rem;
+  color: var(--red);
+  font-family: Nanum Gothic, monospace;
+}
+
+.selected {
+  display: inline-flex;
+  /* display: none; */
+  flex-direction: row;
+  position: relative;
+  top: -3rem;
+  justify-content: space-between;
+  width: 100%;
+  height: 0.2rem;
+}
+
+.selected a {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
+  margin-left: 0.4rem;
+  width: 33%;
+  height: 100%;
+  background-color: rgba(204, 204, 204, 0.6);
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+.selected a:first-of-type {
+  margin-left: 0;
+}
+
+.location {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 98%;
+  border-bottom: 1px solid rgba(143, 146, 161, 0.2);
+}
+
+.location img {
+  width: 1rem;
+  height: 1.4rem;
+}
+
+.location p {
+  width: 12rem;
+  margin-top: -0.2rem;
+  margin-left: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400 !important;
+}
+
+:is(.personal, .shopping) {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal {
+  margin-top: -1rem;
+}
+
+:is(.personal, .shopping) h3 {
+  font-size: 0.7rem;
+}
+
+:is(.personal, .shopping) div {
+  display: flex;
+  flex-direction: row;
+  width: 18rem;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+:is(.personal, .shopping) img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+:is(.personal, .shopping) p {
+  font-size: 0.7rem !important;
+  margin-left: 0.6rem;
+}
+
+.card_button {
+  padding: 0.4rem;
+  margin-left: 0.6rem;
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.6rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: var(--red);
+  border-radius: 8px;
+}
+
+#blue {
+  background-color: var(--blue);
+}
