@@ -10,7 +10,7 @@ import Contato from "../routes/contato";
 import Atendimento from "../routes/atendimento";
 import Cadastro from "../routes/cadastro";
 import Noticias from "../routes/noticias";
-import NoticiaSingle from "../routes/noticias/single/index-alt";
+import NoticiaSingle from "../routes/noticias/single";
 import Politicas from "../routes/politicas";
 import Sucesso from "../routes/sucesso";
 import NotFoundPage from "../routes/notfound";
@@ -31,7 +31,7 @@ const App: FunctionalComponent = () => {
         <Route path="/atendimento/" component={Atendimento} />
         <Route path="/cadastro/" component={Cadastro} />
         <Route path="/noticias/" component={Noticias} />
-        <Route path="/noticias/single" component={NoticiaSingle} />
+        <Route path="/noticias/single/" component={NoticiaSingle} />
         <Route path="/politicas" component={Politicas} />
         <Route path="/sucesso" component={Sucesso} />
         <Route path="/noticia-selecionada/" component={NotFoundPage} />
