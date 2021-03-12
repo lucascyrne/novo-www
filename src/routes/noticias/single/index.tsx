@@ -1,12 +1,13 @@
 import { FunctionalComponent, h } from "preact";
 
-import style from "../style";
+import { cookieInit } from "../../../components/cookies";
 
 import fbIcon from "../../../assets/icons/facebook_gray.png";
 import wppIcon from "../../../assets/icons/whatsapp_gray.png";
 import ttIcon from "../../../assets/icons/twitter_gray.png";
 import emailIcon from "../../../assets/icons/email_gray.png";
-import { cookieInit } from "../../../components/cookies";
+
+import style from "../style";
 
 const NoticiaSingle: FunctionalComponent = () => {
   cookieInit();
