@@ -1,6 +1,7 @@
 import { FunctionalComponent, h } from "preact";
 
 import { cookieInit } from "../../components/cookies/";
+import { HomeCarousel } from "../../components/carousel/";
 
 import style from "./style.css";
 
@@ -35,47 +36,6 @@ const WebFiquePorDentro: FunctionalComponent = () => {
         <a href="">
           Continue Lendo<span>{">"}</span>
         </a>
-      </div>
-    </div>
-  );
-};
-
-const MobileFiquePorDentro: FunctionalComponent = () => {
-  return (
-    <div>
-      <div>
-        <div>
-          <div>1</div>
-          <div>
-            <h2>Title 1</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-        </div>
-        <div>
-          <div>2</div>
-          <div>
-            <h2>Title 2</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-        </div>
-        <div>
-          <div>3</div>
-          <div>
-            <h2>Title 3</h2>
-            <a href="">
-              Continue Lendo<span>{">"}</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <span />
-        <span />
-        <span />
       </div>
     </div>
   );
@@ -121,7 +81,7 @@ const Home: FunctionalComponent = () => {
       </div>
       <div id={style.fique_por_dentro}>
         <h1>Fique por dentro</h1>
-        {isWeb() ? <WebFiquePorDentro /> : <MobileFiquePorDentro />}
+        {isWeb() ? <WebFiquePorDentro /> : <HomeCarousel />}
       </div>
       <div id={style.cartao}>
         <div>

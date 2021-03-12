@@ -21,8 +21,8 @@
   display: flex;
   grid-column-start: 1;
   order: 1;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -92,7 +92,8 @@
   cursor: pointer;
 }
 
-#home #banner .button:hover {
+#home #banner .button:hover,
+#home #cartao .button:hover {
   background-color: rgba(141, 0, 12, 0.9);
 }
 
@@ -172,8 +173,13 @@
   text-decoration: none;
   border: 3px solid #cccccc;
   border-radius: 0.6rem;
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   cursor: pointer;
+}
+
+#home #fique_por_dentro .news_card a:hover {
+  color: var(--red);
+  border: 3px solid var(--red);
 }
 
 #home #fique_por_dentro .news_card a span {
@@ -194,7 +200,8 @@
   margin-top: 6rem;
   color: #fff;
   background-image: url("../../assets/img/teste3.jpg");
-  background-position: 90% 0;
+  /* background-position: 90% 0; */
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -429,7 +436,8 @@
 
   #home #cartao {
     height: 54vh;
-    background-position: 58% 0;
+    /* background-position: 58% 0; */
+    background-position: center center;
   }
 
   #home #cartao h1 {
@@ -657,7 +665,8 @@
   }
 
   #home #cartao {
-    background-position: 58% 0;
+    /* background-position: 58% 0; */
+    background-position: center center;
   }
 
   #home #cartao h1 {
@@ -773,7 +782,8 @@
   #home #cartao {
     padding: 3rem 2rem;
     background-size: cover;
-    background-position: 60% 0%;
+    /* background-position: 60% 0%; */
+    background-position: center center;
   }
 
   #home #cartao div {
