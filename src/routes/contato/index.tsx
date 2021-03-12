@@ -34,6 +34,7 @@ const Contato: FunctionalComponent = () => {
         <p>
           Prezamos pela sua opinião sobre as nossas lojas e os nossos serviços.
           <br />
+          <br />
           Por isso, utilize esse canal direto para informações, elogios,
           sugestões e registro de insatisfações.
         </p>
