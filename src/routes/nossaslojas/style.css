@@ -13,12 +13,14 @@
 #nossaslojas {
   display: flex;
   flex-direction: row;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 94vh;
   padding: 6rem 18rem;
 }
 
 #nossaslojas #nossaslojas_left {
+  position: relative;
   width: 70%;
   height: auto;
 }
@@ -28,6 +30,7 @@
 }
 
 #nossaslojas .select {
+  position: relative;
   width: 26rem;
   height: 3rem;
   margin-top: 1rem;
@@ -44,6 +47,7 @@
 }
 
 #nossaslojas #stores_select {
+  display: block;
   position: relative;
 }
 
@@ -67,7 +71,6 @@
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  z-index: 50;
 }
 
 #nossaslojas #img {
@@ -75,29 +78,28 @@
   justify-self: center;
   align-items: center;
   min-width: 98%;
-  height: 56vh;
   margin-top: 4rem;
   overflow: hidden;
 }
 
 #nossaslojas #img img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #nossaslojas #infocard {
   display: flex;
   flex-direction: column;
   width: 22.8rem;
-  height: 38rem;
-  margin-top: 15rem;
+  height: 32rem;
+  margin-top: 15.2rem;
   margin-left: 1.8rem;
-  padding: 2rem 2rem;
+  padding: 0.4rem 2rem;
   background-color: #fff;
 }
 
 #nossaslojas #infocard h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -107,7 +109,7 @@
   width: 92%;
   height: auto;
   max-height: 20%;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: -4rem;
   font-size: 0.92rem;
 }
@@ -185,8 +187,11 @@ p {
   will-change: background-color;
 }
 
+#nossaslojas #infocard button:focus,
 #nossaslojas #infocard button:hover {
-  background-color: rgb(207, 207, 207, 0.6);
+  color: var(--red);
+  border: 2.5px solid var(--red);
+  outline-color: var(--red);
 }
 
 #map_container {
@@ -207,13 +212,7 @@ p {
 
 @media (max-width: 1920px) and (max-height: 970px) {
   #nossaslojas {
-    height: 110vh;
-  }
-
-  #nossaslojas #infocard {
-    height: 34.2rem;
-    padding: 1rem 2rem;
-    margin-top: 15rem;
+    height: 106vh;
   }
 
   #nossaslojas #infocard #infolocation {
@@ -258,33 +257,34 @@ p {
   }
 
   #nossaslojas #infocard {
-    margin-top: 17rem;
+    margin-top: 17.4rem;
     width: 30rem;
-    height: 50.5rem;
+    height: 40rem;
     padding: 0.8rem 3rem;
   }
 
   #nossaslojas #infocard h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   #nossaslojas #infocard #infolocation {
+    margin-top: 1rem;
     width: 100%;
   }
 
   #nossaslojas #infocard #infolocation img {
-    width: 3rem;
-    height: 4rem;
+    width: 2rem;
+    height: 3rem;
     margin-top: -1rem;
   }
 
   #nossaslojas #infocard #infolocation p {
-    margin-top: -0.3rem;
+    margin-top: -1rem;
     font-size: 1.2rem;
   }
 
   #nossaslojas #infocard #infohours {
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
 
   #nossaslojas #infocard #infohours h5 {
@@ -342,11 +342,7 @@ p {
 /* aiming to 2560px width */
 @media (min-width: 2200px) and (max-height: 1080px) {
   #nossaslojas {
-    height: 130vh;
-  }
-
-  #nossaslojas #nossaslojas_left #img {
-    height: 74.6vh;
+    height: 110vh;
   }
 }
 
@@ -368,13 +364,14 @@ p {
   }
 
   #nossaslojas #infocard {
-    height: 31.7rem;
+    height: 24.4rem;
+    width: 18rem;
     margin-top: 14rem;
     padding: 0.6rem 2rem;
   }
 
   #nossaslojas #infocard h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   #nossaslojas #infocard #infolocation {
@@ -383,13 +380,29 @@ p {
   }
 
   #nossaslojas #infocard #infolocation img {
-    width: 2rem;
-    height: 3rem;
+    width: 1rem;
+    height: 1.6rem;
   }
 
   #nossaslojas #infocard #infolocation p {
-    margin-top: 0.4rem;
+    margin-top: 0rem;
+    font-size: 0.7rem;
+  }
+
+  #nossaslojas #infocard #infohours {
+    margin-top: 6rem;
+  }
+
+  #nossaslojas #infocard #infohours h5 {
     font-size: 0.9rem;
+  }
+
+  #nossaslojas #infocard #infohours p {
+    font-size: 0.8rem;
+  }
+
+  #nossaslojas #infocard button {
+    margin-top: 1rem;
   }
 
   #map_container {
@@ -404,21 +417,21 @@ p {
 
 @media (max-width: 1440px) and (max-height: 790px) {
   #nossaslojas #infocard {
-    height: 27.8rem;
-  }
-
-  #nossaslojas #infocard #infolocation img {
-    width: 1.8rem;
-    height: 2.4rem;
-  }
-
-  #nossaslojas #infocard #infolocation p {
-    margin-top: 0.2rem;
-    font-size: 0.8rem;
+    height: 24.4rem;
   }
 
   #nossaslojas #infocard h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  #nossaslojas #infocard #infolocation img {
+    width: 1.2rem;
+    height: 1.8rem;
+  }
+
+  #nossaslojas #infocard #infolocation p {
+    margin-top: 0rem;
+    font-size: 0.7rem;
   }
 
   #nossaslojas #infocard #infohours {
@@ -427,11 +440,11 @@ p {
 
   #nossaslojas #infocard #infohours h5 {
     margin-top: 0.2rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   #nossaslojas #infocard #infohours p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   #nossaslojas #infocard #contact div {
@@ -439,12 +452,16 @@ p {
   }
 
   #nossaslojas #infocard #contact div:last-child {
-    margin-bottom: 0;
+    margin-bottom: -0.8rem;
   }
 
   #nossaslojas #infocard #contact p {
     margin-top: 0.2rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  #nossaslojas #infocard button {
+    margin-top: 1.8rem;
   }
 }
 
@@ -454,8 +471,16 @@ p {
   }
 
   #nossaslojas #infocard {
-    height: 27.1rem;
+    height: 22rem;
     margin-top: 13rem;
+  }
+
+  #nossaslojas #infocard h2 {
+    font-size: 1rem;
+  }
+
+  #nossaslojas #infohours h5 {
+    font-size: 0.7rem;
   }
 
   #nossaslojas #infocard #contact {
@@ -486,7 +511,11 @@ p {
 
   #nossaslojas #infocard {
     padding: 0 1.4rem;
-    height: 23.3rem;
+    height: 22rem;
+  }
+
+  #nossaslojas #infocard h2 {
+    font-size: 1.6rem;
   }
 
   #nossaslojas #infocard #infolocation {
@@ -526,7 +555,6 @@ p {
   #nossaslojas #infocard button {
     width: 46%;
     height: 2.4rem;
-    padding-top: 0.58rem;
     font-size: 0.8rem;
   }
 
@@ -540,19 +568,23 @@ p {
     height: 22rem;
   }
 
+  #nossaslojas #infocard h2 {
+    font-size: 1.4rem;
+  }
+
   #nossaslojas #infocard #infohours {
     padding-bottom: 4.6rem;
   }
 
   #nossaslojas #infocard button {
     padding-top: 0.24rem;
-    margin-top: 1.2rem;
+    margin-top: 1.8rem;
   }
 }
 
 @media (max-width: 1280px) and (max-height: 800px) {
   #nossaslojas {
-    height: 94vh;
+    height: 86vh;
     padding: 4rem 12rem;
   }
 
@@ -575,19 +607,18 @@ p {
   }
 
   #nossaslojas #nossaslojas_left #img {
-    height: 44.2vh;
     margin-top: 3.6rem;
   }
 
   #nossaslojas #infocard {
-    width: 20rem;
-    height: 22.2rem;
+    width: 16rem;
+    height: 21rem;
     margin-top: 12rem;
     padding: 0.4rem 2rem;
   }
 
   #nossaslojas #infocard h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #nossaslojas #infocard #infolocation img {
@@ -597,11 +628,12 @@ p {
 
   #nossaslojas #infocard #infolocation p {
     margin-top: 0;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   #nossaslojas #infocard #infohours {
     padding-bottom: 1rem;
+    margin-top: 7rem;
   }
 
   #nossaslojas #infocard #infohours h5 {
@@ -624,10 +656,9 @@ p {
   }
 
   #nossaslojas #infocard button {
-    width: 50%;
+    width: 60%;
     height: 2rem;
     margin-top: 1.2rem;
-    padding-top: 0.26rem;
     font-size: 0.7rem;
   }
 
@@ -641,10 +672,6 @@ p {
     height: 118vh;
   }
 
-  #nossaslojas #nossaslojas_left #img {
-    height: 58.4vh;
-  }
-
   #nossaslojas #infocard #infolocation {
     margin-top: 0.6rem;
   }
@@ -654,14 +681,15 @@ p {
   }
 
   #nossaslojas #infocard button {
-    padding-top: 0.1rem;
+    margin-top: 2rem;
   }
 }
 
 @media (max-width: 1024px) and (max-height: 768px) {
   #nossaslojas {
-    height: 84vh;
+    height: 78vh;
     padding: 4rem 10rem;
+    padding-right: 0;
   }
 
   #nossaslojas #nossaslojas_left .select {
@@ -671,24 +699,31 @@ p {
     font-size: 0.7rem;
   }
 
+  #nossaslojas #nossaslojas_left #img {
+    min-width: 80%;
+    width: 80%;
+  }
+
   #nossaslojas #stores_select::after {
     top: 1.6rem;
     left: 14rem;
   }
 
-  #nossaslojas #nossaslojas_left #img {
-    height: 38vh;
-  }
-
   #nossaslojas #infocard {
-    width: 16rem;
-    height: 18.3rem;
+    width: 14rem;
+    height: 16.6rem;
     margin-top: 11.6rem;
+    margin-left: -6.2rem;
     padding: 0rem 1.2rem;
+    z-index: 10;
   }
 
   #nossaslojas #infocard h2 {
     font-size: 1rem;
+  }
+
+  #nossaslojas #infocard #infolocation {
+    margin-top: 0;
   }
 
   #nossaslojas #infocard #infolocation img {
@@ -700,6 +735,10 @@ p {
     font-size: 0.6rem;
   }
 
+  #nossaslojas #infocard #infohours h5 {
+    margin-top: -2rem;
+  }
+
   #nossaslojas #infocard #infohours {
     margin-top: 6.8rem;
   }
@@ -709,7 +748,8 @@ p {
   }
 
   #nossaslojas #infocard button {
-    margin-top: 0.8rem;
+    height: 1.8rem;
+    margin-top: 1.4rem;
     padding-top: 0.16rem;
     font-size: 0.6rem;
   }
@@ -723,6 +763,10 @@ p {
 @media (max-width: 1024px) and (max-height: 610px) {
   #nossaslojas {
     height: 104vh;
+  }
+
+  #nossaslojas #infocard {
+    margin-top: 12.4rem;
   }
 
   #nossaslojas #nossaslojas_left #img {
@@ -757,7 +801,6 @@ p {
 
   #nossaslojas #stores_select::after {
     top: 2.2rem;
-    z-index: 1;
   }
 
   #nossaslojas #nossaslojas_left #img {
@@ -766,10 +809,8 @@ p {
   }
 
   #nossaslojas #nossaslojas_left #img img {
-    align-self: center;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: fill;
+    max-width: 100%;
+    height: auto;
   }
 
   #nossaslojas #infocard {
