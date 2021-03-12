@@ -5,6 +5,8 @@ import style from "./style";
 import cardwoman from "../../assets/img/cartaonovo_girl.jpg";
 import { cookieInit } from "../../components/cookies";
 
+const Nothing = (): null => null;
+
 const isWeb = (): boolean => {
   if (window.innerHeight < window.innerWidth) return true;
   return false;
@@ -34,6 +36,85 @@ const MobileCartao = (): h.JSX.Element => {
   );
 };
 
+const WebListItems = (): h.JSX.Element => {
+  return (
+    <ul>
+      <li>Aprovação imediata e crédito na hora;</li>
+      <li>Até 40 dias para pagar, sem juros, a depender da data de compra;</li>
+      <li>Até 2 cartões adicionais grátis;</li>
+      <li>Consulta de fatura on-line;</li>
+    </ul>
+  );
+};
+
+const MobileListItems = (): h.JSX.Element => {
+  return (
+    <ul>
+      <li>Aprovação imediata e crédito na hora;</li>
+      <li>Até 40 dias para pagar, sem juros, a depender da data de compra;</li>
+      <li>Até 2 cartões adicionais grátis;</li>
+      <li>Consulta de fatura on-line;</li>
+      <li>Mais crédito para o seu negócio;</li>
+      <li>
+        Acesso o resumo da fatura ou tire dúvidas pelo atendimento (11)
+        3003-3099 ou baixe o app Meu Cartão Tricard.
+      </li>
+    </ul>
+  );
+};
+
+const WebRequesites = (): h.JSX.Element => {
+  return (
+    <div>
+      <h1>É fácil adquirir o seu NOVOCARD!</h1>
+      <p>
+        Basta comparecer a uma de nossas lojas, com a seguinte documentação:
+      </p>
+      <ul>
+        <li>Documento de identidade com foto;</li>
+        <li>CPF;</li>
+        <li>Comprovante de residência e renda recentes;</li>
+      </ul>
+    </div>
+  );
+};
+
+const MobileRequesites = (): h.JSX.Element => {
+  return (
+    <div id={style.requisites}>
+      <h1>Veja como é fácil adquirir o seu NOVOCARD!</h1>
+      <p>Compareça a uma de nossas lojas, com a seguinte documentação:</p>
+    </div>
+  );
+};
+
+const RedBanner = (): h.JSX.Element => {
+  return (
+    <div id={style.redbanner}>
+      <div>
+        <div>
+          <h1>Pessoa Física</h1>
+          <ul>
+            <li>Documento de identidade com foto;</li>
+            <li>CPF;</li>
+            <li>Comprovante de residência e renda decentes.</li>
+          </ul>
+        </div>
+        <div>
+          <h1>Empresarial</h1>
+          <ul>
+            <li>Empresarial</li>
+            <li>CNPJ;</li>
+            <li>E-mail;</li>
+            <li>Telefone para contato;</li>
+            <li>Identidade do proprietário.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const CartaoNovo: FunctionalComponent = () => {
   cookieInit();
 
@@ -42,34 +123,17 @@ const CartaoNovo: FunctionalComponent = () => {
       {isWeb() ? <WebCartao /> : <MobileCartao />}
       <div id={style.cartaonovo_inner} class={style.row}>
         <div class={style.col} id={style.fst_paragraph}>
-          <div>
-            <h1>Conheça o NOVOCARD</h1>
-            <ul>
-              <li>Aprovação imediata e crédito na hora;</li>
-              <li>
-                Até 40 dias para pagar, sem juros, a depender da data de compra;
-              </li>
-              <li>Até 2 cartões adicionais grátis;</li>
-              <li>Consulta de fatura on-line;</li>
-            </ul>
-          </div>
-          <div>
-            <h1>É fácil adquirir o seu NOVOCARD!</h1>
-            <p>
-              Basta comparecer a uma de nossas lojas, com a seguinte
-              documentação:
-            </p>
-            <ul>
-              <li>Documento de identidade com foto;</li>
-              <li>CPF;</li>
-              <li>Comprovante de residência e renda recentes;</li>
-            </ul>
-          </div>
+          <h1>Conheça o NOVOCARD</h1>
+          {isWeb() ? <WebListItems /> : <MobileListItems />}
+          {isWeb() ? <WebRequesites /> : <MobileRequesites />}
         </div>
-        <div id={style.cartao_img}>
-          <img src={cardwoman} alt="" />
+        <div id={style.mask_cartao_img}>
+          <div id={style.cartao_img}>
+            <img src={cardwoman} alt="" />
+          </div>
         </div>
       </div>
+      {isWeb() ? <Nothing /> : <RedBanner />}
     </div>
   );
 };
