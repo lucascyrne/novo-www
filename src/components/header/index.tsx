@@ -1,10 +1,10 @@
-import { FunctionalComponent, h, render } from "preact";
+import { FunctionalComponent, h } from "preact";
 import { Link } from "preact-router/match";
 import style from "./style.css";
 
 import logo from "../../assets/logo/logo.svg";
 import location from "../../assets/icons/location.png";
-import { useEffect, useRef, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 
 const Nothing = (): null => null;
 
@@ -40,48 +40,53 @@ const Menu: FunctionalComponent = () => {
 const BurgerMenu: FunctionalComponent = () => {
   const [open, isOpen] = useState(false);
 
-  const handleClick = (): void => {
-    if (open) isOpen(!open);
-    else isOpen(true);
+  const toggleShow = (): void => {
+    isOpen(!open);
   };
 
-  function useOutsideAlerter(paneRef): void {
-    useEffect(() => {
-      const handleClickOutside = (e: MouseEvent): void => {
-        if (paneRef?.current && !paneRef?.current?.contains(e.target as Node)) {
-          return isOpen(false);
-        }
-      };
-
-      document.addEventListener("mousedown", handleClickOutside);
-      return (): void => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    });
-  }
+  const hide = (): void => {
+    isOpen(false);
+  };
 
   const Links: FunctionalComponent = () => {
-    const paneRef = useRef<HTMLDivElement>(null);
-    useOutsideAlerter(paneRef);
-
     return (
-      <div id={style.black_layer}>
-        <div id={style.burger_menu_pane} class={style.slide_left} ref={paneRef}>
+      <div id={style.black_layer} onClick={toggleShow}>
+        <div id={style.burger_menu_pane} class={style.slide_left}>
           <div id={style.burger_menu_links}>
             <nav>
-              <Link activeClassName={style.active} href="/quem-somos">
+              <Link
+                activeClassName={style.active}
+                onClick={hide}
+                href="/quem-somos"
+              >
                 Quem somos
               </Link>
-              <Link activeClassName={style.active} href="/nossas-lojas">
+              <Link
+                activeClassName={style.active}
+                onClick={hide}
+                href="/nossas-lojas"
+              >
                 Nossas lojas
               </Link>
-              <Link activeClassName={style.active} href="/ofertas">
+              <Link
+                activeClassName={style.active}
+                onClick={hide}
+                href="/ofertas"
+              >
                 Ofertas
               </Link>
-              <Link activeClassName={style.active} href="/cartao-novo">
+              <Link
+                activeClassName={style.active}
+                onClick={hide}
+                href="/cartao-novo"
+              >
                 Cartão Novo
               </Link>
-              <Link activeClassName={style.active} href="/contato">
+              <Link
+                activeClassName={style.active}
+                onClick={hide}
+                href="/contato"
+              >
                 Contato
               </Link>
             </nav>
@@ -93,7 +98,7 @@ const BurgerMenu: FunctionalComponent = () => {
 
   return (
     <div id={style.burger_menu}>
-      <div id={style.burger_menu_span} onClick={handleClick}>
+      <div id={style.burger_menu_span} onClick={toggleShow} onBlur={hide}>
         <span />
         <span />
         <span />
