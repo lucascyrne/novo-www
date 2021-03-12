@@ -45,6 +45,7 @@
   min-width: 100%;
   height: 30vh;
   background-image: url("../../assets/img/ofertasbannertop.jpg");
+  background-position: center center;
   background-repeat: repeat;
   background-size: fill;
 }
@@ -74,11 +75,13 @@
 }
 
 #ofertas .select {
-  width: 26rem;
-  height: 3rem;
+  position: relative;
+  width: 34rem;
+  height: 4rem;
   padding-left: 2rem;
+  color: #9a9a9a;
   font-family: Montserrat, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   border: 1px solid #d6d6d6;
   border-radius: 10px;
@@ -94,13 +97,13 @@
 
 #ofertas #stores_select::after {
   position: absolute;
-  top: 0.4rem;
-  left: 22rem;
+  top: 0.8rem;
+  left: 28rem;
   content: ">";
   width: auto;
   height: auto;
   color: var(--red);
-  font-size: 1.8em;
+  font-size: 2em;
   font-family: "Nanum Gothic", monospace;
   pointer-events: none;
   -webkit-transform: rotate(90deg);
@@ -115,7 +118,7 @@
   justify-content: space-between;
   width: 45rem;
   height: 36rem;
-  margin-top: 6rem;
+  margin-top: 7rem;
   margin-left: 4rem;
 }
 
@@ -127,8 +130,8 @@
 
 #ofertas #tabloids img {
   display: flex;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: 90%;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -164,20 +167,26 @@
   }
 
   #ofertas #ofertas_inner #ofertas_left .select {
-    width: 32rem;
-    height: 4rem;
-    font-size: 1.4rem;
+    width: 40rem;
+    height: 5.4rem;
+    font-size: 2rem;
+    color: #9a9a9a;
   }
 
   #ofertas #stores_select::after {
-    top: 0.6rem;
-    left: 27rem;
-    font-size: 2.6rem;
+    top: 1rem;
+    left: 34rem;
+    font-size: 3rem;
   }
 
   #ofertas #ofertas_inner #tabloids {
     width: 70rem;
+    height: 50rem;
     margin-top: 7.8rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids img {
+    height: 100%;
   }
 
   #ofertas #ofertas_inner #tabloids h6 {
@@ -189,6 +198,8 @@
   }
 
   #ofertas #ofertas_inner #btn .button {
+    position: relative;
+    top: -12rem;
     width: 40rem;
     height: 5rem;
     padding: 1.5rem 2rem;
@@ -222,32 +233,27 @@
   }
 
   #ofertas #ofertas_inner #ofertas_left .select {
-    width: 20rem;
-    height: 3rem;
+    width: 30rem;
+    height: 4rem;
     margin-top: 0rem;
     padding-top: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   #ofertas #stores_select::after {
-    font-size: 1.6rem;
-    top: 0.7rem;
-    left: 17rem;
+    font-size: 2rem;
+    top: 1rem;
+    left: 25rem;
   }
 
   #ofertas #ofertas_inner #tabloids {
-    width: 38rem;
+    width: 49.2rem;
+    height: 38rem;
     margin-top: 7.4rem;
   }
 
   #ofertas #ofertas_inner #btn {
-    margin-top: -6rem;
-  }
-
-  #ofertas #ofertas_inner #btn .button img {
-    margin-top: 0.32rem;
-    width: 1.8rem;
-    height: 1.8rem;
+    margin-top: -2rem;
   }
 
   #ofertas #ofertas_inner #btn .button {
@@ -256,6 +262,12 @@
     padding-top: 0.92rem;
     font-size: 1rem;
     border-radius: 10px;
+  }
+
+  #ofertas #ofertas_inner #btn .button img {
+    margin-top: 0.32rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 
@@ -268,8 +280,23 @@
     font-size: 2.4rem;
   }
 
+  #ofertas #ofertas_inner #stores_select .select {
+    width: 24rem;
+    font-size: 1.2rem;
+  }
+
+  #ofertas #ofertas_inner #stores_select::after {
+    left: 20rem;
+  }
+
   #ofertas #ofertas_inner #tabloids {
     margin-top: 6.4rem;
+    width: 36rem;
+    height: 30rem;
+  }
+
+  #ofertas #ofertas_inner #btn {
+    margin-top: 0;
   }
 }
 
@@ -286,6 +313,15 @@
 
   #ofertas #ofertas_inner #ofertas_left h1 {
     font-size: 2rem;
+  }
+
+  #ofertas #ofertas_inner #tabloids {
+    margin-top: 5.2rem;
+    margin-left: 5rem;
+  }
+
+  #ofertas #ofertas_inner #btn {
+    margin-left: 1rem;
   }
 }
 
@@ -311,6 +347,14 @@
     font-size: 2rem;
   }
 
+  #ofertas #ofertas_inner #stores_select .select {
+    width: 21rem;
+  }
+
+  #ofertas #ofertas_inner #stores_select::after {
+    left: 18rem;
+  }
+
   #ofertas #ofertas_inner #tabloids {
     margin-top: 5.2rem;
   }
@@ -333,17 +377,17 @@
   }
 
   #ofertas #ofertas_inner #ofertas_left .select {
-    width: 14rem;
-    height: 2rem;
+    width: 18rem;
+    height: 2.4rem;
     padding-left: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-radius: 8px;
   }
 
-  #ofertas #stores_select::after {
+  #ofertas #ofertas_inner #stores_select::after {
     top: 0.5rem;
-    left: 12rem;
-    font-size: 1rem;
+    left: 15rem;
+    font-size: 1.4rem;
   }
 
   #ofertas #ofertas_inner #tabloids {
@@ -351,12 +395,16 @@
     margin-top: 3.7rem;
   }
 
+  #ofertas #ofertas_inner #tabloids img {
+    height: 64%;
+  }
+
   #ofertas #ofertas_inner #tabloids h6 {
     font-size: 0.7rem;
   }
 
   #ofertas #ofertas_inner #btn {
-    margin-top: -16rem;
+    margin-top: -10rem;
   }
 
   #ofertas #ofertas_inner #btn .button {
@@ -366,6 +414,7 @@
     padding-top: 0.54rem;
     padding-right: 1rem;
     font-size: 0.7rem;
+    border-radius: 6px;
   }
 
   #ofertas #ofertas_inner #btn .button img {
@@ -415,10 +464,6 @@
     font-weight: 500;
   }
 
-  #ofertas #stores_select::after {
-    z-index: 1;
-  }
-
   #ofertas #ofertas_inner #tabloids div {
     width: 100%;
     height: auto;
@@ -433,7 +478,7 @@
   }
 
   #ofertas #ofertas_inner #tabloids img {
-    min-width: 100%;
+    max-width: 100%;
   }
 
   #ofertas #ofertas_inner #tabloids h6 {
@@ -468,7 +513,7 @@
     font-size: 0.8rem;
   }
 
-  #ofertas #stores_select::after {
+  #ofertas #ofertas_inner #stores_select::after {
     top: 1.2rem;
     left: 14rem;
     font-size: 1.4rem;

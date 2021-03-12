@@ -3,7 +3,7 @@ import { FunctionalComponent, h } from "preact";
 import style from "./style";
 
 import whitewpp from "../../assets/icons/white_whatsapp.png";
-import teste1 from "../../assets/img/teste2.jpg";
+import tabloidtest from "../../assets/img/tabloidtest.jpg";
 import { cookieInit } from "../../components/cookies";
 
 const Ofertas: FunctionalComponent = () => {
@@ -28,11 +28,11 @@ const Ofertas: FunctionalComponent = () => {
         <div class={style.col}>
           <div id={style.tabloids}>
             <div>
-              <img src={teste1} alt="" />
+              <img src={tabloidtest} alt="" />
               <h6>OFERTAS DA SEMANA - DE 21 A 24/12</h6>
             </div>
             <div>
-              <img src={teste1} alt="" />
+              <img src={tabloidtest} alt="" />
               <h6>OFERTAS DE NATAL | DE 14 A 18/12</h6>
             </div>
           </div>
