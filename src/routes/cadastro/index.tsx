@@ -1,23 +1,103 @@
 import { FunctionalComponent, h } from "preact";
+import { useState } from "preact/hooks";
 import { cookieInit } from "../../components/cookies";
 
 import style from "./style";
 
 const Cadastro: FunctionalComponent = () => {
+  const [state, setState] = useState({
+    comprasPessoais: false,
+    atacado: false,
+    politics: false,
+    subscribe: false,
+  })
+  console.log(state);
+
+  const onComprasChanged = (e): void => {
+    const uncheck = !state.atacado
+    const check = !state.comprasPessoais
+
+    if (state.atacado) {
+      setState(prevState => {
+        return {
+          ...prevState,
+          atacado: uncheck
+        }
+      })
+    }
+    setState(prevState => {
+      return {
+        ...prevState,
+        comprasPessoais: check
+      }
+    })
+  }
+
+  const onAtacadoChanged = (e): void => {
+    const uncheck = !state.comprasPessoais
+    const check = !state.atacado
+
+    if (state.comprasPessoais) {
+      setState(prevState => {
+        return {
+          ...prevState,
+          comprasPessoais: uncheck
+        }
+      })
+    }
+    setState(prevState => {
+      return {
+        ...prevState,
+        atacado: check
+      }
+    })
+  }
+
+  const onPoliticsChanged = (e): void => {
+    const check = !state.politics
+    setState({
+      ...state,
+      politics: check
+    });
+  }
+
+  const onSubscribeChanged = (e): void => {
+    const check = !state.subscribe
+    setState({
+      ...state,
+      subscribe: check
+    })
+  }
+
   cookieInit();
 
   return (
     <div id={style.cadastro}>
       <h1>Cadastre-se</h1>
       <div id={style.radio}>
-        <div>
-          <input type="radio" name="radiobutton" />
-          Compras pessoais
-        </div>
-        <div>
-          <input type="radio" name="radiobutton" />
-          Atacado
-        </div>
+        <label htmlFor="comprasPessoais">
+          <div>
+            <input
+              type="checkbox"
+              id="comprasPessoais"
+              name="comprasPessoais"
+              checked={state.comprasPessoais}
+              onChange={onComprasChanged} />
+            Compras pessoais
+          </div>
+        </label>
+        <label htmlFor="atacado">
+          <div>
+            <input
+              type="checkbox"
+              id="atacado"
+              name="atacado"
+              checked={state.atacado}
+              onChange={onAtacadoChanged}
+            />
+            Atacado
+          </div>
+        </label>
       </div>
       <form action="" method="post">
         <div class={style.row}>
@@ -48,16 +128,32 @@ const Cadastro: FunctionalComponent = () => {
         </div>
       </form>
       <div id={style.politics}>
-        <div>
-          <input type="radio" name="politics" />
-          Li e aceito a Política de Privacidade
-        </div>
-        <div>
-          <input type="radio" name="subscribe" />
-          Desejo receber ofertas por e-mail do Novo Atacarejo
-        </div>
+        <label htmlFor="politics">
+          <div>
+            <input
+              type="checkbox"
+              id="politics"
+              name="politics"
+              checked={state.politics}
+              onChange={onPoliticsChanged}
+            />
+            Li e aceito a Política de Privacidade
+          </div>
+        </label>
+        <label htmlFor="subscribe">
+          <div>
+            <input
+              type="checkbox"
+              id="subscribe"
+              name="subscribe"
+              checked={state.subscribe}
+              onChange={onSubscribeChanged}
+            />
+            Desejo receber ofertas por e-mail do Novo Atacarejo
+          </div>
+        </label>
       </div>
-      <a href="" class={style.button}>
+      <a href="/" class={style.button}>
         Enviar
       </a>
     </div>
