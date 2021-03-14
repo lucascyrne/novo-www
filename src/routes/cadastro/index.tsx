@@ -78,6 +78,7 @@ const Cadastro: FunctionalComponent = () => {
         <label htmlFor="comprasPessoais">
           <div>
             <input
+              required
               type="checkbox"
               id="comprasPessoais"
               name="comprasPessoais"
@@ -89,6 +90,7 @@ const Cadastro: FunctionalComponent = () => {
         <label htmlFor="atacado">
           <div>
             <input
+              required
               type="checkbox"
               id="atacado"
               name="atacado"
@@ -131,6 +133,7 @@ const Cadastro: FunctionalComponent = () => {
         <label htmlFor="politics">
           <div>
             <input
+              required
               type="checkbox"
               id="politics"
               name="politics"
@@ -143,6 +146,7 @@ const Cadastro: FunctionalComponent = () => {
         <label htmlFor="subscribe">
           <div>
             <input
+              required
               type="checkbox"
               id="subscribe"
               name="subscribe"
