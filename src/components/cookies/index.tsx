@@ -11,7 +11,7 @@ type State = {
 const Nothing = (): null => null;
 
 const getCookie = (): string[] => {
-  console.log("getcookies:", document.cookie);
+  // console.log("getcookies:", document.cookie);
   return (document.cookie || "").split(";");
 };
 
