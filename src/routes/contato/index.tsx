@@ -6,9 +6,8 @@ import help from "../../assets/icons/help.png";
 import { cookieInit } from "../../components/cookies";
 
 const Contato: FunctionalComponent = () => {
-
   const handleClick = (): void => {
-    alert("Envie um arquivo no formato PDF ou DOC com tamanho de até 5mb.")
+    alert("Envie um arquivo no formato PDF ou DOC com tamanho de até 5mb.");
   };
 
   cookieInit();
@@ -58,6 +57,7 @@ const Contato: FunctionalComponent = () => {
         <h1>Trabalhe conosco</h1>
         <p>
           O Novo Atacarejo vem promovendo maior qualidade de vida para a família
+          <br />
           <br />
           pernambucana e gerando mais de mil empregos diretos e três mil
           indiretos!
