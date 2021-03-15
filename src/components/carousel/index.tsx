@@ -8,7 +8,68 @@ import location from "../../assets/icons/location_red.jpg";
 import wppred from "../../assets/icons/whatsapp_red.png";
 import wppblue from "../../assets/icons/whatsapp_blue.jpg";
 
-const NavLinks = (): h.JSX.Element => {
+const HomeNavLinks = (): h.JSX.Element => {
+  const [fstBar, isFstBar] = useState(false);
+  const [sndBar, isSndBar] = useState(false);
+  const [trdBar, isTrdBar] = useState(false);
+  const fstLink = useRef(null),
+    sndLink = useRef(null),
+    trdLink = useRef(null);
+
+  const handleClick = (e, index): void => {
+    switch (index) {
+      case 1:
+        if (fstBar) break;
+        isFstBar(true);
+        fstLink.current.style.backgroundColor = "var(--red)";
+
+        if (sndBar) {
+          sndLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+          isSndBar(false);
+        } else if (trdBar) {
+          isTrdBar(false);
+          trdLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+        }
+        break;
+      case 2:
+        if (sndBar) break;
+        isSndBar(true);
+        sndLink.current.style.backgroundColor = "var(--red)";
+
+        if (fstBar) {
+          fstLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+          isFstBar(false);
+        } else if (trdBar) {
+          trdLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+          isTrdBar(false);
+        }
+        break;
+      default:
+        if (trdBar) break;
+        isTrdBar(true);
+        trdLink.current.style.backgroundColor = "var(--red)";
+
+        if (sndBar) {
+          sndLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+          isSndBar(false);
+        } else if (fstBar) {
+          fstLink.current.style.backgroundColor = "rgba(204, 204, 204, 0.6)";
+          isFstBar(false);
+        }
+        break;
+    }
+  };
+
+  return (
+    <nav class={style.selected} id={style.home_selected}>
+      <a href="#card1" onClick={(e): void => handleClick(e, 1)} ref={fstLink} />
+      <a href="#card2" onClick={(e): void => handleClick(e, 2)} ref={sndLink} />
+      <a href="#card3" onClick={(e): void => handleClick(e, 3)} ref={trdLink} />
+    </nav>
+  );
+};
+
+const AtendimentoNavLinks = (): h.JSX.Element => {
   const [fstBar, isFstBar] = useState(false);
   const [sndBar, isSndBar] = useState(false);
   const [trdBar, isTrdBar] = useState(false);
@@ -72,8 +133,8 @@ const NavLinks = (): h.JSX.Element => {
 export const HomeCarousel: FunctionalComponent = () => {
   return (
     <div class={style.superContainer}>
-      <div class={style.container}>
-        <div class={style.items}>
+      <div class={style.container} id={style.home_container}>
+        <div class={style.items} id={style.home_items}>
           <div class={style.card} id="card1">
             <img src={teste1} alt="" />
             <div>
@@ -103,7 +164,7 @@ export const HomeCarousel: FunctionalComponent = () => {
           </div>
         </div>
       </div>
-      <NavLinks />
+      <HomeNavLinks />
     </div>
   );
 };
@@ -111,7 +172,7 @@ export const HomeCarousel: FunctionalComponent = () => {
 export const AtendimentoCarousel: FunctionalComponent = () => {
   return (
     <div class={style.superContainer}>
-      <div class={style.container}>
+      <div class={style.container} id={style.atendimento_container}>
         <div class={style.atendimento_items}>
           <div class={style.atendimento_card} id="card1">
             <h2>Arcoverde - PE</h2>
@@ -196,7 +257,7 @@ export const AtendimentoCarousel: FunctionalComponent = () => {
           </div>
         </div>
       </div>
-      <NavLinks />
+      <AtendimentoNavLinks />
     </div>
   );
 };
