@@ -757,7 +757,7 @@
   }
 }
 
-@media (max-width: 400px) and (max-height: 568px) {
+@media (max-width: 400px) and (max-height: 670px) {
   .button {
     padding-top: 0.5rem;
     width: 8rem;
@@ -773,8 +773,9 @@
     margin-top: 1rem;
   }
 
-  #contato form .form_input :is(input, textarea) {
-    width: 90%;
+  #contato form .form_input :is(input, textarea),
+  #trabalheconosco form div div.form_input input {
+    width: 110%;
   }
 
   #contato .button {
@@ -790,16 +791,12 @@
     margin-top: -1rem;
   }
 
-  #trabalheconosco form div div.form_input input {
-    width: 89%;
-  }
-
   #trabalheconosco form label#input_file {
-    width: 40%;
+    width: 50%;
   }
 
   #trabalheconosco form #help {
-    margin: -2.6rem 8rem;
+    margin: -2.6rem 11rem;
     padding: 0;
   }
 
@@ -818,11 +815,19 @@
     margin-top: 1.4rem;
     margin-bottom: 2rem;
   }
+}
 
-  #trabalheconosco #help_msg {
-    top: 1rem;
-    left: 9rem;
-    padding: 0.6rem 0.4rem;
-    max-width: 8rem;
+@media (max-width: 400px) and (max-height: 568px) {
+  #contato form .form_input :is(input, textarea),
+  #trabalheconosco form div div.form_input input {
+    width: 90%;
+  }
+
+  #trabalheconosco form label#input_file {
+    width: 40.8%;
+  }
+
+  #trabalheconosco form #help {
+    margin: -2.6rem 8rem;
   }
 }
