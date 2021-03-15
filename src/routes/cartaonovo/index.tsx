@@ -50,14 +50,28 @@ const WebListItems = (): h.JSX.Element => {
 const MobileListItems = (): h.JSX.Element => {
   return (
     <ul>
-      <li>Aprovação imediata e crédito na hora;</li>
-      <li>Até 40 dias para pagar, sem juros, a depender da data de compra;</li>
-      <li>Até 2 cartões adicionais grátis;</li>
-      <li>Consulta de fatura on-line;</li>
-      <li>Mais crédito para o seu negócio;</li>
       <li>
-        Acesso o resumo da fatura ou tire dúvidas pelo atendimento (11)
-        3003-3099 ou baixe o app Meu Cartão Tricard.
+        <span>Aprovação imediata e crédito na hora;</span>
+      </li>
+      <li>
+        <span>
+          Até 40 dias para pagar, sem juros, a depender da data de compra;
+        </span>
+      </li>
+      <li>
+        <span>Até 2 cartões adicionais grátis;</span>
+      </li>
+      <li>
+        <span>Consulta de fatura on-line;</span>
+      </li>
+      <li>
+        <span>Mais crédito para o seu negócio;</span>
+      </li>
+      <li>
+        <span>
+          Acesso o resumo da fatura ou tire dúvidas pelo atendimento (11)
+          3003-3099 ou baixe o app Meu Cartão Tricard.
+        </span>
       </li>
     </ul>
   );
