@@ -713,6 +713,19 @@
   }
 }
 
+@media (max-width: 420px) and (max-height: 870px) {
+  #footer #newsletter h4 {
+    margin: 0;
+    margin-bottom: .6rem;
+    width: 100%;
+  }
+
+  #footer #newsletter .button {
+    padding-top: .76rem;
+    font-size: .8rem;
+  }
+}
+
 @media (max-width: 420px) and (max-height: 840px) {
   #footer #newsletter .button {
     padding-top: 0.78rem;
