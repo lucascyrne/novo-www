@@ -820,7 +820,7 @@
 
 @media (max-width: 420px) and (max-height: 870px) {
   #home #banner .info div {
-    padding: 1rem 2rem;
+    padding: 1rem 2.4rem;
     width: 100%;
   }
 
@@ -831,7 +831,7 @@
 
   #home #banner .info p {
     width: 66%;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 
@@ -842,7 +842,7 @@
   #home #ofertas h1,
   #home #fique_por_dentro h1 {
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 
@@ -850,8 +850,12 @@
     margin-bottom: 1rem;
   }
 
+  #home #cartao {
+    margin-top: -2rem;
+  }
+
   #home #cartao h1 {
-    width: 11rem;
+    width: 10rem;
     font-size: 1.2rem;
   }
 
@@ -864,7 +868,7 @@
     padding-top: 0.66rem;
     width: 8rem;
     height: 2.4rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
