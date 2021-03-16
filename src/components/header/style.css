@@ -503,6 +503,7 @@
     width: 66%;
     height: 62vh;
     background-color: var(--blue);
+    border-radius: 0 0 0 20px;
     z-index: 999;
   }
 
@@ -616,6 +617,16 @@
 
   #header #location p {
     font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 420px) and (max-height: 870px) {
+  #header #burger_menu #black_layer {
+    top: 7.9vh;
+  }
+
+  #header #burger_menu #burger_menu_pane {
+    height: 40vh;
   }
 }
 
