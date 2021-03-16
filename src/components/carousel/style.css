@@ -262,6 +262,12 @@
   }
 }
 
+@media (max-width: 420px) and (max-height: 870px) {
+  #home_container {
+    height: 47vh;
+  }
+}
+
 @media (max-width: 420px) and (max-height: 830px) {
   #atendimento_container {
     margin-top: 1rem;
