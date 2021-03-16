@@ -252,3 +252,34 @@
     border-radius: 4px;
   }
 }
+
+@media (max-width: 420px) and (max-height: 870px) {
+  #cadastro {
+    padding: 1rem 2rem;
+  }
+
+  #cadastro h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  #cadastro #radio div {
+    font-size: 0.8rem;
+  }
+
+  #cadastro form label {
+    font-size: 0.8rem;
+  }
+
+  #cadastro form input {
+    width: 100%;
+  }
+
+  #cadastro .button {
+    padding-top: 0.8rem;
+    width: 8rem;
+    height: 2.4rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+}
