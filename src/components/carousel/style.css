@@ -221,6 +221,7 @@
 
   .atendimento_items {
     width: 260vw;
+    height: 94%;
   }
 
   #home_items {
@@ -262,7 +263,7 @@
   }
 }
 
-@media (max-width: 420px) and (max-height: 870px) {
+@media (max-width: 420px) and (max-height: 900px) {
   #home_container {
     height: 47vh;
   }
@@ -275,7 +276,7 @@
 
   .atendimento_items {
     width: 100vw;
-    height: 36vh;
+    height: 34vh;
   }
 
   .atendimento_card {
@@ -324,7 +325,7 @@
   }
 
   .atendimento_items {
-    height: 89%;
+    height: 98%;
   }
 
   .atendimento_card {
@@ -333,11 +334,17 @@
   }
 
   .atendimento_card .card_button {
-    margin-right: -0.6rem;
+    padding-top: 0.32rem;
+    margin-right: 0;
+    font-size: 0.6rem;
   }
 
   .selected {
     width: 98%;
+  }
+
+  #home_selected {
+    top: -2.2rem;
   }
 }
 
@@ -352,7 +359,13 @@
   }
 
   #atendimento_container {
+    height: 38vh;
     margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .atendimento_items {
+    height: 100%;
   }
 
   .atendimento_card {
@@ -365,7 +378,9 @@
   }
 
   .atendimento_card .card_button {
-    margin-right: -1.2rem;
+    padding-top: 0.32rem;
+    margin-right: 0rem;
+    font-size: 0.6rem;
   }
 
   #home_selected {
@@ -373,7 +388,7 @@
   }
 
   .selected {
-    top: -2.6rem;
+    top: -1rem;
   }
 }
 
@@ -383,6 +398,7 @@
   }
 
   #atendimento_container {
+    margin-bottom: -2rem;
     height: 40vh;
   }
 
@@ -402,9 +418,13 @@
 
   .atendimento_card .card_button {
     margin-right: 3rem;
-    padding-top: 0.12rem;
-    width: 7rem;
-    font-size: 0.7rem;
+    padding-top: 0.28rem;
+    width: 10rem;
+    font-size: 0.6rem;
+  }
+
+  #home_selected {
+    top: -2rem;
   }
 }
 
@@ -414,11 +434,9 @@
   }
 
   #atendimento_container {
-    height: 47vh;
-  }
-
-  #atendimento_container {
     margin-top: 1rem;
+    margin-bottom: -3rem !important;
+    height: 47vh;
   }
 
   #atendimento_container .location {
@@ -448,6 +466,7 @@
 
   .selected {
     width: 100%;
+    top: 0;
   }
 }
 
@@ -455,19 +474,24 @@
   .container {
     margin-top: 0 !important;
     margin-bottom: -3rem;
-    height: 50vh;
   }
 
   #home_container {
     height: 51vh;
   }
 
+  #atendimento_container {
+    margin-bottom: -1.6rem;
+    height: 52vh;
+  }
+
   .atendimento_items {
-    width: 86vw;
+    width: 90vw;
   }
 
   .atendimento_card {
     padding: 0.2rem 1rem;
+    width: 90%;
   }
 
   .atendimento_card h2 {
@@ -502,15 +526,15 @@
   }
 
   .atendimento_card .card_button {
-    padding-top: 0.68rem;
-    margin-right: 0.4rem;
-    width: 8rem;
+    padding-top: 0.28rem;
+    margin-right: 2rem;
+    width: 10rem;
     font-size: 0.6rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   }
 
   .selected {
-    top: -1.6rem;
+    top: -0.8rem;
   }
 
   #home_selected {
@@ -530,12 +554,12 @@
   #atendimento_container {
     margin-top: 1rem !important;
     margin-bottom: 1rem;
-    height: 48vh;
+    height: 54vh;
   }
 
   .atendimento_items {
     width: 90vw;
-    height: 92%;
+    height: 100%;
   }
 
   .atendimento_card .location {
@@ -555,6 +579,11 @@
     margin-top: -1rem !important;
   }
 
+  .atendimento_card :is(.personal, .shopping) :is(p) {
+    width: 40% !important;
+    font-size: 0.8rem !important;
+  }
+
   .atendimento_card .card_button {
     padding-top: 0.18rem;
     margin-right: 3.8rem;
@@ -563,7 +592,7 @@
   }
 
   .selected {
-    width: 100%;
+    width: 96%;
     top: -1.6rem;
   }
 
