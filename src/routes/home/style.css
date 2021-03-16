@@ -818,14 +818,64 @@
   }
 }
 
-@media (max-width: 420px) and (max-height: 840px) {
+@media (max-width: 420px) and (max-height: 870px) {
+  #home #banner .info div {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  #home #banner .info h1 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  #home #banner .info p {
+    width: 66%;
+    font-size: .8rem;
+    line-height: 1rem;
+  }
+
+  #home #banner .info .button {
+    margin-top: 1rem;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  #home #fique_por_dentro h1 {
+    margin-bottom: 1rem;
+  }
+
+  #home #cartao h1 {
+    width: 11rem;
+    font-size: 1.2rem;
+  }
+
+  #home #cartao div {
+    margin-left: -11rem;
+  }
+
+  #home #banner .info .button,
+  #home #cartao .button {
+    padding-top: 0.66rem;
+    width: 8rem;
+    height: 2.4rem;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 420px) and (max-height: 830px) {
   #home #banner .info h1 {
     font-size: 1.8rem;
     line-height: 2rem;
   }
 
   #home #banner .info div p {
-    width: 54%;
+    width: 58%;
     font-size: 0.7rem;
     line-height: 0.9rem;
   }
