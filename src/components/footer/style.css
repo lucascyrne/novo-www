@@ -705,6 +705,7 @@
   }
 
   #footer #copyright h4 {
+    font-size: 0.6rem;
     padding-left: 2.6rem;
   }
 
@@ -716,13 +717,13 @@
 @media (max-width: 420px) and (max-height: 870px) {
   #footer #newsletter h4 {
     margin: 0;
-    margin-bottom: .6rem;
+    margin-bottom: 0.6rem;
     width: 100%;
   }
 
   #footer #newsletter .button {
-    padding-top: .76rem;
-    font-size: .8rem;
+    padding-top: 0.76rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -733,10 +734,24 @@
   }
 }
 
+@media (max-width: 420px) and (max-height: 740px) {
+  #footer #newsletter .button {
+    padding-top: 0.56rem;
+  }
+}
+
 @media (max-width: 400px) and (max-height: 820px) {
   #footer #newsletter .button {
     padding-top: 0.84rem;
     font-size: 0.8rem;
+  }
+
+  #footer #copyright h4 {
+    font-size: 0.5rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 2rem;
   }
 }
 
@@ -744,11 +759,27 @@
   #footer #newsletter .button {
     padding-top: 0.56rem;
   }
+
+  #footer #copyright img {
+    margin-right: 2rem;
+  }
+
+  #footer #copyright h4 {
+    font-size: 0.4rem;
+  }
 }
 
 @media (max-width: 400px) and (max-height: 640px) {
   #footer #newsletter .button {
     padding-top: 0.56rem;
+  }
+
+  #footer #copyright img {
+    margin-right: 1.8rem;
+  }
+
+  #footer #copyright h4 {
+    font-size: 0.4rem;
   }
 }
 
@@ -756,5 +787,9 @@
   #footer #newsletter .button {
     padding-top: 0.54rem;
     font-size: 0.8rem;
+  }
+
+  #footer #copyright h4 {
+    font-size: 0.4rem;
   }
 }
