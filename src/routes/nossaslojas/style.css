@@ -882,6 +882,31 @@ p {
   }
 }
 
+@media (max-width: 420px) and (max-height: 870px) {
+  #nossaslojas h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  #nossaslojas #stores_select .select {
+    padding-left: 1rem;
+  }
+
+  #nossaslojas #stores_select::after {
+    top: 1.6rem;
+    left: 18.6rem;
+  }
+
+  #nossaslojas #infocard :is(#infolocation, #infohours, #contact) :is(p) {
+    font-size: 0.8rem;
+  }
+
+  #nossaslojas #infocard button {
+    margin-top: 1.6rem;
+    width: 50%;
+  }
+}
+
 @media (max-width: 420px) and (max-height: 830px) {
   #nossaslojas #stores_select::after {
     left: 18rem;
