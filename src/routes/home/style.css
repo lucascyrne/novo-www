@@ -628,10 +628,6 @@
     height: 40vh;
   }
 
-  #home #banner .img img {
-    width: 50%;
-  }
-
   #home #banner .info h1 {
     margin-top: 0;
     font-size: 1.8rem;
@@ -644,8 +640,7 @@
     line-height: 0.8rem;
   }
 
-  #home #banner .info .button,
-  #home #cartao .button {
+  #home #banner .info .button {
     width: 8rem;
     height: 2.4rem;
     font-size: 0.8rem;
@@ -677,6 +672,10 @@
   #home #cartao h1,
   #home #cartao a {
     margin-left: 9.2rem;
+  }
+
+  #home #cartao .button {
+    margin-top: 0;
   }
 }
 
@@ -760,7 +759,7 @@
 
   #home #banner .info div h1 {
     margin-bottom: 0.8rem;
-    width: 60%;
+    width: 100%;
     font-size: 1.8rem;
   }
 
@@ -873,35 +872,6 @@
 }
 
 @media (max-width: 420px) and (max-height: 830px) {
-  #home #banner .info h1 {
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
-
-  #home #banner .info div p {
-    width: 58%;
-    font-size: 0.7rem;
-    line-height: 0.9rem;
-  }
-
-  #home #banner .info .button,
-  #home #cartao .button {
-    width: 8rem;
-    height: 2.4rem;
-    font-size: 0.8rem;
-  }
-
-  #home #cartao {
-    height: 30vh;
-  }
-
-  #home #cartao h1 {
-    width: 12rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 420px) and (max-height: 740px) {
   :is(#home, #fique_por_dentro) :is(h1) {
     font-size: 1.6rem;
   }
@@ -911,21 +881,18 @@
     font-size: 1.2rem;
   }
 
+  #home #banner .info {
+    padding: 1rem 0.4rem;
+  }
+
+  #home #banner .info div h1 {
+    width: 100%;
+  }
+
   #home #banner .info div p {
-    width: 58%;
+    width: 64%;
     font-size: 0.6rem;
     line-height: 0.8rem;
-  }
-}
-
-@media (max-width: 400px) and (max-height: 820px) {
-  #home #banner .info h1 {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-  }
-
-  #home #banner .info div p {
-    font-size: 0.7rem;
   }
 
   #home #cartao {
@@ -944,28 +911,113 @@
     height: 2.6rem;
     font-size: 1rem;
   }
+
+  #home #cartao {
+    padding: 3rem 2rem;
+    margin-top: 0;
+    height: 34vh;
+    background-size: cover;
+    /* background-position: 60% 0%; */
+    background-position: center center;
+  }
+
+  #home #cartao div {
+    padding: 0;
+    margin: 0;
+  }
+
+  #home #cartao h1 {
+    width: 12rem;
+    font-size: 1.2rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao .button {
+    margin-left: 0;
+  }
+
+  #home #cartao .button {
+    margin-top: 0;
+    padding-top: 0.86rem;
+    width: 8rem;
+    font-size: 0.8rem;
+  }
 }
 
-@media (max-width: 400px) and (max-height: 740px) {
+@media (max-width: 420px) and (max-height: 740px) {
+  :is(#home, #fique_por_dentro) :is(h1) {
+    font-size: 1.6rem;
+  }
+
+  #home #cartao h1 {
+    width: 12rem;
+    font-size: 1.2rem;
+  }
+
+  #home #banner .info {
+    padding: 1rem 0.4rem;
+  }
+
+  #home #banner .info div h1 {
+    width: 100%;
+  }
+
+  #home #banner .info div p {
+    width: 64%;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  #home #cartao {
+    height: 30vh;
+  }
+
   #home #cartao h1 {
     width: 10rem;
     font-size: 1rem;
   }
 
+  #home #banner .info .button,
   #home #cartao .button {
+    padding-top: 0.76rem;
+    width: 10rem;
+    height: 2.6rem;
+    font-size: 1rem;
+  }
+
+  #home #cartao {
+    padding: 3rem 2rem;
+    margin-top: 0;
+    height: 34vh;
+    background-size: cover;
+    /* background-position: 60% 0%; */
+    background-position: center center;
+  }
+
+  #home #cartao div {
+    padding: 0;
+    margin: 0;
+  }
+
+  #home #cartao h1 {
+    width: 11rem;
+    font-size: 1.1rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao .button {
+    margin-left: 0;
+  }
+
+  #home #cartao .button {
+    margin-top: 0;
+    padding-top: 0.86rem;
     width: 8rem;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 400px) and (max-height: 670px) {
-  #home #banner .img {
-    height: 30vh;
-  }
-
-  #home #banner .info {
-    padding: 1rem 2rem;
-  }
-
+@media (max-width: 400px) and (max-height: 820px) {
   #home #banner .info div {
     padding: 0;
     margin: 0;
@@ -973,6 +1025,9 @@
   }
 
   #home #banner .info div h1 {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     margin-bottom: 0.8rem;
   }
 
@@ -985,17 +1040,29 @@
 
   #home #ofertas h1,
   #home #fique_por_dentro h1 {
-    margin-top: 2rem;
-    font-size: 1.4rem !important;
-    font-weight: 500;
+    font-size: 1.4rem;
   }
 
-  #home #fique_por_dentro h1 {
-    margin-bottom: 1rem;
+  #home #cartao {
+    height: 30vh;
+  }
+
+  #home #cartao h1 {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  #home #banner .info .button,
+  #home #cartao .button {
+    padding-top: 0.76rem;
+    width: 10rem;
+    height: 2.6rem;
+    font-size: 1rem;
   }
 
   #home #cartao {
     padding: 3rem 2rem;
+    margin-top: 0;
     height: 34vh;
     background-size: cover;
     /* background-position: 60% 0%; */
@@ -1019,11 +1086,167 @@
 
   #home #cartao .button {
     margin-top: 0;
+    padding-top: 0.86rem;
     width: 8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 740px) {
+  #home #banner .img {
+    height: 30vh;
+  }
+
+  #home #banner .img img {
+    width: 114%;
+  }
+
+  #home #banner .info {
+    padding: 1rem 2rem;
+  }
+
+  #home #banner .info div {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  #home #banner .info div h1 {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #home #banner .info div p {
+    margin: 0;
+    width: 60%;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    margin-top: 2rem;
+    font-size: 1.4rem !important;
+    font-weight: 500;
+  }
+
+  #home #fique_por_dentro h1 {
+    margin-bottom: 1rem;
+  }
+
+  #home #cartao {
+    padding: 3rem 2rem;
+    margin-top: 0;
+    height: 34vh;
+    background-size: cover;
+    /* background-position: 60% 0%; */
+    background-position: center center;
+  }
+
+  #home #cartao div {
+    padding: 0;
+    margin: 0;
+  }
+
+  #home #cartao h1 {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao .button {
+    margin-left: 0;
+  }
+
+  #home #cartao .button {
+    margin-top: 0;
+    padding-top: 0.86rem;
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 670px) {
+  #home #banner .img {
+    height: 30vh;
+  }
+
+  #home #banner .info {
+    padding: 1rem 2rem;
+  }
+
+  #home #banner .info div {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  #home #banner .info div h1 {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #home #banner .info div p {
+    margin: 0;
+    width: 60%;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+
+  #home #ofertas h1,
+  #home #fique_por_dentro h1 {
+    margin-top: 2rem;
+    font-size: 1.4rem !important;
+    font-weight: 500;
+  }
+
+  #home #fique_por_dentro h1 {
+    margin-bottom: 1rem;
+  }
+
+  #home #cartao {
+    padding: 3rem 2rem;
+    margin-top: 0;
+    height: 34vh;
+    background-size: cover;
+    /* background-position: 60% 0%; */
+    background-position: center center;
+  }
+
+  #home #cartao div {
+    padding: 0;
+    margin: 0;
+  }
+
+  #home #cartao h1 {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  #home #cartao h1,
+  #home #cartao .button {
+    margin-left: 0;
+  }
+
+  #home #cartao .button {
+    margin-top: 0;
+    padding-top: 0.86rem;
+    width: 8rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 400px) and (max-height: 568px) {
+  #home #banner .info div h1 {
+    width: 90%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
   #home #banner .info div p {
     width: 64%;
   }
@@ -1031,6 +1254,10 @@
   #home #cartao h1 {
     width: 9rem;
     font-size: 0.9rem;
+  }
+
+  #home #cartao {
+    margin-top: 0;
   }
 
   #home #banner .info .button,
