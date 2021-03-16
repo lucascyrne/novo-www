@@ -39,10 +39,20 @@ const MobileCartao = (): h.JSX.Element => {
 const WebListItems = (): h.JSX.Element => {
   return (
     <ul>
-      <li>Aprovação imediata e crédito na hora;</li>
-      <li>Até 40 dias para pagar, sem juros, a depender da data de compra;</li>
-      <li>Até 2 cartões adicionais grátis;</li>
-      <li>Consulta de fatura on-line;</li>
+      <li>
+        <span>Aprovação imediata e crédito na hora;</span>
+      </li>
+      <li>
+        <span>
+          Até 40 dias para pagar, sem juros, a depender da data de compra;
+        </span>
+      </li>
+      <li>
+        <span>Até 2 cartões adicionais grátis;</span>
+      </li>
+      <li>
+        <span>Consulta de fatura on-line;</span>
+      </li>
     </ul>
   );
 };
@@ -85,9 +95,15 @@ const WebRequesites = (): h.JSX.Element => {
         Basta comparecer a uma de nossas lojas, com a seguinte documentação:
       </p>
       <ul>
-        <li>Documento de identidade com foto;</li>
-        <li>CPF;</li>
-        <li>Comprovante de residência e renda recentes;</li>
+        <li>
+          <span>Documento de identidade com foto;</span>
+        </li>
+        <li>
+          <span>CPF;</span>
+        </li>
+        <li>
+          <span>Comprovante de residência e renda recentes;</span>
+        </li>
       </ul>
     </div>
   );
