@@ -405,6 +405,10 @@
     color: #9a9a9a;
     font-weight: 500;
   }
+
+  #mask_cartao_img {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) and (max-height: 860px) {
@@ -494,6 +498,75 @@
   #cartaonovo #redbanner li {
     margin-top: 0.2rem;
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 420px) and (max-height: 870px) {
+  #cartaonovo #cartao {
+    height: 30vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #cartaonovo #cartao h1 {
+    margin: 0;
+    margin-left: 2rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  #cartaonovo #cartaonovo_inner {
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+
+  #cartaonovo #cartaonovo_inner :is(ul li, p) {
+    font-size: 0.8rem;
+  }
+
+  #cartaonovo #cartaonovo_inner #fst_paragraph {
+    width: 80%;
+  }
+
+  #cartaonovo #cartaonovo_inner #fst_paragraph ul {
+    margin: 0;
+  }
+
+  #cartaonovo #cartaonovo_inner #fst_paragraph ul li span {
+    position: relative;
+    top: -0.3rem;
+  }
+
+  #cartaonovo #cartaonovo_inner h1,
+  #cartaonovo #cartaonovo_inner div h1 {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  #cartaonovo #cartaonovo_inner #fst_paragraph #requisites {
+    margin-top: 2rem;
+  }
+
+  #cartaonovo #redbanner {
+    padding: 1rem 2rem;
+    margin-top: -1rem;
+    background-color: var(--red);
+    color: #fff;
+  }
+
+  #cartaonovo #redbanner h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  #cartaonovo #redbanner ul {
+    margin: 0;
+  }
+
+  #cartaonovo #redbanner ul li {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
   }
 }
 
