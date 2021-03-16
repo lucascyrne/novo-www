@@ -38,6 +38,7 @@
   font-family: Montserrat, sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
+  color: #9a9a9a;
   border: 1px solid #d6d6d6;
   border-radius: 10px;
   background-color: #fff;
@@ -237,6 +238,7 @@ p {
 @media (min-width: 2200px) and (max-height: 1440px) {
   #nossaslojas {
     padding: 6rem 24.6rem;
+    height: 86vh;
   }
 
   #nossaslojas #nossaslojas_left h1 {
@@ -349,6 +351,7 @@ p {
 @media (max-width: 1440px) and (max-height: 900px) {
   #nossaslojas {
     padding: 6rem 13rem;
+    height: 94vh;
   }
 
   #nossaslojas #nossaslojas_left h1 {
@@ -416,6 +419,10 @@ p {
 }
 
 @media (max-width: 1440px) and (max-height: 790px) {
+  #nossaslojas {
+    height: 106vh;
+  }
+
   #nossaslojas #infocard {
     height: 24.4rem;
   }
@@ -466,6 +473,10 @@ p {
 }
 
 @media (max-width: 1366px) and (max-height: 768px) {
+  #nossaslojas {
+    height: 100vh;
+  }
+
   #nossaslojas #nossaslojas_left h1 {
     font-size: 2rem;
   }
@@ -506,7 +517,7 @@ p {
 
 @media (max-width: 1366px) and (max-height: 660px) {
   #nossaslojas {
-    height: 124vh;
+    height: 116vh;
   }
 
   #nossaslojas #infocard {
@@ -564,6 +575,10 @@ p {
 }
 
 @media (max-width: 1366px) and (max-height: 625px) {
+  #nossaslojas {
+    height: 122vh;
+  }
+
   #nossaslojas #infocard {
     height: 22rem;
   }
@@ -584,7 +599,7 @@ p {
 
 @media (max-width: 1280px) and (max-height: 800px) {
   #nossaslojas {
-    height: 86vh;
+    height: 92vh;
     padding: 4rem 12rem;
   }
 
@@ -687,9 +702,13 @@ p {
 
 @media (max-width: 1024px) and (max-height: 768px) {
   #nossaslojas {
-    height: 78vh;
+    height: 82vh;
     padding: 4rem 10rem;
     padding-right: 0;
+  }
+
+  #nossaslojas #nossaslojas_left {
+    width: 60%;
   }
 
   #nossaslojas #nossaslojas_left .select {
@@ -700,8 +719,7 @@ p {
   }
 
   #nossaslojas #nossaslojas_left #img {
-    min-width: 80%;
-    width: 80%;
+    max-width: 100%;
   }
 
   #nossaslojas #stores_select::after {
@@ -710,10 +728,10 @@ p {
   }
 
   #nossaslojas #infocard {
-    width: 14rem;
-    height: 16.6rem;
+    width: 12rem;
+    height: 17.6rem;
     margin-top: 11.6rem;
-    margin-left: -6.2rem;
+    margin-left: 1.4rem;
     padding: 0rem 1.2rem;
   }
 
@@ -753,8 +771,12 @@ p {
     font-size: 0.6rem;
   }
 
+  #map_container {
+    margin-left: 0.8rem;
+  }
+
   #map_container iframe {
-    width: 44rem;
+    width: 46rem;
     height: 18rem;
   }
 }
