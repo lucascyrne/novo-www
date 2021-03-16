@@ -79,7 +79,7 @@ const Cadastro: FunctionalComponent = () => {
           <div>
             <input
               required
-              type="checkbox"
+              type="radio"
               id="comprasPessoais"
               name="comprasPessoais"
               checked={state.comprasPessoais}
@@ -91,7 +91,7 @@ const Cadastro: FunctionalComponent = () => {
           <div>
             <input
               required
-              type="checkbox"
+              type="radio"
               id="atacado"
               name="atacado"
               checked={state.atacado}
