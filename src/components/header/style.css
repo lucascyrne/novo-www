@@ -407,7 +407,7 @@
   }
 
   #header #location div p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -600,6 +600,34 @@
   }
 }
 
+@media (max-width: 420px) and (max-height: 900px) {
+  #header #location {
+    margin-top: -4.5rem;
+    padding: 0;
+    padding-top: 0.4rem;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header #location img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  #header #location p {
+    font-size: 0.6rem;
+  }
+
+  #header #burger_menu #black_layer {
+    top: 7.9vh;
+  }
+
+  #header #burger_menu #burger_menu_pane {
+    height: 39.4vh;
+  }
+}
+
 @media (max-width: 420px) and (max-height: 870px) {
   #header #location {
     margin-top: -4.4rem;
@@ -666,6 +694,12 @@
 
   #header #burger_menu #burger_menu_pane {
     height: 48vh;
+  }
+}
+
+@media (max-width: 420px) and (max-height: 715px) {
+  #header #burger_menu #burger_menu_pane {
+    height: 49vh;
   }
 }
 
@@ -757,7 +791,7 @@
 
 @media (max-width: 400px) and (max-height: 640px) {
   #header #logo a img {
-    margin-top: -1rem;
+    margin-top: -0.68rem;
   }
 
   #header #burger_menu #black_layer {
