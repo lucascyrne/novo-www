@@ -1,6 +1,8 @@
 import { FunctionalComponent, h } from "preact";
 import { cookieInit } from "../../components/cookies";
 
+import sucess from "../../assets/icons/sucess.svg";
+
 import style from "./style";
 
 const Sucesso: FunctionalComponent = () => {
@@ -9,7 +11,7 @@ const Sucesso: FunctionalComponent = () => {
   return (
     <div id={style.sucesso}>
       <div id={style.message}>
-        <img src="" alt="" />
+        <img src={sucess} alt="" />
         <h1>Seu cadastro foi enviado com sucesso!</h1>
         <p>
           Para qualquer alteração de informação, entre em
