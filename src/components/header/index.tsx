@@ -11,7 +11,7 @@ import { useState } from "preact/hooks";
 const Nothing = (): null => null;
 
 const isWeb = (): boolean => {
-  if (typeof window !== undefined)
+  if (typeof window !== "undefined")
     if (window.innerHeight < window.innerWidth) return true;
   return false;
 };
