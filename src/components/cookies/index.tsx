@@ -11,8 +11,9 @@ type State = {
 const Nothing = (): null => null;
 
 const getCookie = (): string[] => {
-  // console.log("getcookies:", document.cookie);
-  return (document.cookie || "").split(";");
+  if (typeof document !== "undefined")
+    // console.log("getcookies:", document.cookie);
+    return (document.cookie || "").split(";");
 };
 
 const setCookie = (c: string): void => {
