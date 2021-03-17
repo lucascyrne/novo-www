@@ -47,7 +47,7 @@ const WebFooter: FunctionalComponent = () => {
               Receba nossas
               <br /> ofertas por email
             </h4>
-            <a class={style.button}>Quero Receber</a>
+            <a class={style.button}>Quero receber</a>
           </div>
           <div id={style.formas_pagamento}>
             <h4>Formas de pagamento</h4>

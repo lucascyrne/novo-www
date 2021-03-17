@@ -97,8 +97,8 @@
   width: 16rem;
   height: 4rem;
   margin-top: 0.6rem;
-  padding-top: 1.1rem;
-  font-size: 1.4rem;
+  padding-top: 1.24rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
   background-color: var(--red);
@@ -127,7 +127,7 @@
   align-content: center;
   width: 100vw;
   height: 5rem;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   margin-left: -16rem;
   padding-left: 18rem;
   color: #fff;
@@ -143,7 +143,7 @@
 }
 
 #footer #social #social_icons h4 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 #footer #social #social_icons a:first-of-type {
@@ -172,10 +172,14 @@
 
 #footer #copyright h4 {
   padding-left: 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #9a9a9a;
 }
 
 #footer #copyright img {
-  height: 3rem;
+  width: 4rem;
+  height: auto;
   margin-left: auto;
   margin-right: 1.2rem;
 }
