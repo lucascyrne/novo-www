@@ -17,6 +17,8 @@
 #cartao {
   display: flex;
   position: relative;
+  justify-content: left;
+  align-items: center;
   min-width: 100%;
   height: 52vh;
   padding: 8rem 18rem;
@@ -29,9 +31,9 @@
 
 #cartao h1 {
   width: 40rem;
-  font-size: 3.8rem;
+  font-size: 3.4rem;
+  line-height: 3.8rem;
   text-align: left;
-  margin-top: 0;
   margin-left: 1rem;
 }
 
@@ -105,10 +107,10 @@
 
   #cartaonovo #cartao h1 {
     width: 58rem !important;
-    margin-top: -1rem;
     margin-left: 7rem;
     align-self: center;
-    font-size: 5.4rem !important;
+    font-size: 5rem !important;
+    line-height: 5.6rem;
   }
 
   #cartaonovo #cartaonovo_inner #fst_paragraph {
@@ -153,7 +155,7 @@
     width: 56rem;
     height: auto;
     margin-left: 7rem;
-    font-size: 5.4rem;
+    font-size: 4.6rem;
   }
 
   #cartaonovo #cartaonovo_inner {
@@ -218,6 +220,7 @@
 
   #cartaonovo #cartao h1 {
     font-size: 2.4rem;
+    line-height: 2.8rem;
     margin-left: 13.8rem;
   }
 
@@ -350,6 +353,7 @@
   #cartaonovo #cartao h1 {
     margin-left: 9.8rem;
     font-size: 2rem;
+    line-height: 2.4rem;
   }
 
   #cartaonovo #cartaonovo_inner #fst_paragraph {
@@ -431,7 +435,6 @@
   }
 
   #cartaonovo #cartao h1 {
-    margin-top: 0.8rem;
     margin-left: 2rem;
     width: 14rem;
     font-size: 1.4rem;
@@ -748,7 +751,6 @@
   }
 
   #cartaonovo #cartao h1 {
-    margin-top: 0.8rem;
     margin-left: 2rem;
     width: 12rem;
     font-size: 1.2rem;
