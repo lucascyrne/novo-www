@@ -123,8 +123,9 @@ const Header: FunctionalComponent = () => {
         <div>
           <img src={location} alt="Location icon" />
           <p>
-            Você está proximo a nossa loja do{" "}
-            <span id={style.bold}>Recife - PE</span>
+            Você está proximo a nossa loja
+            <br />
+            do <span id={style.bold}>Recife - PE</span>
           </p>
         </div>
       </div>
