@@ -21,7 +21,8 @@
   justify-self: center;
   align-self: center;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-family: Montserrat, sans-serif;
 }
 
@@ -37,7 +38,7 @@
   align-self: flex-end;
   margin-left: auto;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   font-family: Montserrat, sans-serif;
   text-align: center;
@@ -89,7 +90,7 @@
   }
 
   #cookies_container div button {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -131,6 +132,7 @@
 
   #cookies_container div p {
     font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
 
