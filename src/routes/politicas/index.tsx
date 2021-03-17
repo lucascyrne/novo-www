@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from "preact";
 import { cookieInit } from "../../components/cookies";
 
-import style from "./style";
+import style from "./style.css";
 
 const Politicas: FunctionalComponent = () => {
   cookieInit();

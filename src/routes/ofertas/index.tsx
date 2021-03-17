@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 
-import style from "./style";
+import style from "./style.css";
 
 import whitewpp from "../../assets/icons/white_whatsapp.png";
 import tabloidtest from "../../assets/img/tabloidtest.jpg";

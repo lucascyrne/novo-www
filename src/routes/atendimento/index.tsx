@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 
-import style from "./style";
+import style from "./style.css";
 
 import location from "../../assets/icons/location_red.jpg";
 import wppred from "../../assets/icons/whatsapp_red.png";

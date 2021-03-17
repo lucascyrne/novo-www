@@ -1,9 +1,11 @@
 import { FunctionalComponent, h } from "preact";
 import { Link } from "preact-router/match";
-import style from "./style.css";
 
 import logo from "../../assets/logo/logo.svg";
 import location from "../../assets/icons/location.png";
+
+import style from "./style.css";
+
 import { useState } from "preact/hooks";
 
 const Nothing = (): null => null;

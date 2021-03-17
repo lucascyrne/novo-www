@@ -1,6 +1,5 @@
 import { FunctionalComponent, h } from "preact";
 import { Link } from "preact-router";
-import style from "./style";
 
 import logo from "../../assets/logo/logo.svg";
 import pulltechLogo from "../../assets/logo/Pulltech.png";
@@ -8,6 +7,8 @@ import payment from "../../assets/img/formapagamento.png";
 import fbIcon from "../../assets/icons/facebook_white.png";
 import ytIcon from "../../assets/icons/youtube_white.png";
 import igIcon from "../../assets/icons/instagram_white.png";
+
+import style from "./style.css";
 
 const isWeb = (): boolean => {
   if (window.innerHeight < window.innerWidth) return true;

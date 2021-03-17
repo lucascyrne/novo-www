@@ -3,7 +3,7 @@ import { cookieInit } from "../../components/cookies";
 
 import sucess from "../../assets/icons/sucess.svg";
 
-import style from "./style";
+import style from "./style.css";
 
 const Sucesso: FunctionalComponent = () => {
   cookieInit();

@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 
-import style from "./style";
+import style from "./style.css";
 
 import help from "../../assets/icons/help.png";
 import { cookieInit } from "../../components/cookies";

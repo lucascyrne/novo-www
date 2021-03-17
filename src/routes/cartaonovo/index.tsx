@@ -1,6 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 
-import style from "./style";
+import style from "./style.css";
 
 import cardwoman from "../../assets/img/cartaonovo_girl.png";
 import { cookieInit } from "../../components/cookies";

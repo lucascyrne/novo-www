@@ -5,7 +5,7 @@ import wppIcon from "../../../assets/icons/whatsapp_gray.png";
 import ttIcon from "../../../assets/icons/twitter_gray.png";
 import emailIcon from "../../../assets/icons/email_gray.png";
 
-import style from "../style";
+import style from "../style.css";
 
 const NoticiaSingle: FunctionalComponent = () => {
   return (

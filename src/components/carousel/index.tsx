@@ -1,7 +1,7 @@
 import { h, FunctionalComponent } from "preact";
 import { useRef, useState } from "preact/hooks";
 
-import style from "./style";
+import style from "./style.css";
 
 import teste1 from "../../assets/img/teste1.jpg";
 import location from "../../assets/icons/location_red.jpg";

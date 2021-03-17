@@ -2,7 +2,7 @@ import { FunctionalComponent, h } from "preact";
 import { useState } from "preact/hooks";
 import { cookieInit } from "../../components/cookies";
 
-import style from "./style";
+import style from "./style.css";
 
 const Cadastro: FunctionalComponent = () => {
   const [state, setState] = useState({
@@ -10,64 +10,64 @@ const Cadastro: FunctionalComponent = () => {
     atacado: false,
     politics: false,
     subscribe: false,
-  })
+  });
   console.log(state);
 
   const onComprasChanged = (e): void => {
-    const uncheck = !state.atacado
-    const check = !state.comprasPessoais
+    const uncheck = !state.atacado;
+    const check = !state.comprasPessoais;
 
     if (state.atacado) {
-      setState(prevState => {
+      setState((prevState) => {
         return {
           ...prevState,
-          atacado: uncheck
-        }
-      })
+          atacado: uncheck,
+        };
+      });
     }
-    setState(prevState => {
+    setState((prevState) => {
       return {
         ...prevState,
-        comprasPessoais: check
-      }
-    })
-  }
+        comprasPessoais: check,
+      };
+    });
+  };
 
   const onAtacadoChanged = (e): void => {
-    const uncheck = !state.comprasPessoais
-    const check = !state.atacado
+    const uncheck = !state.comprasPessoais;
+    const check = !state.atacado;
 
     if (state.comprasPessoais) {
-      setState(prevState => {
+      setState((prevState) => {
         return {
           ...prevState,
-          comprasPessoais: uncheck
-        }
-      })
+          comprasPessoais: uncheck,
+        };
+      });
     }
-    setState(prevState => {
+    setState((prevState) => {
       return {
         ...prevState,
-        atacado: check
-      }
-    })
-  }
+        atacado: check,
+      };
+    });
+  };
 
   const onPoliticsChanged = (e): void => {
-    const check = !state.politics
+    const check = !state.politics;
     setState({
       ...state,
-      politics: check
+      politics: check,
     });
-  }
+  };
 
   const onSubscribeChanged = (e): void => {
-    const check = !state.subscribe
+    const check = !state.subscribe;
     setState({
       ...state,
-      subscribe: check
-    })
-  }
+      subscribe: check,
+    });
+  };
 
   cookieInit();
 
@@ -83,7 +83,8 @@ const Cadastro: FunctionalComponent = () => {
               id="comprasPessoais"
               name="comprasPessoais"
               checked={state.comprasPessoais}
-              onChange={onComprasChanged} />
+              onChange={onComprasChanged}
+            />
             Compras pessoais
           </div>
         </label>
