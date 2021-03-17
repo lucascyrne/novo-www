@@ -60,11 +60,11 @@
   position: absolute;
   width: auto;
   height: auto;
-  top: 1.6rem;
-  left: 22.4rem;
+  top: 1.82rem;
+  left: 23rem;
   content: ">";
   color: var(--red);
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-family: "Nanum Gothic", monospace;
   pointer-events: none;
   cursor: pointer;
