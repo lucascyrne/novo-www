@@ -56,6 +56,7 @@ const checkCookies = (): boolean => {
 export const cookieInit = (): void => {
   setCookie("sylogentpolicyseen=true");
   if (!checkCookies()) {
-    render(<CookiePopup />, document.getElementById("app"));
+    if (typeof document !== "undefined")
+      render(<CookiePopup />, document.getElementById("app"));
   }
 };
