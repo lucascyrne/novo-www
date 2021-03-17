@@ -191,7 +191,7 @@
 }
 
 #trabalheconosco #help p {
-  margin-top: 0.2rem;
+  margin-top: 0.7rem;
   margin-left: 1rem;
 }
 
@@ -318,7 +318,7 @@
   }
 
   #trabalheconosco form #help p {
-    margin-top: 0.66rem;
+    margin-top: 1.3rem;
     margin-left: 2rem;
     font-size: 1.6rem;
   }
@@ -353,10 +353,6 @@
 
   #trabalheconosco {
     height: 106vh;
-  }
-
-  #trabalheconosco #help p {
-    padding-top: 0.56rem;
   }
 }
 
@@ -494,6 +490,10 @@
   #trabalheconosco {
     height: 126vh;
     padding: 4rem 13.6rem;
+  }
+
+  #trabalheconosco form #help p {
+    margin-top: 2.1rem;
   }
 }
 
@@ -644,7 +644,7 @@
   }
 
   #trabalheconosco form #help p {
-    margin-top: 1.8rem;
+    margin-top: 2rem;
   }
 
   #trabalheconosco #help_msg {
@@ -706,6 +706,10 @@
   #trabalheconosco {
     height: 114vh;
     padding: 3rem 10rem;
+  }
+
+  #trabalheconosco form #help p {
+    margin-top: 2.1rem;
   }
 }
 
