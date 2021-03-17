@@ -49,8 +49,8 @@ class CookiePopup extends Component<Props, State> {
 
 const checkCookies = (): boolean => {
   const c = getCookie();
-  console.log(c);
-  return c.indexOf("sylogentpolicyseen=true") > -1;
+  if (typeof c !== "undefined")
+    return c.indexOf("sylogentpolicyseen=true") > -1;
 };
 
 export const cookieInit = (): void => {
