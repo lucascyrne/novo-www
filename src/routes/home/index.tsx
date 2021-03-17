@@ -21,21 +21,21 @@ const WebFiquePorDentro: FunctionalComponent = () => {
         <img src={teste1} alt="" />
         <h2>Example of title not to big that's gonna be read!</h2>
         <a href="">
-          Continue Lendo<span>{">"}</span>
+          Continue lendo<span>{">"}</span>
         </a>
       </div>
       <div class={style.news_card}>
         <img src={teste1} alt="" />
         <h2>Example of title not to big that's gonna be read!</h2>
         <a href="">
-          Continue Lendo<span>{">"}</span>
+          Continue lendo<span>{">"}</span>
         </a>
       </div>
       <div class={style.news_card}>
         <img src={teste1} alt="" />
         <h2>Example of title not to big that's gonna be read!</h2>
         <a href="">
-          Continue Lendo<span>{">"}</span>
+          Continue lendo<span>{">"}</span>
         </a>
       </div>
     </div>
