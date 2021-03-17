@@ -75,14 +75,14 @@
   position: relative;
 }
 
-#ofertas .select {
+#ofertas #stores_select .select {
   position: relative;
   width: 34rem;
   height: 4rem;
   padding-left: 2rem;
   color: #9a9a9a;
   font-family: Montserrat, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
   border: 1px solid #d6d6d6;
   border-radius: 10px;
@@ -104,7 +104,7 @@
   width: auto;
   height: auto;
   color: var(--red);
-  font-size: 2em;
+  font-size: 1.2em;
   font-family: "Nanum Gothic", monospace;
   pointer-events: none;
   -webkit-transform: rotate(90deg);
@@ -170,7 +170,7 @@
   #ofertas #ofertas_inner #ofertas_left .select {
     width: 40rem;
     height: 5.4rem;
-    font-size: 2rem;
+    font-size: rem;
     color: #9a9a9a;
   }
 
@@ -235,16 +235,16 @@
 
   #ofertas #ofertas_inner #ofertas_left .select {
     width: 30rem;
-    height: 4rem;
+    height: 3rem;
     margin-top: 0rem;
     padding-top: 0.2rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   #ofertas #stores_select::after {
-    font-size: 2rem;
-    top: 1rem;
-    left: 25rem;
+    font-size: 1.4rem;
+    top: 0.862rem;
+    left: 26.8rem;
   }
 
   #ofertas #ofertas_inner #tabloids {

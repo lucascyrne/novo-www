@@ -17,7 +17,7 @@ const Ofertas: FunctionalComponent = () => {
           <h1>Ofertas vigentes</h1>
           <div id={style.stores_select}>
             <select name="stores" id="stores" class={style.select}>
-              <option value="op0">Escolha por cidade</option>
+              <option value="op0">Escolha por loja</option>
               <option value="op1">Option 1</option>
               <option value="op2">Option 2</option>
               <option value="op3">Option 3</option>
