@@ -84,9 +84,9 @@
     height: 10vh;
   }
 
-  #cookies_container p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+  #cookies_container div p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
   #cookies_container div button {
@@ -115,13 +115,15 @@
   }
 
   #cookies_container div p {
-    font-size: 1.2rem;
+    width: 68%;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 1366px) {
   #cookies_container div p {
-    font-size: 1.2rem;
+    width: 60%;
+    font-size: 1rem;
   }
 }
 
@@ -136,13 +138,21 @@
   }
 }
 
+@media (max-width: 1280px) and (max-height: 610px) {
+  #cookies_container div p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+
 @media (max-width: 1024px) {
-  #cookies_container p {
-    width: 80%;
-    font-size: 0.8rem;
+  #cookies_container div p {
+    width: 70%;
+    font-size: 0.7rem;
   }
 
   #cookies_container div button {
+    width: 14%;
     font-size: 1em;
   }
 }
