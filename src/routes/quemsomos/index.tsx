@@ -5,7 +5,8 @@ import teste1 from "../../assets/img/teste1.jpg";
 import { cookieInit } from "../../components/cookies";
 
 const isWeb = (): boolean => {
-  if (window.innerHeight < window.innerWidth) return true;
+  if (typeof window !== undefined)
+    if (window.innerHeight < window.innerWidth) return true;
   return false;
 };
 

@@ -11,7 +11,8 @@ import igIcon from "../../assets/icons/instagram_white.png";
 import style from "./style.css";
 
 const isWeb = (): boolean => {
-  if (window.innerHeight < window.innerWidth) return true;
+  if (typeof window !== undefined)
+    if (window.innerHeight < window.innerWidth) return true;
   false;
 };
 

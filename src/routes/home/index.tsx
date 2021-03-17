@@ -9,7 +9,8 @@ import teste1 from "../../assets/img/teste1.jpg";
 import teste2 from "../../assets/img/teste2.jpg";
 
 const isWeb = (): boolean => {
-  if (window.innerHeight > window.innerWidth) return false;
+  if (typeof window !== undefined)
+    if (window.innerHeight > window.innerWidth) return false;
   return true;
 };
 
