@@ -16,8 +16,10 @@ const getCookie = (): string[] => {
 };
 
 const setCookie = (c: string): void => {
-  const cookies = document.cookie;
-  document.cookie = `${cookies};${c}`;
+  if (typeof document !== "undefined") {
+    const cookies = document.cookie;
+    document.cookie = `${cookies};${c}`;
+  }
 };
 
 class CookiePopup extends Component<Props, State> {
