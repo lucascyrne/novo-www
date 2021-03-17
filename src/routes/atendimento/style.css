@@ -72,9 +72,9 @@
   padding: 0.2rem 1.6rem;
   margin-top: 4rem;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.33);
-  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 #atendimento #card_container .card h2 {
@@ -218,6 +218,10 @@
     font-size: 1.1rem;
   }
 
+  #atendimento #card_container .card .personal {
+    margin-top: 1rem;
+  }
+
   #atendimento #card_container .card .personal div p,
   #atendimento #card_container .card .shopping div p {
     margin-top: 0.6rem;
@@ -258,6 +262,35 @@
     left: -4rem;
     font-size: 3rem;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 1000px) {
+  #atendimento #card_container .card {
+    padding: 1.4rem 1.6rem;
+  }
+
+  #atendimento #card_container .card .location {
+    margin-top: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  #atendimento .card .location p {
+    margin-top: 1rem;
+  }
+
+  #atendimento .card :is(.personal, .shopping) :is(h3) {
+    font-size: 1rem;
+  }
+
+  #atendimento .card :is(.personal, .shopping) :is(p) {
+    margin-top: 1rem;
+  }
+
+  #atendimento #newsletter label {
+    top: 0.682rem;
+    left: -3.6rem;
+    font-size: 1.4rem;
   }
 }
 
