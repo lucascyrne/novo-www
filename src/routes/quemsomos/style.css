@@ -76,11 +76,13 @@
 }
 
 #quemsomos #infobanner h2 {
-  font-size: 3.6rem;
+  font-size: 3.8rem;
+  line-height: 4rem;
 }
 
 #quemsomos #infobanner p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 #quemsomos #valuesbanner {
@@ -149,7 +151,7 @@
 
 #quemsomos #mapbanner #maptext p {
   width: 100%;
-  text-align: justify;
+  text-align: left;
   line-height: 1.6rem;
 }
 
@@ -183,15 +185,17 @@
   }
 
   #quemsomos #infobanner {
-    height: 38vh;
+    height: 42vh;
   }
 
   #quemsomos #infobanner h2 {
-    font-size: 5rem;
+    font-size: 6rem;
+    line-height: 6.2rem;
   }
 
   #quemsomos #infobanner p {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
   }
 
   #quemsomos #valuesbanner {
