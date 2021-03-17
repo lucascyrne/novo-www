@@ -14,7 +14,7 @@
 }
 
 #container h1 {
-  text-align: center;
+  text-align: left;
 }
 
 #container h1,
@@ -24,6 +24,14 @@
 
 #container div:first-of-type {
   margin-top: 4rem;
+}
+
+#container #fst_paragraph li:first-child {
+  margin-top: 0;
+}
+
+#container #fst_paragraph li {
+  margin-top: -1rem;
 }
 
 #container div:last-of-type {

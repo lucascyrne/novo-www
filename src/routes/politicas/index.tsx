@@ -9,29 +9,43 @@ const Politicas: FunctionalComponent = () => {
   return (
     <div id={style.politicas}>
       <div id={style.container}>
-        <div>
+        <div id={style.fst_paragraph}>
           <h1>POLÍTICA DE PRIVACIDADE</h1>
           <p>
-            Todas as suas informações pessoais recolhidas, serão usadas para o
-            ajudar a tornar a sua visita no nosso site a mais produtiva e
-            agradável possível.
+            <li>
+              Todas as suas informações pessoais recolhidas, serão usadas para o
+              ajudar a tornar a sua visita no nosso site a mais produtiva e
+              agradável possível.
+            </li>
             <br />
-            <br />A garantia da confidencialidade dos dados pessoais dos
-            utilizadores do nosso site é muito importante para a Novo Atacarejo.
+            <br />
+            <li>
+              A garantia da confidencialidade dos dados pessoais dos
+              utilizadores do nosso site é muito importante para a Novo
+              Atacarejo.
+            </li>
             <br />
             <br />
-            Todas as informações pessoais relativas a clientes ou visitantes que
-            usem o site da Novo Atacarejo serão tratadas em concordância com a
-            Lei.
+            <li>
+              Todas as informações pessoais relativas a clientes ou visitantes
+              que usem o site da Novo Atacarejo serão tratadas em concordância
+              com a Lei.
+            </li>
             <br />
-            <br /> A informação pessoal recolhida pode incluir o seu nome,
-            e-mail, número de telefone e/ou celular e CPF.
+            <br />{" "}
+            <li>
+              A informação pessoal recolhida pode incluir o seu nome, e-mail,
+              número de telefone e/ou celular e CPF.
+            </li>
             <br />
-            <br /> O uso do site da Novo Atacarejo pressupõe a aceitação deste
-            Acordo de Privacidade. A equipe da Novo Atacarejo reserva-se ao
-            direito de alterar este acordo sem aviso prévio. Deste modo,
-            recomendamos que consulte a nossa política de privacidade com
-            regularidade de forma a estar sempre atualizado.
+            <br />
+            <li>
+              O uso do site da Novo Atacarejo pressupõe a aceitação deste Acordo
+              de Privacidade. A equipe da Novo Atacarejo reserva-se ao direito
+              de alterar este acordo sem aviso prévio. Deste modo, recomendamos
+              que consulte a nossa política de privacidade com regularidade de
+              forma a estar sempre atualizado.
+            </li>
           </p>
         </div>
         <div>
