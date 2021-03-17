@@ -76,7 +76,7 @@ const WebCards = (): h.JSX.Element => {
           </div>
         </div>
         <div class={style.shopping}>
-          <h3>Ofertas para compras para Atacada</h3>
+          <h3>Ofertas para compras para Atacado</h3>
           <div>
             <img src={wppblue} alt="" />
             <p>(81) 98252-8942</p>
@@ -103,7 +103,7 @@ const WebCards = (): h.JSX.Element => {
           </div>
         </div>
         <div class={style.shopping}>
-          <h3>Ofertas para compras para Atacada</h3>
+          <h3>Ofertas para compras para Atacado</h3>
           <div>
             <img src={wppblue} alt="" />
             <p>(81) 98252-8942</p>
@@ -130,7 +130,7 @@ const WebCards = (): h.JSX.Element => {
           </div>
         </div>
         <div class={style.shopping}>
-          <h3>Ofertas para compras para Atacada</h3>
+          <h3>Ofertas para compras para Atacado</h3>
           <div>
             <img src={wppblue} alt="" />
             <p>(81) 98252-8942</p>
