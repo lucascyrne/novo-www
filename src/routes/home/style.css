@@ -51,6 +51,7 @@
   justify-self: center;
   align-self: center;
   margin: 0 auto;
+  margin-left: 8rem;
 }
 
 #home #banner .info h1 {
@@ -171,7 +172,7 @@
   font-weight: 600;
   color: #cccccc;
   text-decoration: none;
-  border: 3px solid #cccccc;
+  border: 2px solid #cccccc;
   border-radius: 0.6rem;
   background-color: rgb(245, 245, 245);
   cursor: pointer;
@@ -186,8 +187,8 @@
   display: flex;
   position: relative;
   color: var(--red);
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 1.6rem;
+  font-family: "Nanum Myeongjo", monospace;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
