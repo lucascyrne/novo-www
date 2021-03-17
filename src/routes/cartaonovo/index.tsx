@@ -2,7 +2,7 @@ import { FunctionalComponent, h } from "preact";
 
 import style from "./style";
 
-import cardwoman from "../../assets/img/cartaonovo_girl.jpg";
+import cardwoman from "../../assets/img/cartaonovo_girl.png";
 import { cookieInit } from "../../components/cookies";
 
 const Nothing = (): null => null;
@@ -157,10 +157,8 @@ const CartaoNovo: FunctionalComponent = () => {
           {isWeb() ? <WebListItems /> : <MobileListItems />}
           {isWeb() ? <WebRequesites /> : <MobileRequesites />}
         </div>
-        <div id={style.mask_cartao_img}>
-          <div id={style.cartao_img}>
-            <img src={cardwoman} alt="" />
-          </div>
+        <div id={style.cartao_img}>
+          <img src={cardwoman} alt="" />
         </div>
       </div>
       {isWeb() ? <Nothing /> : <RedBanner />}
