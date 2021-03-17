@@ -47,7 +47,7 @@
 #contato p {
   width: 60rem;
   margin-top: 1rem;
-  line-height: 1.8rem;
+  line-height: 0.8rem;
 }
 
 #contato form {
@@ -80,7 +80,7 @@
   font-size: 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #e6e6e6;
+  background-color: #efefef;
 }
 
 #contato form .form_input textarea {
@@ -93,7 +93,7 @@
   font-size: 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #e6e6e6;
+  background-color: #efefef;
   resize: none;
 }
 
@@ -118,7 +118,7 @@
   width: 60rem;
   margin-top: 0;
   margin-bottom: 2rem;
-  line-height: 1.8rem;
+  line-height: 0.8rem;
 }
 
 #trabalheconosco form {
@@ -141,7 +141,7 @@
   font-size: 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #e6e6e6;
+  background-color: #efefef;
 }
 
 #trabalheconosco form p {
@@ -168,7 +168,7 @@
   text-align: center;
   color: #fff;
   font-size: 1.26rem;
-  border: 2px solid #cccccc;
+  border: 2px solid #efefef;
   border-radius: 8px;
   background-color: transparent;
 }
@@ -239,12 +239,14 @@
   }
 
   #contato form .form_input input {
+    padding-left: 2rem;
     height: 4rem;
     font-size: 1.6rem;
     border-radius: 14px;
   }
 
   #contato form .form_input textarea {
+    padding-left: 2rem;
     width: 80rem;
   }
 
@@ -286,6 +288,7 @@
   }
 
   #trabalheconosco form .form_input input {
+    padding-left: 2rem;
     width: 40rem;
     height: 4rem;
     margin-bottom: 0.8rem;
@@ -350,6 +353,10 @@
 
   #trabalheconosco {
     height: 106vh;
+  }
+
+  #trabalheconosco #help p {
+    padding-top: 0.56rem;
   }
 }
 
